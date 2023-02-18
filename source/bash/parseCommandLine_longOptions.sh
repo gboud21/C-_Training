@@ -14,8 +14,7 @@
 # To do so we will create a variable that contains the valid arguments
 VALID_ARGS=$(getopt -o abc:h --long alpha,bravo,charlie:,help -- "$@")
 
-# This checks to see if the number of arguments is not 0. If it is then it will exit
-# the program with a status of 1
+# This checks to see if the last command executed successfully
 if [[ $? -ne 0 ]]; then
     exit 1
 fi

@@ -1,0 +1,2 @@
+# a_singleFileApplication
+This is the simplest case for an application. This application will compile a single file into an Application.

@@ -86,6 +86,7 @@ function generateCMake
         exitScript ${RETURN_CMAKE_NOT_FOUND}
     fi
 
+    # --- Execute command to generate Makefiles
     ${CMAKE_EXE} -S ${SOURCE_DIR} -B ${BUILD_DIR}
 }
 
@@ -96,13 +97,21 @@ function build
 
     generateCMake
 
-    ${CMAKE_EXE} --build
+    # --- Execute command to build binaries
+    ${CMAKE_EXE} --build ${BUILD_DIR}
 }
 
 # --- Cleans the source code
 function clean
 {
     printDebug "Cleaning"
+
+    if [ ! -f "${CMAKE_EXE}" ]; then
+        exitScript ${RETURN_CMAKE_NOT_FOUND}
+    fi
+
+    # Execute command to clean build directory
+    ${CMAKE_EXE} --build ${BUILD_DIR} --target clean
 }
 
 # --- Main Script Execution

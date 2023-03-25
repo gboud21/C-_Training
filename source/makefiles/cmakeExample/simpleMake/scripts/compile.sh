@@ -102,6 +102,13 @@ function build
 function clean
 {
     printDebug "Cleaning"
+
+    if [ ! -f "${CMAKE_EXE}" ]; then
+        exitScript ${RETURN_CMAKE_NOT_FOUND}
+    fi
+
+    # Execute command to clean build directory
+    ${CMAKE_EXE} --build ${BUILD_DIR} --target clean
 }
 
 # --- Main Script Execution

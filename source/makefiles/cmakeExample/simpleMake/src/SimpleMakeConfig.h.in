@@ -1,0 +1,3 @@
+// --- The configured options and settings for SimpleMake
+#define SimpleMake_VERSION_MAJOR @SimpleMake_VERSION_MAJOR@
+#define SimpleMake_VERSION_MINOR @SimpleMake_VERSION_MINOR@

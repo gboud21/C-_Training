@@ -95,7 +95,8 @@ function build
     printDebug "build"
 
     generateCMake
-    ${CMAKE_EXE} --build ${BUILD_DIR}
+
+    ${CMAKE_EXE} --build
 }
 
 # --- Cleans the source code

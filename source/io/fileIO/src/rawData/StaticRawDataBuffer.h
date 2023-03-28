@@ -6,14 +6,17 @@
 #include <stdint.h>
 
 //////////////////////////////////////////////////////////////////////////
-/// \class StaticRawDataBuffer
-/// \details This class provides an implementation of a Raw Data Buffer
+/// @brief Raw Data Buffer Implementation
+/// @details This class provides an implementation of a Raw Data Buffer
 /// without using Dynamic Memory.
 //////////////////////////////////////////////////////////////////////////
 template <uint64_t size>
 class StaticRawDataBuffer
 {
 public:
+    //////////////////////////////////////////////////////////////////////////
+    /// @brief Default Constructor
+    //////////////////////////////////////////////////////////////////////////
     StaticRawDataBuffer() : dataSize(0), maxSize(size)
     {
         memset(&data, 0, sizeof(uint8_t) * size);

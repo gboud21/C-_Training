@@ -1,0 +1,85 @@
+\hypertarget{classLogger}{}\doxysection{Logger Class Reference}
+\label{classLogger}\index{Logger@{Logger}}
+
+
+{\ttfamily \#include $<$Logger.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classLogger_a716362c0f93231b8ce1941892596a706}{log\+Msg}} (std\+::string $\ast$msg)
+\item 
+\mbox{\Hypertarget{classLogger_a716362c0f93231b8ce1941892596a706}\label{classLogger_a716362c0f93231b8ce1941892596a706}} 
+bool {\bfseries log\+Msg} (std\+::string $\ast$msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classLogger}{Logger}} $\ast$ \mbox{\hyperlink{classLogger_a45db7d43c58d7a16338a32b115aa5775}{get\+Instance}} (void)
+\item 
+static bool \mbox{\hyperlink{classLogger_acc33bbffdb37bae1a1c429bb195a027c}{destroy\+Instance}} (void)
+\item 
+\mbox{\Hypertarget{classLogger_a9d02c1642e2b8de923a4c899467699db}\label{classLogger_a9d02c1642e2b8de923a4c899467699db}} 
+static \mbox{\hyperlink{classLogger}{Logger}} $\ast$ {\bfseries get\+Instance} (void)
+\item 
+\mbox{\Hypertarget{classLogger_a4825c88fed331b8813d172bdff4b1533}\label{classLogger_a4825c88fed331b8813d172bdff4b1533}} 
+static bool {\bfseries destroy\+Instance} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File Name\+: logger.\+h
+
+Class Name\+: \mbox{\hyperlink{classLogger}{Logger}}
+
+Description\+: The \mbox{\hyperlink{classLogger}{Logger}} class is a singleton class that Code\+Web uses to write to a log file for debugging purposes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLogger_acc33bbffdb37bae1a1c429bb195a027c}\label{classLogger_acc33bbffdb37bae1a1c429bb195a027c}} 
+\index{Logger@{Logger}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily bool Logger\+::destroy\+Instance (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Name\+: destroy\+Instance
+
+Description\+: The destroy\+Instance function destroys the instance of the Error Handler.
+
+Inputs\+: None
+
+Outputs\+: bool -\/ Returns whether the function destroyed the instance of this class
+
+Errors\+: None \mbox{\Hypertarget{classLogger_a45db7d43c58d7a16338a32b115aa5775}\label{classLogger_a45db7d43c58d7a16338a32b115aa5775}} 
+\index{Logger@{Logger}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLogger}{Logger}} $\ast$ Logger\+::get\+Instance (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Name\+: get\+Instance
+
+Description\+: The get\+Instance function returns the instance of the \mbox{\hyperlink{classLogger}{Logger}}.
+
+Inputs\+: None
+
+Outputs\+: \mbox{\hyperlink{classLogger}{Logger}} $\ast$ -\/ Returns the singleton instance of this class
+
+Errors\+: None \mbox{\Hypertarget{classLogger_a716362c0f93231b8ce1941892596a706}\label{classLogger_a716362c0f93231b8ce1941892596a706}} 
+\index{Logger@{Logger}!logMsg@{logMsg}}
+\index{logMsg@{logMsg}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{logMsg()}{logMsg()}}
+{\footnotesize\ttfamily bool Logger\+::log\+Msg (\begin{DoxyParamCaption}\item[{std\+::string $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Name\+: log\+Msg
+
+Description\+: The log\+Msg function logs a message to the log file.
+
+Inputs\+: std\+::string $\ast$msg -\/ The message to be written to the log file
+
+Outputs\+: bool -\/ Returns whether the message was successfully logged
+
+Errors\+: None 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+source/makefiles/cmake\+Example/medium\+Make/src/utils/Logger.\+h\item 
+source/makefiles/cmake\+Example/medium\+Make/src/utils/Logger.\+cpp\end{DoxyCompactItemize}

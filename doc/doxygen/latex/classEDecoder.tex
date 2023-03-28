@@ -1,0 +1,104 @@
+\hypertarget{classEDecoder}{}\doxysection{E\+Decoder Class Reference}
+\label{classEDecoder}\index{EDecoder@{EDecoder}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEDecoder_a2af50cf398eda2afcd9fbceb5e83529c}\label{classEDecoder_a2af50cf398eda2afcd9fbceb5e83529c}} 
+{\bfseries E\+Decoder} (int server\+Version, \mbox{\hyperlink{classEWrapper}{E\+Wrapper}} $\ast$callback, \mbox{\hyperlink{structEClientMsgSink}{E\+Client\+Msg\+Sink}} $\ast$client\+Msg\+Sink=0)
+\item 
+\mbox{\Hypertarget{classEDecoder_aae6906e19fcac9e0cc7027bc90d923fd}\label{classEDecoder_aae6906e19fcac9e0cc7027bc90d923fd}} 
+int {\bfseries parse\+And\+Process\+Msg} (const char $\ast$\&begin\+Ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a2af50cf398eda2afcd9fbceb5e83529c}\label{classEDecoder_a2af50cf398eda2afcd9fbceb5e83529c}} 
+{\bfseries E\+Decoder} (int server\+Version, \mbox{\hyperlink{classEWrapper}{E\+Wrapper}} $\ast$callback, \mbox{\hyperlink{structEClientMsgSink}{E\+Client\+Msg\+Sink}} $\ast$client\+Msg\+Sink=0)
+\item 
+\mbox{\Hypertarget{classEDecoder_aae6906e19fcac9e0cc7027bc90d923fd}\label{classEDecoder_aae6906e19fcac9e0cc7027bc90d923fd}} 
+int {\bfseries parse\+And\+Process\+Msg} (const char $\ast$\&begin\+Ptr, const char $\ast$end\+Ptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEDecoder_ae4b8f26541b4b00bb4c51c5d5ba57eab}\label{classEDecoder_ae4b8f26541b4b00bb4c51c5d5ba57eab}} 
+static bool {\bfseries Check\+Offset} (const char $\ast$ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a1e767a94fdf934dc78bd73c3179c6852}\label{classEDecoder_a1e767a94fdf934dc78bd73c3179c6852}} 
+static const char $\ast$ {\bfseries Find\+Field\+End} (const char $\ast$ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a43606d6b5cfa9d577f61681e7ea0f240}\label{classEDecoder_a43606d6b5cfa9d577f61681e7ea0f240}} 
+static bool {\bfseries Decode\+Field} (bool \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_aa28d56df11544e1fdb3332b1bb4a73f3}\label{classEDecoder_aa28d56df11544e1fdb3332b1bb4a73f3}} 
+static bool {\bfseries Decode\+Field} (int \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a7bfdf05d04182cf629c3e11972107a58}\label{classEDecoder_a7bfdf05d04182cf629c3e11972107a58}} 
+static bool {\bfseries Decode\+Field} (long \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_abdc25878ebf44b4c52b8e82e742d7ee6}\label{classEDecoder_abdc25878ebf44b4c52b8e82e742d7ee6}} 
+static bool {\bfseries Decode\+Field} (long long \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a98d92346ce547cff67bdadae896fbf14}\label{classEDecoder_a98d92346ce547cff67bdadae896fbf14}} 
+static bool {\bfseries Decode\+Field} (double \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a342d7ce8886836dba4fd754ebfb7356e}\label{classEDecoder_a342d7ce8886836dba4fd754ebfb7356e}} 
+static bool {\bfseries Decode\+Field} (std\+::string \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a6b4f1c37aa84f9c48575d8e495c93521}\label{classEDecoder_a6b4f1c37aa84f9c48575d8e495c93521}} 
+static bool {\bfseries Decode\+Field} (char \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_ac4aa96e4cd909fcb07cba05bf8cdc25d}\label{classEDecoder_ac4aa96e4cd909fcb07cba05bf8cdc25d}} 
+static bool {\bfseries Decode\+Field\+Time} (time\+\_\+t \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a357761c3de978af1c2552198ef388282}\label{classEDecoder_a357761c3de978af1c2552198ef388282}} 
+static bool {\bfseries Decode\+Field\+Max} (int \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a6293adbac4e338855af0593dac5e6534}\label{classEDecoder_a6293adbac4e338855af0593dac5e6534}} 
+static bool {\bfseries Decode\+Field\+Max} (long \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a72f0964cea03730bfdd61c1b752cb612}\label{classEDecoder_a72f0964cea03730bfdd61c1b752cb612}} 
+static bool {\bfseries Decode\+Field\+Max} (double \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a6c69e2e2e7ca677aebd0771bda8d7c93}\label{classEDecoder_a6c69e2e2e7ca677aebd0771bda8d7c93}} 
+static bool {\bfseries Check\+Offset} (const char $\ast$ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a31de522a61d9e8d33d63cad2758fd5ee}\label{classEDecoder_a31de522a61d9e8d33d63cad2758fd5ee}} 
+static const char $\ast$ {\bfseries Find\+Field\+End} (const char $\ast$ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a6c2882b292dc46c237e27286b3de32fe}\label{classEDecoder_a6c2882b292dc46c237e27286b3de32fe}} 
+static bool {\bfseries Decode\+Field} (bool \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a542ff58a418a6c953ab76497f69f1603}\label{classEDecoder_a542ff58a418a6c953ab76497f69f1603}} 
+static bool {\bfseries Decode\+Field} (int \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_abd51cad5d453ffb9c9fdc0bed4c67bc6}\label{classEDecoder_abd51cad5d453ffb9c9fdc0bed4c67bc6}} 
+static bool {\bfseries Decode\+Field} (long \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_ab2a6e9d1771d3d4032f72978d02b5ec9}\label{classEDecoder_ab2a6e9d1771d3d4032f72978d02b5ec9}} 
+static bool {\bfseries Decode\+Field} (long long \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a25663ad4399f1d2e2d558f5c4ca13da7}\label{classEDecoder_a25663ad4399f1d2e2d558f5c4ca13da7}} 
+static bool {\bfseries Decode\+Field} (double \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_abf3a68b683b6aa69317e6efac9f154cc}\label{classEDecoder_abf3a68b683b6aa69317e6efac9f154cc}} 
+static bool {\bfseries Decode\+Field} (std\+::string \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_af48ce73776df65dfb80935360d4a1607}\label{classEDecoder_af48ce73776df65dfb80935360d4a1607}} 
+static bool {\bfseries Decode\+Field} (char \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a5c410d7c6df16cfaae9f8bd7b0b3ecb2}\label{classEDecoder_a5c410d7c6df16cfaae9f8bd7b0b3ecb2}} 
+static bool {\bfseries Decode\+Field\+Time} (time\+\_\+t \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_ad2f4eafe72cf1522c27f1bddcbdaaabc}\label{classEDecoder_ad2f4eafe72cf1522c27f1bddcbdaaabc}} 
+static bool {\bfseries Decode\+Field\+Max} (int \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_a39e83b14f4338b8f8afe42516f3ff271}\label{classEDecoder_a39e83b14f4338b8f8afe42516f3ff271}} 
+static bool {\bfseries Decode\+Field\+Max} (long \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\item 
+\mbox{\Hypertarget{classEDecoder_af2d377697b470e9f7e9e966dc6f959fc}\label{classEDecoder_af2d377697b470e9f7e9e966dc6f959fc}} 
+static bool {\bfseries Decode\+Field\+Max} (double \&, const char $\ast$\&ptr, const char $\ast$end\+Ptr)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+source/makefiles/cmake\+Example/medium\+Make/src/\+T\+W\+S/client/E\+Decoder.\+h\item 
+source/makefiles/cmake\+Example/medium\+Make/src/\+T\+W\+S/client/E\+Decoder.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,434 @@
+\hypertarget{structOrder}{}\doxysection{Order Struct Reference}
+\label{structOrder}\index{Order@{Order}}
+
+
+Collaboration diagram for Order\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{structOrder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structOrder_ada9af59fddbaca94e7b64aad5f172564}\label{structOrder_ada9af59fddbaca94e7b64aad5f172564}} 
+typedef std\+::vector$<$ Order\+Combo\+Leg\+S\+Ptr $>$ {\bfseries Order\+Combo\+Leg\+List}
+\item 
+\mbox{\Hypertarget{structOrder_adb65ae0f0783b31686de174308b546b2}\label{structOrder_adb65ae0f0783b31686de174308b546b2}} 
+typedef std\+::shared\+\_\+ptr$<$ Order\+Combo\+Leg\+List $>$ {\bfseries Order\+Combo\+Leg\+List\+S\+Ptr}
+\item 
+\mbox{\Hypertarget{structOrder_ada9af59fddbaca94e7b64aad5f172564}\label{structOrder_ada9af59fddbaca94e7b64aad5f172564}} 
+typedef std\+::vector$<$ Order\+Combo\+Leg\+S\+Ptr $>$ {\bfseries Order\+Combo\+Leg\+List}
+\item 
+\mbox{\Hypertarget{structOrder_adb65ae0f0783b31686de174308b546b2}\label{structOrder_adb65ae0f0783b31686de174308b546b2}} 
+typedef std\+::shared\+\_\+ptr$<$ Order\+Combo\+Leg\+List $>$ {\bfseries Order\+Combo\+Leg\+List\+S\+Ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structOrder_a871c2fd4d3726246a91318cbd33e6dc8}\label{structOrder_a871c2fd4d3726246a91318cbd33e6dc8}} 
+static void {\bfseries Clone\+Order\+Combo\+Legs} (Order\+Combo\+Leg\+List\+S\+Ptr \&dst, const Order\+Combo\+Leg\+List\+S\+Ptr \&src)
+\item 
+\mbox{\Hypertarget{structOrder_acb3d770b8ca2669eaefc6918be14edc1}\label{structOrder_acb3d770b8ca2669eaefc6918be14edc1}} 
+static void {\bfseries Clone\+Order\+Combo\+Legs} (Order\+Combo\+Leg\+List\+S\+Ptr \&dst, const Order\+Combo\+Leg\+List\+S\+Ptr \&src)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structOrder_a65a0fda67cb227bebdbe710e487e6743}\label{structOrder_a65a0fda67cb227bebdbe710e487e6743}} 
+long {\bfseries order\+Id}
+\item 
+\mbox{\Hypertarget{structOrder_a6e9c067d9075608887de3c739e258725}\label{structOrder_a6e9c067d9075608887de3c739e258725}} 
+long {\bfseries client\+Id}
+\item 
+\mbox{\Hypertarget{structOrder_a233c49f122609cfbb591b77eb704f206}\label{structOrder_a233c49f122609cfbb591b77eb704f206}} 
+int {\bfseries perm\+Id}
+\item 
+\mbox{\Hypertarget{structOrder_af389c38feacb311aa3b351d93796e05d}\label{structOrder_af389c38feacb311aa3b351d93796e05d}} 
+std\+::string {\bfseries action}
+\item 
+\mbox{\Hypertarget{structOrder_abe29d28a6ae3a73cfb96d2c7c230c9f1}\label{structOrder_abe29d28a6ae3a73cfb96d2c7c230c9f1}} 
+double {\bfseries total\+Quantity}
+\item 
+\mbox{\Hypertarget{structOrder_a04c04eb779b7cd1d4336ce088044bde1}\label{structOrder_a04c04eb779b7cd1d4336ce088044bde1}} 
+std\+::string {\bfseries order\+Type}
+\item 
+\mbox{\Hypertarget{structOrder_a879eb51fa402f9d0619cb1b08fb47cdf}\label{structOrder_a879eb51fa402f9d0619cb1b08fb47cdf}} 
+double {\bfseries lmt\+Price}
+\item 
+\mbox{\Hypertarget{structOrder_afddde6f008922e5aa6c65779fdeaa196}\label{structOrder_afddde6f008922e5aa6c65779fdeaa196}} 
+double {\bfseries aux\+Price}
+\item 
+\mbox{\Hypertarget{structOrder_a5dbf304c8c1130905aed2bd54319e5e3}\label{structOrder_a5dbf304c8c1130905aed2bd54319e5e3}} 
+std\+::string {\bfseries tif}
+\item 
+\mbox{\Hypertarget{structOrder_ac1a209df97db6aa3f75da0df6b30c89a}\label{structOrder_ac1a209df97db6aa3f75da0df6b30c89a}} 
+std\+::string {\bfseries active\+Start\+Time}
+\item 
+\mbox{\Hypertarget{structOrder_affc647793fbb83311b717ffe095736b0}\label{structOrder_affc647793fbb83311b717ffe095736b0}} 
+std\+::string {\bfseries active\+Stop\+Time}
+\item 
+\mbox{\Hypertarget{structOrder_a5c4215312af539c5b16dcce4fa905b71}\label{structOrder_a5c4215312af539c5b16dcce4fa905b71}} 
+std\+::string {\bfseries oca\+Group}
+\item 
+\mbox{\Hypertarget{structOrder_acbd6b1b39d06b23992de6b5e102edb2d}\label{structOrder_acbd6b1b39d06b23992de6b5e102edb2d}} 
+int {\bfseries oca\+Type}
+\item 
+\mbox{\Hypertarget{structOrder_ab89f8e2f3652cb553b1b19c47b8c79da}\label{structOrder_ab89f8e2f3652cb553b1b19c47b8c79da}} 
+std\+::string {\bfseries order\+Ref}
+\item 
+\mbox{\Hypertarget{structOrder_a703e5f13cd887a34d2a75c4856a8fbaa}\label{structOrder_a703e5f13cd887a34d2a75c4856a8fbaa}} 
+bool {\bfseries transmit}
+\item 
+\mbox{\Hypertarget{structOrder_ae7fadb9ba96cf8fa227dde5834e8280e}\label{structOrder_ae7fadb9ba96cf8fa227dde5834e8280e}} 
+long {\bfseries parent\+Id}
+\item 
+\mbox{\Hypertarget{structOrder_ae77f33e699208ec22d918d7b443c3a45}\label{structOrder_ae77f33e699208ec22d918d7b443c3a45}} 
+bool {\bfseries block\+Order}
+\item 
+\mbox{\Hypertarget{structOrder_a46459b0610a05aa758e6c67937e2ddd8}\label{structOrder_a46459b0610a05aa758e6c67937e2ddd8}} 
+bool {\bfseries sweep\+To\+Fill}
+\item 
+\mbox{\Hypertarget{structOrder_a353ff44098c302be1074eea0ba60e6ec}\label{structOrder_a353ff44098c302be1074eea0ba60e6ec}} 
+int {\bfseries display\+Size}
+\item 
+\mbox{\Hypertarget{structOrder_aded2ffb055f2f5bc99ab0a4ec291a3ad}\label{structOrder_aded2ffb055f2f5bc99ab0a4ec291a3ad}} 
+int {\bfseries trigger\+Method}
+\item 
+\mbox{\Hypertarget{structOrder_ad9965ba3467eac4578fb884c25231563}\label{structOrder_ad9965ba3467eac4578fb884c25231563}} 
+bool {\bfseries outside\+Rth}
+\item 
+\mbox{\Hypertarget{structOrder_a596e414442670280a8757a34d137557a}\label{structOrder_a596e414442670280a8757a34d137557a}} 
+bool {\bfseries hidden}
+\item 
+\mbox{\Hypertarget{structOrder_a9229f9b9d26343bf1cdc091cf7e00925}\label{structOrder_a9229f9b9d26343bf1cdc091cf7e00925}} 
+std\+::string {\bfseries good\+After\+Time}
+\item 
+\mbox{\Hypertarget{structOrder_a30f5aa84d89d1a694bcd11ce5502b6af}\label{structOrder_a30f5aa84d89d1a694bcd11ce5502b6af}} 
+std\+::string {\bfseries good\+Till\+Date}
+\item 
+\mbox{\Hypertarget{structOrder_a31b026805ccc7deb0587036ea1a66da4}\label{structOrder_a31b026805ccc7deb0587036ea1a66da4}} 
+std\+::string {\bfseries rule80A}
+\item 
+\mbox{\Hypertarget{structOrder_a07a3eff71a4e0818433a1a18358ea95b}\label{structOrder_a07a3eff71a4e0818433a1a18358ea95b}} 
+bool {\bfseries all\+Or\+None}
+\item 
+\mbox{\Hypertarget{structOrder_a2ce2cfee49eb9f4c68d075e71d8f9989}\label{structOrder_a2ce2cfee49eb9f4c68d075e71d8f9989}} 
+int {\bfseries min\+Qty}
+\item 
+\mbox{\Hypertarget{structOrder_acd9b2bbc6fdf07d5c92111a0474cb06b}\label{structOrder_acd9b2bbc6fdf07d5c92111a0474cb06b}} 
+double {\bfseries percent\+Offset}
+\item 
+\mbox{\Hypertarget{structOrder_a31f0caca832f90d62d08c4b3b6f364d3}\label{structOrder_a31f0caca832f90d62d08c4b3b6f364d3}} 
+bool {\bfseries override\+Percentage\+Constraints}
+\item 
+\mbox{\Hypertarget{structOrder_a179cf92cf1adae8e08ae0b3e5dd72c77}\label{structOrder_a179cf92cf1adae8e08ae0b3e5dd72c77}} 
+double {\bfseries trail\+Stop\+Price}
+\item 
+\mbox{\Hypertarget{structOrder_aa879969230f03cd1cdf9a49ececab629}\label{structOrder_aa879969230f03cd1cdf9a49ececab629}} 
+double {\bfseries trailing\+Percent}
+\item 
+\mbox{\Hypertarget{structOrder_afbf05c5607f3571962567be96607346a}\label{structOrder_afbf05c5607f3571962567be96607346a}} 
+std\+::string {\bfseries fa\+Group}
+\item 
+\mbox{\Hypertarget{structOrder_a834558df533bba9529328fec2fef92df}\label{structOrder_a834558df533bba9529328fec2fef92df}} 
+std\+::string {\bfseries fa\+Profile}
+\item 
+\mbox{\Hypertarget{structOrder_a1f9ae315261b7c3e30feb0a9da2a734b}\label{structOrder_a1f9ae315261b7c3e30feb0a9da2a734b}} 
+std\+::string {\bfseries fa\+Method}
+\item 
+\mbox{\Hypertarget{structOrder_a740cccf7e23a2d5fa253ba54ea400c35}\label{structOrder_a740cccf7e23a2d5fa253ba54ea400c35}} 
+std\+::string {\bfseries fa\+Percentage}
+\item 
+\mbox{\Hypertarget{structOrder_a187c503119f9ae742d4c12a0985263df}\label{structOrder_a187c503119f9ae742d4c12a0985263df}} 
+std\+::string {\bfseries open\+Close}
+\item 
+\mbox{\Hypertarget{structOrder_ad8a42874828f15a2bb7ba6567178c721}\label{structOrder_ad8a42874828f15a2bb7ba6567178c721}} 
+Origin {\bfseries origin}
+\item 
+\mbox{\Hypertarget{structOrder_a2e44e1c0072117dd804bda42923b2611}\label{structOrder_a2e44e1c0072117dd804bda42923b2611}} 
+int {\bfseries short\+Sale\+Slot}
+\item 
+\mbox{\Hypertarget{structOrder_a6b84ebaf31281d550ac34b86db885fce}\label{structOrder_a6b84ebaf31281d550ac34b86db885fce}} 
+std\+::string {\bfseries designated\+Location}
+\item 
+\mbox{\Hypertarget{structOrder_a424e6ff1f914c17aea21ea2a8732e4b5}\label{structOrder_a424e6ff1f914c17aea21ea2a8732e4b5}} 
+int {\bfseries exempt\+Code}
+\item 
+\mbox{\Hypertarget{structOrder_aedd5ffc42b1e78a3e6b89044ac8cdb8a}\label{structOrder_aedd5ffc42b1e78a3e6b89044ac8cdb8a}} 
+double {\bfseries discretionary\+Amt}
+\item 
+\mbox{\Hypertarget{structOrder_aaf180701291cc8cb368cebb60a7d39e0}\label{structOrder_aaf180701291cc8cb368cebb60a7d39e0}} 
+bool {\bfseries e\+Trade\+Only}
+\item 
+\mbox{\Hypertarget{structOrder_a3ef5ac1abea64865ff7520e9396824cb}\label{structOrder_a3ef5ac1abea64865ff7520e9396824cb}} 
+bool {\bfseries firm\+Quote\+Only}
+\item 
+\mbox{\Hypertarget{structOrder_a360d8a6b22839881a0daaae308f2f19f}\label{structOrder_a360d8a6b22839881a0daaae308f2f19f}} 
+double {\bfseries nbbo\+Price\+Cap}
+\item 
+\mbox{\Hypertarget{structOrder_a137f55ffff4cd8cef5800cc0f614988f}\label{structOrder_a137f55ffff4cd8cef5800cc0f614988f}} 
+bool {\bfseries opt\+Out\+Smart\+Routing}
+\item 
+\mbox{\Hypertarget{structOrder_ab4aa388702e953b4a6f6c1e38217c1e5}\label{structOrder_ab4aa388702e953b4a6f6c1e38217c1e5}} 
+int {\bfseries auction\+Strategy}
+\item 
+\mbox{\Hypertarget{structOrder_a6d50140b0ce80d72cd4ec6eb67d1b008}\label{structOrder_a6d50140b0ce80d72cd4ec6eb67d1b008}} 
+double {\bfseries starting\+Price}
+\item 
+\mbox{\Hypertarget{structOrder_a2ad08e2d49391f8c600f04a21ac85808}\label{structOrder_a2ad08e2d49391f8c600f04a21ac85808}} 
+double {\bfseries stock\+Ref\+Price}
+\item 
+\mbox{\Hypertarget{structOrder_aa1e1d496238b43b7cb3ee3ae76091f55}\label{structOrder_aa1e1d496238b43b7cb3ee3ae76091f55}} 
+double {\bfseries delta}
+\item 
+\mbox{\Hypertarget{structOrder_a1a2be45c950ff5a5cb00c211dd9f8509}\label{structOrder_a1a2be45c950ff5a5cb00c211dd9f8509}} 
+double {\bfseries stock\+Range\+Lower}
+\item 
+\mbox{\Hypertarget{structOrder_ad47b934f981072f8ee08f4de3a9b2ce2}\label{structOrder_ad47b934f981072f8ee08f4de3a9b2ce2}} 
+double {\bfseries stock\+Range\+Upper}
+\item 
+\mbox{\Hypertarget{structOrder_a148137641f737d875790dbb099357652}\label{structOrder_a148137641f737d875790dbb099357652}} 
+bool {\bfseries randomize\+Size}
+\item 
+\mbox{\Hypertarget{structOrder_a48f1ff0e5178baef48386cb5558ded7b}\label{structOrder_a48f1ff0e5178baef48386cb5558ded7b}} 
+bool {\bfseries randomize\+Price}
+\item 
+\mbox{\Hypertarget{structOrder_acdaa76f13b61c66e8ed2ba90e78baad0}\label{structOrder_acdaa76f13b61c66e8ed2ba90e78baad0}} 
+double {\bfseries volatility}
+\item 
+\mbox{\Hypertarget{structOrder_ad63d51d2709aaf52937317a646c7a038}\label{structOrder_ad63d51d2709aaf52937317a646c7a038}} 
+int {\bfseries volatility\+Type}
+\item 
+\mbox{\Hypertarget{structOrder_a0015c15133b0fab06b1d6af833d3d293}\label{structOrder_a0015c15133b0fab06b1d6af833d3d293}} 
+std\+::string {\bfseries delta\+Neutral\+Order\+Type}
+\item 
+\mbox{\Hypertarget{structOrder_a08c9e5ec55b0bf4ac79ea0c277e73faf}\label{structOrder_a08c9e5ec55b0bf4ac79ea0c277e73faf}} 
+double {\bfseries delta\+Neutral\+Aux\+Price}
+\item 
+\mbox{\Hypertarget{structOrder_ace5f906d112eeb95e720349350c91cb4}\label{structOrder_ace5f906d112eeb95e720349350c91cb4}} 
+long {\bfseries delta\+Neutral\+Con\+Id}
+\item 
+\mbox{\Hypertarget{structOrder_ae3c711d77fabbd7ee9886835e2cc20cf}\label{structOrder_ae3c711d77fabbd7ee9886835e2cc20cf}} 
+std\+::string {\bfseries delta\+Neutral\+Settling\+Firm}
+\item 
+\mbox{\Hypertarget{structOrder_a1f2366ee4acb6f40353e8ed387cd7d6d}\label{structOrder_a1f2366ee4acb6f40353e8ed387cd7d6d}} 
+std\+::string {\bfseries delta\+Neutral\+Clearing\+Account}
+\item 
+\mbox{\Hypertarget{structOrder_a25c0e9f1476869a09cd1acc8cce649cc}\label{structOrder_a25c0e9f1476869a09cd1acc8cce649cc}} 
+std\+::string {\bfseries delta\+Neutral\+Clearing\+Intent}
+\item 
+\mbox{\Hypertarget{structOrder_a4fe6938d3f33d041b9489268fc8aa505}\label{structOrder_a4fe6938d3f33d041b9489268fc8aa505}} 
+std\+::string {\bfseries delta\+Neutral\+Open\+Close}
+\item 
+\mbox{\Hypertarget{structOrder_afb10e72bf634f1bf07d1d7014b8d5b1b}\label{structOrder_afb10e72bf634f1bf07d1d7014b8d5b1b}} 
+bool {\bfseries delta\+Neutral\+Short\+Sale}
+\item 
+\mbox{\Hypertarget{structOrder_af915c9452d05ccf38509f2be6174ac40}\label{structOrder_af915c9452d05ccf38509f2be6174ac40}} 
+int {\bfseries delta\+Neutral\+Short\+Sale\+Slot}
+\item 
+\mbox{\Hypertarget{structOrder_a44873c0187d203dd6e22df23589fcd41}\label{structOrder_a44873c0187d203dd6e22df23589fcd41}} 
+std\+::string {\bfseries delta\+Neutral\+Designated\+Location}
+\item 
+\mbox{\Hypertarget{structOrder_ad07139e1be96b538d85320c810b206d0}\label{structOrder_ad07139e1be96b538d85320c810b206d0}} 
+bool {\bfseries continuous\+Update}
+\item 
+\mbox{\Hypertarget{structOrder_a14fc69eaabc51c88c3b02d4fe6230bfd}\label{structOrder_a14fc69eaabc51c88c3b02d4fe6230bfd}} 
+int {\bfseries reference\+Price\+Type}
+\item 
+\mbox{\Hypertarget{structOrder_a8e8dcfe15ec35c31122cf05f1fa0683c}\label{structOrder_a8e8dcfe15ec35c31122cf05f1fa0683c}} 
+double {\bfseries basis\+Points}
+\item 
+\mbox{\Hypertarget{structOrder_a46efedcf8d1953c0c4b90492d0766098}\label{structOrder_a46efedcf8d1953c0c4b90492d0766098}} 
+int {\bfseries basis\+Points\+Type}
+\item 
+\mbox{\Hypertarget{structOrder_a8902bffaf962edcb7ac215b13c040614}\label{structOrder_a8902bffaf962edcb7ac215b13c040614}} 
+int {\bfseries scale\+Init\+Level\+Size}
+\item 
+\mbox{\Hypertarget{structOrder_a5f8cc9af467838ee8857aaeb7898adad}\label{structOrder_a5f8cc9af467838ee8857aaeb7898adad}} 
+int {\bfseries scale\+Subs\+Level\+Size}
+\item 
+\mbox{\Hypertarget{structOrder_a961ed88cc0ed18d091532b5b4ba355e2}\label{structOrder_a961ed88cc0ed18d091532b5b4ba355e2}} 
+double {\bfseries scale\+Price\+Increment}
+\item 
+\mbox{\Hypertarget{structOrder_a36e601e37c7568b8436913662ace8167}\label{structOrder_a36e601e37c7568b8436913662ace8167}} 
+double {\bfseries scale\+Price\+Adjust\+Value}
+\item 
+\mbox{\Hypertarget{structOrder_afacf70a407e23c35f38942e520470297}\label{structOrder_afacf70a407e23c35f38942e520470297}} 
+int {\bfseries scale\+Price\+Adjust\+Interval}
+\item 
+\mbox{\Hypertarget{structOrder_afb2edf379ed7b5f1959ceef2bc5999d6}\label{structOrder_afb2edf379ed7b5f1959ceef2bc5999d6}} 
+double {\bfseries scale\+Profit\+Offset}
+\item 
+\mbox{\Hypertarget{structOrder_ad07920ad2d6b1918072718bd0379c53f}\label{structOrder_ad07920ad2d6b1918072718bd0379c53f}} 
+bool {\bfseries scale\+Auto\+Reset}
+\item 
+\mbox{\Hypertarget{structOrder_a5c8167fd0613a39e6f2cd9b3291984dc}\label{structOrder_a5c8167fd0613a39e6f2cd9b3291984dc}} 
+int {\bfseries scale\+Init\+Position}
+\item 
+\mbox{\Hypertarget{structOrder_a93f346485f4da7112c29e807cdeaa8cd}\label{structOrder_a93f346485f4da7112c29e807cdeaa8cd}} 
+int {\bfseries scale\+Init\+Fill\+Qty}
+\item 
+\mbox{\Hypertarget{structOrder_a38a317c1955b15061b0e9f085f6c2590}\label{structOrder_a38a317c1955b15061b0e9f085f6c2590}} 
+bool {\bfseries scale\+Random\+Percent}
+\item 
+\mbox{\Hypertarget{structOrder_ad9995f9d14433cc027907874dd83566c}\label{structOrder_ad9995f9d14433cc027907874dd83566c}} 
+std\+::string {\bfseries scale\+Table}
+\item 
+\mbox{\Hypertarget{structOrder_ab0bb4b32b662ad96b9e3d768f705a155}\label{structOrder_ab0bb4b32b662ad96b9e3d768f705a155}} 
+std\+::string {\bfseries hedge\+Type}
+\item 
+\mbox{\Hypertarget{structOrder_ac57b56af52caf8e4286b8982295204bc}\label{structOrder_ac57b56af52caf8e4286b8982295204bc}} 
+std\+::string {\bfseries hedge\+Param}
+\item 
+\mbox{\Hypertarget{structOrder_ace09ab4a993fcefee6ccb3a4a17d311b}\label{structOrder_ace09ab4a993fcefee6ccb3a4a17d311b}} 
+std\+::string {\bfseries account}
+\item 
+\mbox{\Hypertarget{structOrder_a011d5d28766ac977804d16114a502da2}\label{structOrder_a011d5d28766ac977804d16114a502da2}} 
+std\+::string {\bfseries settling\+Firm}
+\item 
+\mbox{\Hypertarget{structOrder_add7ed2a190aaa4fb99a7ffdbe6d6b147}\label{structOrder_add7ed2a190aaa4fb99a7ffdbe6d6b147}} 
+std\+::string {\bfseries clearing\+Account}
+\item 
+\mbox{\Hypertarget{structOrder_a1015de9150f213670ac712e9727febe1}\label{structOrder_a1015de9150f213670ac712e9727febe1}} 
+std\+::string {\bfseries clearing\+Intent}
+\item 
+\mbox{\Hypertarget{structOrder_a9056811bbf31b68d6d58fe65063ecbd9}\label{structOrder_a9056811bbf31b68d6d58fe65063ecbd9}} 
+std\+::string {\bfseries algo\+Strategy}
+\item 
+\mbox{\Hypertarget{structOrder_a43892565cb24cb538dcddfaac636efd9}\label{structOrder_a43892565cb24cb538dcddfaac636efd9}} 
+Tag\+Value\+List\+S\+Ptr {\bfseries algo\+Params}
+\item 
+\mbox{\Hypertarget{structOrder_ae8e16415a62e8f920d393b97eecc4fc3}\label{structOrder_ae8e16415a62e8f920d393b97eecc4fc3}} 
+Tag\+Value\+List\+S\+Ptr {\bfseries smart\+Combo\+Routing\+Params}
+\item 
+\mbox{\Hypertarget{structOrder_aa859c431835803d273ab0ff018642dc8}\label{structOrder_aa859c431835803d273ab0ff018642dc8}} 
+std\+::string {\bfseries algo\+Id}
+\item 
+\mbox{\Hypertarget{structOrder_af5f4b70db81b97924b0349bd975e5722}\label{structOrder_af5f4b70db81b97924b0349bd975e5722}} 
+bool {\bfseries what\+If}
+\item 
+\mbox{\Hypertarget{structOrder_ae60adc218a564453b182889b34634aea}\label{structOrder_ae60adc218a564453b182889b34634aea}} 
+bool {\bfseries not\+Held}
+\item 
+\mbox{\Hypertarget{structOrder_ad722a971ed40e70c6140e0627d299ade}\label{structOrder_ad722a971ed40e70c6140e0627d299ade}} 
+bool {\bfseries solicited}
+\item 
+\mbox{\Hypertarget{structOrder_aca158dc5a6106c178b743a0dc4a65ab8}\label{structOrder_aca158dc5a6106c178b743a0dc4a65ab8}} 
+std\+::string {\bfseries model\+Code}
+\item 
+\mbox{\Hypertarget{structOrder_ab62b7fb4e0660ac9a758fb26b053de8a}\label{structOrder_ab62b7fb4e0660ac9a758fb26b053de8a}} 
+Order\+Combo\+Leg\+List\+S\+Ptr {\bfseries order\+Combo\+Legs}
+\item 
+\mbox{\Hypertarget{structOrder_adf52e10f5cf70448616909c3e9811deb}\label{structOrder_adf52e10f5cf70448616909c3e9811deb}} 
+Tag\+Value\+List\+S\+Ptr {\bfseries order\+Misc\+Options}
+\item 
+\mbox{\Hypertarget{structOrder_a1a92b6ca2fbf8872a872353b08af6713}\label{structOrder_a1a92b6ca2fbf8872a872353b08af6713}} 
+int {\bfseries reference\+Contract\+Id}
+\item 
+\mbox{\Hypertarget{structOrder_a8a6864f2de76c5f7ea26a8b681f7759b}\label{structOrder_a8a6864f2de76c5f7ea26a8b681f7759b}} 
+double {\bfseries pegged\+Change\+Amount}
+\item 
+\mbox{\Hypertarget{structOrder_afbd8284cf6d3ccb39b5ec54186ab86a0}\label{structOrder_afbd8284cf6d3ccb39b5ec54186ab86a0}} 
+bool {\bfseries is\+Pegged\+Change\+Amount\+Decrease}
+\item 
+\mbox{\Hypertarget{structOrder_a131ddab7372f31ad7f96dd649077b0b9}\label{structOrder_a131ddab7372f31ad7f96dd649077b0b9}} 
+double {\bfseries reference\+Change\+Amount}
+\item 
+\mbox{\Hypertarget{structOrder_a311ce41e1d0a7195b84e150e4e0b64d5}\label{structOrder_a311ce41e1d0a7195b84e150e4e0b64d5}} 
+std\+::string {\bfseries reference\+Exchange\+Id}
+\item 
+\mbox{\Hypertarget{structOrder_a2c1a4be639158438c88a0b9104e59277}\label{structOrder_a2c1a4be639158438c88a0b9104e59277}} 
+std\+::string {\bfseries adjusted\+Order\+Type}
+\item 
+\mbox{\Hypertarget{structOrder_a5f7472d6e4f70bf013a1294859b4a708}\label{structOrder_a5f7472d6e4f70bf013a1294859b4a708}} 
+double {\bfseries trigger\+Price}
+\item 
+\mbox{\Hypertarget{structOrder_aca05ac56b66d6923fb7ed4f6b1ce54f3}\label{structOrder_aca05ac56b66d6923fb7ed4f6b1ce54f3}} 
+double {\bfseries adjusted\+Stop\+Price}
+\item 
+\mbox{\Hypertarget{structOrder_ac7a1d8529f4c2fdeaadec3ee8bfc7d88}\label{structOrder_ac7a1d8529f4c2fdeaadec3ee8bfc7d88}} 
+double {\bfseries adjusted\+Stop\+Limit\+Price}
+\item 
+\mbox{\Hypertarget{structOrder_abdbb8f2cbcf9a0c426679836696ccf5c}\label{structOrder_abdbb8f2cbcf9a0c426679836696ccf5c}} 
+double {\bfseries adjusted\+Trailing\+Amount}
+\item 
+\mbox{\Hypertarget{structOrder_ac452ebbce74950fab63bfeb1b1fd8a63}\label{structOrder_ac452ebbce74950fab63bfeb1b1fd8a63}} 
+int {\bfseries adjustable\+Trailing\+Unit}
+\item 
+\mbox{\Hypertarget{structOrder_a8d9dcda4ab70ac58042ea218c6793014}\label{structOrder_a8d9dcda4ab70ac58042ea218c6793014}} 
+double {\bfseries lmt\+Price\+Offset}
+\item 
+\mbox{\Hypertarget{structOrder_aa6872acc239f39225cadb37be75ee149}\label{structOrder_aa6872acc239f39225cadb37be75ee149}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classOrderCondition}{Order\+Condition}} $>$ $>$ {\bfseries conditions}
+\item 
+\mbox{\Hypertarget{structOrder_a6dcd54655b55f6eae5b9164d5c70ffb4}\label{structOrder_a6dcd54655b55f6eae5b9164d5c70ffb4}} 
+bool {\bfseries conditions\+Cancel\+Order}
+\item 
+\mbox{\Hypertarget{structOrder_acdbea5b50132d6b06da18674cd38430d}\label{structOrder_acdbea5b50132d6b06da18674cd38430d}} 
+bool {\bfseries conditions\+Ignore\+Rth}
+\item 
+\mbox{\Hypertarget{structOrder_ace7bffe830e90841458c15fad7ed8f21}\label{structOrder_ace7bffe830e90841458c15fad7ed8f21}} 
+std\+::string {\bfseries ext\+Operator}
+\item 
+\mbox{\Hypertarget{structOrder_af94e6dd3337aa0ae17f156ee2f3c3d28}\label{structOrder_af94e6dd3337aa0ae17f156ee2f3c3d28}} 
+\mbox{\hyperlink{classSoftDollarTier}{Soft\+Dollar\+Tier}} {\bfseries soft\+Dollar\+Tier}
+\item 
+\mbox{\Hypertarget{structOrder_ace5715cc07ee01cb84599a4b8dfa8ad5}\label{structOrder_ace5715cc07ee01cb84599a4b8dfa8ad5}} 
+double {\bfseries cash\+Qty}
+\item 
+\mbox{\Hypertarget{structOrder_acf0a89029cd92832150a80571367db37}\label{structOrder_acf0a89029cd92832150a80571367db37}} 
+std\+::string {\bfseries mifid2\+Decision\+Maker}
+\item 
+\mbox{\Hypertarget{structOrder_a8e1cde4af4f31b002e8b013243e78869}\label{structOrder_a8e1cde4af4f31b002e8b013243e78869}} 
+std\+::string {\bfseries mifid2\+Decision\+Algo}
+\item 
+\mbox{\Hypertarget{structOrder_a5df142d2f11c2dca871600035fdb7153}\label{structOrder_a5df142d2f11c2dca871600035fdb7153}} 
+std\+::string {\bfseries mifid2\+Execution\+Trader}
+\item 
+\mbox{\Hypertarget{structOrder_a09dc03d92b9b82b08462675106ee3a48}\label{structOrder_a09dc03d92b9b82b08462675106ee3a48}} 
+std\+::string {\bfseries mifid2\+Execution\+Algo}
+\item 
+\mbox{\Hypertarget{structOrder_a6e36c89f58425864816f74930610e416}\label{structOrder_a6e36c89f58425864816f74930610e416}} 
+bool {\bfseries dont\+Use\+Auto\+Price\+For\+Hedge}
+\item 
+\mbox{\Hypertarget{structOrder_a168ed534eb9e024448045d4c6387d6fb}\label{structOrder_a168ed534eb9e024448045d4c6387d6fb}} 
+bool {\bfseries is\+Oms\+Container}
+\item 
+\mbox{\Hypertarget{structOrder_a3661224b497de276f56ce667f067c366}\label{structOrder_a3661224b497de276f56ce667f067c366}} 
+bool {\bfseries discretionary\+Up\+To\+Limit\+Price}
+\item 
+\mbox{\Hypertarget{structOrder_ad53f008a4ccde97d434b79d327b9bc60}\label{structOrder_ad53f008a4ccde97d434b79d327b9bc60}} 
+std\+::string {\bfseries auto\+Cancel\+Date}
+\item 
+\mbox{\Hypertarget{structOrder_a706e6f3c04d6d97f487070a3b234183a}\label{structOrder_a706e6f3c04d6d97f487070a3b234183a}} 
+double {\bfseries filled\+Quantity}
+\item 
+\mbox{\Hypertarget{structOrder_ae767cdc432b23656f0ae8ac37e971746}\label{structOrder_ae767cdc432b23656f0ae8ac37e971746}} 
+int {\bfseries ref\+Futures\+Con\+Id}
+\item 
+\mbox{\Hypertarget{structOrder_a0c2c43a0ec9d05d233654621b4413a20}\label{structOrder_a0c2c43a0ec9d05d233654621b4413a20}} 
+bool {\bfseries auto\+Cancel\+Parent}
+\item 
+\mbox{\Hypertarget{structOrder_a49cb8ded94925cac85ed01ac9a5f6728}\label{structOrder_a49cb8ded94925cac85ed01ac9a5f6728}} 
+std\+::string {\bfseries shareholder}
+\item 
+\mbox{\Hypertarget{structOrder_aefb2e7d2e0565844d12fd4a04d070056}\label{structOrder_aefb2e7d2e0565844d12fd4a04d070056}} 
+bool {\bfseries imbalance\+Only}
+\item 
+\mbox{\Hypertarget{structOrder_a7bddbe7ff54b7ad4b3e61c3a5f8d2742}\label{structOrder_a7bddbe7ff54b7ad4b3e61c3a5f8d2742}} 
+bool {\bfseries route\+Marketable\+To\+Bbo}
+\item 
+\mbox{\Hypertarget{structOrder_a6a7f6acf971624d35d1bc94fdd5a65bf}\label{structOrder_a6a7f6acf971624d35d1bc94fdd5a65bf}} 
+long long {\bfseries parent\+Perm\+Id}
+\item 
+\mbox{\Hypertarget{structOrder_a024c147277406e9a9444c7ae24fcefbc}\label{structOrder_a024c147277406e9a9444c7ae24fcefbc}} 
+Use\+Price\+Mmgt\+Algo {\bfseries use\+Price\+Mgmt\+Algo}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/makefiles/cmake\+Example/medium\+Make/src/\+T\+W\+S/client/Order.\+h\end{DoxyCompactItemize}

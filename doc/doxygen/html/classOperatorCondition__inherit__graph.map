@@ -1,0 +1,11 @@
+<map id="OperatorCondition" name="OperatorCondition">
+<area shape="rect" id="node1" title=" " alt="" coords="358,155,499,181"/>
+<area shape="rect" id="node4" href="$classContractCondition.html" title=" " alt="" coords="201,229,339,256"/>
+<area shape="rect" id="node8" href="$classMarginCondition.html" title=" " alt="" coords="364,229,493,256"/>
+<area shape="rect" id="node9" href="$classTimeCondition.html" title=" " alt="" coords="518,229,635,256"/>
+<area shape="rect" id="node2" href="$classOrderCondition.html" title=" " alt="" coords="369,80,489,107"/>
+<area shape="rect" id="node3" href="$structIExternalizable.html" title=" " alt="" coords="369,5,488,32"/>
+<area shape="rect" id="node5" href="$classPercentChangeCondition.html" title=" " alt="" coords="5,304,188,331"/>
+<area shape="rect" id="node6" href="$classPriceCondition.html" title=" " alt="" coords="212,304,328,331"/>
+<area shape="rect" id="node7" href="$classVolumeCondition.html" title=" " alt="" coords="353,304,486,331"/>
+</map>

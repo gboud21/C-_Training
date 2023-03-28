@@ -1,8 +1,14 @@
 #include "RawDataBuffer.h"
+
 #include <iostream>
-RawDataBuffer::RawDataBuffer() {}
+
+RawDataBuffer::RawDataBuffer(uint64_t size)
+    : data(nullptr), dataSize(0), maxSize(size)
+{
+    data = new uint8_t[size];
+}
 
 void RawDataBuffer::printContents()
 {
-    std::cout << "Here are my contents: " << std::endl;
+    std::cout << "RawDataBuffer contents: " << std::endl;
 }

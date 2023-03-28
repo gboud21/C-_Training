@@ -1,14 +1,14 @@
 #include <iostream>
 
-#include "RawDataBuffer.h"
+#include "StaticRawDataBuffer.h"
 
 int main(int argc, char** argv)
 {
     std::cout << "Running FileIO" << std::endl;
 
-    RawDataBuffer buffer;
+    StaticRawDataBuffer<100> staticBuffer;
 
-    buffer.printContents();
+    staticBuffer.printContents();
 
     return 0;
 }

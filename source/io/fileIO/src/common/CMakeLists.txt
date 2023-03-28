@@ -1,29 +1,21 @@
 # Create a variable to contain the source files
-set(RAW_DATA_H
-    RawDataBuffer.h
-    StaticRawDataBuffer.h
-    RawDataStream.h
+set(COMMON_H
+    Error.h
     )
 
 # Create a variable to contain the source files
-set(RAW_DATA_SRC
-RawDataStream.cpp
-RawDataBuffer.cpp
+set(COMMON_SRC
+Error.cpp
 )
 
 # This command tells CMake to create an executable using the specified source code files
-add_library(rawData STATIC
-            ${RAW_DATA_H}
-            ${RAW_DATA_SRC}
+add_library(common STATIC
+            ${COMMON_H}
+            ${COMMON_SRC}
             )
 
-
-target_link_libraries(rawData PUBLIC
-                    common
-                    )
-
 # Link in the Configuration File
-target_include_directories(rawData PUBLIC
+target_include_directories(common PUBLIC
                            "${CMAKE_CURRENT_SOURCE_DIR}"
                            )
 

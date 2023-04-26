@@ -2,7 +2,10 @@
 
 #include "StaticRawDataBuffer.h"
 
-int main(int argc, char** argv)
+RETURN_TYPE FUNCTION_NAME(FUNCTION_PARAMETERS) {}
+}
+
+int main() int main(int argc, char** argv)
 {
     std::cout << "Running FileIO" << std::endl;
 

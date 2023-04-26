@@ -1,0 +1,32 @@
+#ifndef __BASICCLASS_H__
+#define __BASICCLASS_H__
+
+#include <stdint.h>
+
+class BasicClass
+{
+public:
+    //////////////////////////////////////////////////////////////////
+    /// \brief Constructor
+    //////////////////////////////////////////////////////////////////
+    BasicClass();
+
+    //////////////////////////////////////////////////////////////////
+    /// \brief Returns the Secret Value
+    /// \details This function returns the Secret Value
+    /// \return int32_t
+    //////////////////////////////////////////////////////////////////
+    int32_t getSecretValue();
+
+    //////////////////////////////////////////////////////////////////
+    /// \brief Sets the Secret Value
+    /// \details This function sets the Secret Value
+    /// \param [in] value - value to assign to the Secret Value
+    /// \return void
+    //////////////////////////////////////////////////////////////////
+    void setSecretValue(int32_t value);
+
+private:
+    int32_t secretValue;
+};
+#endif

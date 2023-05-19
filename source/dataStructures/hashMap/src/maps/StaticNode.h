@@ -17,10 +17,10 @@ public:
     /// \param [in] value - A Constant Integer to assign to the
     ///                     constantSecretValue
     //////////////////////////////////////////////////////////////////
-    StaticNode(K k, V v) : key(k), value(v) {}
+    StaticNode(K k, V v) : m_key(k), m_value(v) {}
 
 private:
-    K key;
-    V value;
+    K m_key;
+    V m_value;
 };
 #endif

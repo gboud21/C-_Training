@@ -11,7 +11,7 @@ public:
     //////////////////////////////////////////////////////////////////
     /// \brief Constructor
     //////////////////////////////////////////////////////////////////
-    StaticMap() : maxSize(mapSize){};
+    StaticMap() : m_maxSize(mapSize), m_size(0){};
 
     //////////////////////////////////////////////////////////////////
     /// \brief Sets the Secret Value
@@ -27,7 +27,7 @@ public:
     /// that the hash map can hold
     /// \return uint32_t
     //////////////////////////////////////////////////////////////////
-    const uint32_t getMaxSize() const;
+    const uint32_t getMaxSize() const { return m_maxSize; }
 
     //////////////////////////////////////////////////////////////////
     /// \brief Returns the size of the map
@@ -35,15 +35,15 @@ public:
     /// stored in the hash map
     /// \return uint32_t
     //////////////////////////////////////////////////////////////////
-    const uint32_t size() const;
+    const uint32_t size() const { return m_size; }
 
 private:
     // The maximum number of elements
-    const uint32_t maxSize;
+    const uint32_t m_maxSize;
 
     // The number of elements currently stored in the Hash Map
-    uint32_t size;
+    uint32_t m_size;
 
-    StaticNode nodes[mapSize];
+    StaticNode<K, V> mp_nodes[mapSize];
 };
 #endif

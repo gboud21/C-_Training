@@ -1,0 +1,30 @@
+A Layered Architecture is one of the simplest software architectural patterns. This pattern
+essentially organizes the various components within a software application into layers
+that isolate the different levels of functionality. In general, the Layered Architecture
+pattern consists of 5 layers where layers can only access and use components that are at
+the same level or lower:
+    1) Presentation
+    2) Business
+    3) Persistance
+    4) Database
+    5) Common
+
+Definition: Closed Loop
+    -Function calls must go through each layer sequentially.
+     (ie Presentation --> Business --> Persistance)
+Definition: Open Loop
+    -Components are allowed to make calls to all lower layers directly regardless of
+     whether they would have to skip a layer to make the call.
+     (ie Presentation --> Common)
+Definition: Layers of Isolation
+    -In a Closed Loop Architecture, each layer is designed to isolate the other layers from
+     changes. That is that if two layers are not directly adjacent then changes in one
+     should not impact the logic in any other layers provided that the interfaces do not
+     change.
+
+In general the 80/20 rule can be used to determine whether a Closed Loop or an Open Loop
+approach should be used within your system. This rule aims at defining whether the majoriy
+of function calls solely exist to pass data through to a lower component without doing any
+data manipulation or processing along the way. If more than 20% of the function calls are
+pass through functions then a Closed Loop architecture should not be used, or the system
+needs to be refactored. One alternative is to use the Open Loop Architecture.

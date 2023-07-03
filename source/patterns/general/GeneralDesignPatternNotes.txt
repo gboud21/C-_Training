@@ -140,3 +140,11 @@
 7. Paramaterized types
    A. This allows generic typing of parameters to allow a single class to interact with multiple different types
    B. In C++ this is accomplished through templates
+8. How to select a Design Pattern
+   A. Consider how design patterns solve design problems
+   B. Scan Intent sections
+   C. Study how patterns interrelate
+   D. Study patterns of like Purpose
+   E. Examine a cause of redesign
+   F. Conside what should be variable in your design
+      

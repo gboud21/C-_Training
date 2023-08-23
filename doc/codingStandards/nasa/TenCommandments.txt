@@ -1,0 +1,22 @@
+The Power of 10 by NASA
+1) Simple Control Flow
+	a. Do not use:
+		- goto statements
+		- setjmp constructs
+		- longjmp constructs
+		- recursion
+	b. Benifits
+		- Simpler control flow translates into stronger capabilities for analysis and often results in improved code clarity
+		- Avoiding recurion results in an acyclic function call graph which code analyzers can exploit to prove the limits on stack use
+		  and boundedness of executions
+			- Definition: acyclic - a call graph where we can't start at a node, follow a series of edges and end up back at the
+			  						same node that we started at
+		- Single points of returns are not required by this rule, but can simplify the code
+2) Give all loops an upper bound
+	a. It must be trivially possible for a tool to prove that a loop cannot exceed a preset number of iterations
+	b. Benifits
+		- This prevents runaway code
+	c. Exception
+		- This does not apply to loops that are meant to be nonterminating (ie a process scheduler). In these cases the reverse rule
+		  is applied. It should be possible for a tool to prove statically that the loop cannot terminate.
+3) 

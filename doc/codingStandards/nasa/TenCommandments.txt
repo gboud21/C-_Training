@@ -53,3 +53,14 @@ The Power of 10 by NASA
 	c. Preprocessor macros can make the code more complexity and harder to reader
 	c. Benifits
 		- increased code clarity
+9) Restrict the use of pointers. No more than one level of dereferencing. No use of function pointers.
+	a. Pointer dereferences should not be used within macros or typedefs
+	b. Benifits
+		- Reduces errors due to pointers being misused. This is often the case even by experianced programmers
+		- Increases the ability for tools to analyze code. Static Analyzers do not work well with function pointers.
+10) All code must be compiled from the first day of development. 
+	a. All compiler warnings enabled at the most pedantic settings.
+	b. All code must compile without warnings
+	c. Use at least one strong static analyzer
+	d. Code should pass with 0 Static Analysis warnings
+		- Even erronoeuos errors should be resolved since it is highly likely that if the tool was confused then the code itself was confused. 

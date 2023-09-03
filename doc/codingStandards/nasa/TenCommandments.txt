@@ -19,4 +19,37 @@ The Power of 10 by NASA
 	c. Exception
 		- This does not apply to loops that are meant to be nonterminating (ie a process scheduler). In these cases the reverse rule
 		  is applied. It should be possible for a tool to prove statically that the loop cannot terminate.
-3) 
+3) Do Not use Dynamic Memory allocation afer initialization
+	a. Memory allocators and garbage collection can have unpredictable behavior and can impact performance
+	b. There are a lot of errors related to not freeing memory after it is done being used
+	c. Benifits
+		- Forcing applications to always have the same memory size eliminates a lot of the errors described above
+		- It also makes it possible to determine if the application always lives within its resource limits
+4) No function should be longer than what can be printed on a single piece of paper. This basically translates to limiting a function
+   to 60 lines.
+   	a. Functions are meant to be a logical unit that is easily understandable and verifiable.
+   	b. Functions which grow too large are often the result of poorly structured code
+5) The codes' assertion density should average to minimally two assertions per functions.
+	a. Assertions must be used to check for anomalous conditions that should never happen
+	b. Assertions must be side-effect free and should be defined as boolean tests. When one fails, an explicit recovery action must be taken
+	   such as returning an error condition to the caller
+	c. Benifits
+		- Statistics show that unit tests find one defect per 10 to 100 lines of code. The odds of finding defects increase significantly with
+		  increasing assertion density
+		- Assertions should be used defensively. In particular they should be used to very pre and post conditions of functions, parameter values,
+		  return values and loop invariants.
+		- Since these assertions are side-effect free. They can be disabled after testing in performance critical code
+6) Declare alll data objects at the smallest possible level of scope
+	a. Basically this is data hiding/data encapsulation.
+	b. Reducing how many things can interact with the data object makes debugging easier.
+7) Each calling function must check the return value of nonvoid functions and each function must check the validity of all parameters provided by the
+   caller.
+   	a. This rule is the most frequently violated.
+   	b. In some cases it may be acceptable to cast a return value to void such as with printf(), but a comment should be left explaining why that is ok.
+   	c. Otherwise return values should always be checked to ensure an error was not detected
+8) Limit the use of the preprocessor
+	a. Only allow the inclusion of header files and simple macro definitions. 
+	b. Token pasting, variable argument lists (ellipses) and recursive macrio calls are not allowed
+	c. Preprocessor macros can make the code more complexity and harder to reader
+	c. Benifits
+		- increased code clarity

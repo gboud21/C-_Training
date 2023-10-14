@@ -11,6 +11,8 @@ set(LIBRARY_NAME mapsTests)
 set(MAPS_TEST_SRC
 StaticMap-test.cpp
 StaticNode-test.cpp
+Joy2Bin-test.cpp
+Joy2Map-test.cpp
 )
 
 
@@ -21,7 +23,8 @@ add_library(${LIBRARY_NAME}
 
 target_link_libraries(${LIBRARY_NAME}
                     gtest_main
-                    maps
+                    static_maps
+                    joy2
                     )
 
 include(GoogleTest)

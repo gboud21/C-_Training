@@ -1,0 +1,5 @@
+-Mapping keys to Indices (Hashing)
+    -The most straightforward way is to take the remainder of the key divided by the size of the map
+     aka modulo (%)
+    -uint32_t index = key % table->size
+ 

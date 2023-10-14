@@ -8,7 +8,7 @@ add_executable(${PROJECT_NAME}
                )
 
 target_link_libraries(${PROJECT_NAME} PUBLIC
-    maps
+    static_maps
     )
 
 # Link in the Configuration File

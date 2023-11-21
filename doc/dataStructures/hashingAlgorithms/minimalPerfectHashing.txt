@@ -1,0 +1,3 @@
+What is it?
+-A perfect hash function that can be obtained when the keys are known in advance
+-In this algorithm, each key hash a unique hash value associated with it resulting in no collisions

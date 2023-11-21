@@ -31,3 +31,22 @@ Building Perfect Hashing
     -This controls collision in level 1
 -If there is a collision in h2 (ie two elements collide in the second level)
     -The repick h2 and rehash the table in the second level
+
+Cichelli's Method
+-https://courses.cs.vt.edu/~cs3114/Summer13/Notes/T12.PerfectHashFunctions.pdf
+-Used to hash a relatively small collection of keys such as a the set of reserved words for a programming language
+-Formula
+    - h(S) = S.length() + g(S[0]) + g(S[S.length()-1])
+    -where g() is constructed using Chichelli's algorithm so that h() will return a different hash value for each
+     word in the set
+-This algorithm has three phases
+    -Computation of the letter frequencies in the words
+    -ordering the words
+    -searching
+
+1) Computation of frequencies
+    -For a list of words, determine the frequency with which each first and last letter occurs
+2) Order the words
+    -Score the words by summing the frequencies of their first and last letters and then put them in a sorted list
+3) searching
+    -Search over hashing functions to define g(x) that results in each word having a unique hash value

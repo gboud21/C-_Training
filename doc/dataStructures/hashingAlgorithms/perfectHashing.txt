@@ -1,0 +1,33 @@
+What is it?
+-Hashing algorithm that contains 0 collisions
+-Is very efficient if data is close to static and insertions/deletions are rare/never happen
+-An example is a dictionary (ie Webster) since new words are not added once the dictionary is made
+-Worst case constant search time = O(1)
+-Worst case space = O(n)
+    -Linear
+-Build time for Hash Table = O(n2)
+    -Polynomial
+
+How it works?
+-makes use of 2-level hashing
+-Level 1
+    -Similar to hashing by chaining
+        -In general chaining is implemented by a linked list
+        -In perfect hashing chaining actually points to a secondary hash table that is defined by h2
+-Level 2
+    -Is a second hash function that contains a full hash table
+-Guarantees that no elements have a collision in the second level
+
+Building Perfect Hashing
+-Pick h1 from the universal hashing family {1, ..., U-1} for {0,1,...,m-1} where m = O(n)
+-For each slot j in {0,1,2,...,m-1}
+    -Define l = # of keys (among n) hashing to slot j
+    -How big will this table be, ie size of just
+    -Pick h2: {1,...,U-1} where {0,1,...,l^2 - 1} from the universal hash family
+        -So size of 2nd table = l^2
+-If the sum of l^2 from 0 to m-1 is greater than c*n
+    -Where c is some constant
+    -then redo step 1
+    -This controls collision in level 1
+-If there is a collision in h2 (ie two elements collide in the second level)
+    -The repick h2 and rehash the table in the second level

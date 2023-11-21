@@ -1,0 +1,26 @@
+What is it?
+-A type of hashing algorithm where two has functions (h1 and h2) are used such that each key can hash to two possible locaitons
+-Search and deletion = O(1)
+-Insertion is amortized with O(1) expected time
+
+How does it work?
+-You create two separate tables, one for h1 and one for h2 
+    -basically two separate arrays of the maximum number of elements
+-When you insert an item you hash it into an index in the first table using h1
+-When a collision occurs in h1, hash the element using h2 into an index in table 2
+-When a collision occurs in h2
+    -Colliding element = the new element = col_ele
+    -The element that was in h2 at the start = h2_ele_start
+    -The element that h2 will replace in h1 = h1_ele_start
+    -replace h2_ele_start with col_ele
+    -rehash h2_ele_start into h1
+    -if a collision occurss of h2_ele_start in h1
+        -replace h1_ele_start with h2_ele_start
+        -rehash h1_ele_start into h2
+-If at any point a cyclical collision occurs where you just keep replacing elements then a new hashing function must be chosen and rehash
+    -This is called a cycle
+
+Insertion
+-An insertion into a Cuckoo hash table traces a path through a cuckoo graph
+-An insertion succeeds if the connected component containing the inserted value contains at most one cycle
+-An insertion fails if the connected component containing the inserted value contains two or more cycles

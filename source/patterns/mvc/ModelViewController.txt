@@ -1,0 +1,26 @@
+1. Model View Controller (MVC)
+2. Problem
+    A. The MVC pattern is used to build user interfaces. User interfaces can become easily cluttered and result in
+       classes and components having too many responsibilities resulting in code that is confusing, difficult to
+       maintain and inflexible.
+3. Solution
+    A. A triad of classes that consist of three types of objects: The Model, The View and The Controller. MVC
+       decouples the views and models by establish a subscribe/notify protocol between them. Ultimately the goal
+       is to be able to have multiple views that are attached to a singular model that allows several views
+       to be able to represent the same data in different ways. It also allows new views to be created
+       without having to rewrite the model.
+        I. Model
+            a. The Application Object
+            b. Is responsible for notifying the view whenever its data changes
+        II. View
+            a. The Screen Presentation
+            b. Ensures its appearance reflects the state of the model.
+            c. Composite View Pattern
+                i. Provides a way for complex nexted UI where a View can support Nested Views
+            d. Uses an instance of a controller subsclass to implement a particular response strategy.
+        III. Controller
+            a. The way the user interface reacts to user input.
+            b. Provides the reponse mechanism to user input and allows you to change how an application reacts
+               to the user's input without having to change the View.
+            c. Typically there is a class heirarchy of controllers that makes it easy to create a new controllers
+               as a variation of an existing one.

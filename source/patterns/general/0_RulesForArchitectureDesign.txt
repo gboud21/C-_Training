@@ -1,0 +1,15 @@
+Rules For Architecture Design
+    - Components should have a singular purpose that is accomplished by a set of tightly coupled classes.
+    - Components which contain behavior's should only expose those behaviors to other components through
+      public methods defined by an interface
+    - An interface should only expose the methods required to fulfill the necessary interactions between
+      two components
+    - An interface is an abstract base class which contains only pure virtual public methods that will
+      be defined by one or more derived classes
+    - Components that are not considered "common framework" objects should not directly depend on each other
+    - Favor Composition over Inheritance.
+    - An abstraction layer should be created around all OS or hardware specific functionality
+
+Rules for Layered Architecture Design
+    - Components may only depened on interfaces/components that are at the same or a lower level than their
+      own level

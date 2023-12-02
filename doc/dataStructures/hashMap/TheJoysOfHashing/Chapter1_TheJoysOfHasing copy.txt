@@ -1,0 +1,13 @@
+-Benifits of Hash Map
+    -Constant Time Lookup, deletion and insertion
+    -Low Overhead
+-Hash Key
+    -all application keys are reduced to a number in the range 0 --> N-1 where N is the size of the hash Map
+    - use the key to index into an array with constant time
+-Why Hash Maps cannot just be the total size of the maximum possible entries
+    -If this were the case then just initializing the hash map would be extreamly expensive and would take huge amounts of memory
+        -For example all possible 32-bit integers would take 4GB
+    -Solution is to keep N large, but reduce m, the key range, to a smaller number through a hashing algorithm
+-The goal of the Hash Map is not to make keys uniformly distributed, but rather to just make it so that it is highly
+ unlikely that two keys result in the same hash
+ 

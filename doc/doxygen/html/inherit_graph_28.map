@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structIExternalizable.html" title=" " alt="" coords="5,81,124,108"/>
+<area shape="rect" id="node2" href="$classOrderCondition.html" title=" " alt="" coords="172,81,292,108"/>
+<area shape="rect" id="node3" href="$classExecutionCondition.html" title=" " alt="" coords="340,56,487,83"/>
+<area shape="rect" id="node4" href="$classOperatorCondition.html" title=" " alt="" coords="343,107,484,133"/>
+<area shape="rect" id="node5" href="$classContractCondition.html" title=" " alt="" coords="535,56,673,83"/>
+<area shape="rect" id="node9" href="$classMarginCondition.html" title=" " alt="" coords="539,107,669,133"/>
+<area shape="rect" id="node10" href="$classTimeCondition.html" title=" " alt="" coords="545,157,663,184"/>
+<area shape="rect" id="node6" href="$classPercentChangeCondition.html" title=" " alt="" coords="721,5,904,32"/>
+<area shape="rect" id="node7" href="$classPriceCondition.html" title=" " alt="" coords="755,56,871,83"/>
+<area shape="rect" id="node8" href="$classVolumeCondition.html" title=" " alt="" coords="746,107,879,133"/>
+</map>

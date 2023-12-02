@@ -1,0 +1,4 @@
+Rules For Class Design
+    - Classes should have a singular purpose that contribute towards the overall purpose of the component
+    - Classes may only inherit from a single parent class
+    - Favor Composition over Inheritance.

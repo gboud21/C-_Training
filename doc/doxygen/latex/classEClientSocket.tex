@@ -1,0 +1,149 @@
+\hypertarget{classEClientSocket}{}\doxysection{E\+Client\+Socket Class Reference}
+\label{classEClientSocket}\index{EClientSocket@{EClientSocket}}
+
+
+Inheritance diagram for E\+Client\+Socket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classEClientSocket__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for E\+Client\+Socket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classEClientSocket__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEClientSocket_a8d744c493d15bf7ef36aa90f3d4d1568}\label{classEClientSocket_a8d744c493d15bf7ef36aa90f3d4d1568}} 
+{\bfseries E\+Client\+Socket} (\mbox{\hyperlink{classEWrapper}{E\+Wrapper}} $\ast$ptr, \mbox{\hyperlink{structEReaderSignal}{E\+Reader\+Signal}} $\ast$p\+Signal=0)
+\item 
+\mbox{\Hypertarget{classEClientSocket_a07852bbe7258f2f3e1adcee0f91cdf8b}\label{classEClientSocket_a07852bbe7258f2f3e1adcee0f91cdf8b}} 
+bool {\bfseries e\+Connect} (const char $\ast$host, int port, int client\+Id=0, bool extra\+Auth=false)
+\item 
+\mbox{\Hypertarget{classEClientSocket_a76409ccec49198aad41b8d2fc8a02c13}\label{classEClientSocket_a76409ccec49198aad41b8d2fc8a02c13}} 
+void {\bfseries e\+Disconnect} (bool reset\+State=true)
+\item 
+\mbox{\Hypertarget{classEClientSocket_ad3fb6aa89d69abbb33d6ab4adea8a624}\label{classEClientSocket_ad3fb6aa89d69abbb33d6ab4adea8a624}} 
+bool {\bfseries is\+Socket\+OK} () const
+\item 
+\mbox{\Hypertarget{classEClientSocket_a4759a83e6ba40dfc57b52407c9b86ed7}\label{classEClientSocket_a4759a83e6ba40dfc57b52407c9b86ed7}} 
+int {\bfseries fd} () const
+\item 
+\mbox{\Hypertarget{classEClientSocket_af4d1e7387f3d873d6fabbf56f320d5da}\label{classEClientSocket_af4d1e7387f3d873d6fabbf56f320d5da}} 
+bool {\bfseries async\+E\+Connect} () const
+\item 
+\mbox{\Hypertarget{classEClientSocket_af7540c17ddd65420592561f52b694158}\label{classEClientSocket_af7540c17ddd65420592561f52b694158}} 
+void {\bfseries async\+E\+Connect} (bool val)
+\item 
+\mbox{\Hypertarget{classEClientSocket_a935d8c796e411a2036bf185d7439cac6}\label{classEClientSocket_a935d8c796e411a2036bf185d7439cac6}} 
+\mbox{\hyperlink{classESocket}{E\+Socket}} $\ast$ {\bfseries get\+Transport} ()
+\item 
+\mbox{\Hypertarget{classEClientSocket_abb37fbfc1f6decc9e1696dc58c97a0b8}\label{classEClientSocket_abb37fbfc1f6decc9e1696dc58c97a0b8}} 
+void {\bfseries allow\+Redirect} (bool v)
+\item 
+\mbox{\Hypertarget{classEClientSocket_a50969012ca54ec32b7845a05a9456e03}\label{classEClientSocket_a50969012ca54ec32b7845a05a9456e03}} 
+bool {\bfseries allow\+Redirect} () const
+\item 
+\mbox{\Hypertarget{classEClientSocket_af7654c6bbe0e202cea411a41526ac110}\label{classEClientSocket_af7654c6bbe0e202cea411a41526ac110}} 
+bool {\bfseries handle\+Socket\+Error} ()
+\item 
+\mbox{\Hypertarget{classEClientSocket_a9a780708dbf3c2c7144229fd809909ef}\label{classEClientSocket_a9a780708dbf3c2c7144229fd809909ef}} 
+int {\bfseries receive} (char $\ast$buf, size\+\_\+t sz)
+\item 
+\mbox{\Hypertarget{classEClientSocket_a0b14b175dde1ada79e60f0a59cf7bf69}\label{classEClientSocket_a0b14b175dde1ada79e60f0a59cf7bf69}} 
+void {\bfseries on\+Send} ()
+\item 
+\mbox{\Hypertarget{classEClientSocket_afc666edba8df6b3dec65fafbeb495195}\label{classEClientSocket_afc666edba8df6b3dec65fafbeb495195}} 
+void {\bfseries on\+Error} ()
+\item 
+\mbox{\Hypertarget{classEClientSocket_affd971a04e9c588a6a161b8495509d6a}\label{classEClientSocket_affd971a04e9c588a6a161b8495509d6a}} 
+void {\bfseries server\+Version} (int version, const char $\ast$time)
+\item 
+\mbox{\Hypertarget{classEClientSocket_a65a9b3667e90c61821f2928b0dfd552b}\label{classEClientSocket_a65a9b3667e90c61821f2928b0dfd552b}} 
+void {\bfseries redirect} (const char $\ast$host, int port)
+\item 
+\mbox{\Hypertarget{classEClientSocket_a8d744c493d15bf7ef36aa90f3d4d1568}\label{classEClientSocket_a8d744c493d15bf7ef36aa90f3d4d1568}} 
+{\bfseries E\+Client\+Socket} (\mbox{\hyperlink{classEWrapper}{E\+Wrapper}} $\ast$ptr, \mbox{\hyperlink{structEReaderSignal}{E\+Reader\+Signal}} $\ast$p\+Signal=0)
+\item 
+\mbox{\Hypertarget{classEClientSocket_a07852bbe7258f2f3e1adcee0f91cdf8b}\label{classEClientSocket_a07852bbe7258f2f3e1adcee0f91cdf8b}} 
+bool {\bfseries e\+Connect} (const char $\ast$host, int port, int client\+Id=0, bool extra\+Auth=false)
+\item 
+\mbox{\Hypertarget{classEClientSocket_a76409ccec49198aad41b8d2fc8a02c13}\label{classEClientSocket_a76409ccec49198aad41b8d2fc8a02c13}} 
+void {\bfseries e\+Disconnect} (bool reset\+State=true)
+\item 
+\mbox{\Hypertarget{classEClientSocket_ad3fb6aa89d69abbb33d6ab4adea8a624}\label{classEClientSocket_ad3fb6aa89d69abbb33d6ab4adea8a624}} 
+bool {\bfseries is\+Socket\+OK} () const
+\item 
+\mbox{\Hypertarget{classEClientSocket_a4759a83e6ba40dfc57b52407c9b86ed7}\label{classEClientSocket_a4759a83e6ba40dfc57b52407c9b86ed7}} 
+int {\bfseries fd} () const
+\item 
+\mbox{\Hypertarget{classEClientSocket_af4d1e7387f3d873d6fabbf56f320d5da}\label{classEClientSocket_af4d1e7387f3d873d6fabbf56f320d5da}} 
+bool {\bfseries async\+E\+Connect} () const
+\item 
+\mbox{\Hypertarget{classEClientSocket_af7540c17ddd65420592561f52b694158}\label{classEClientSocket_af7540c17ddd65420592561f52b694158}} 
+void {\bfseries async\+E\+Connect} (bool val)
+\item 
+\mbox{\Hypertarget{classEClientSocket_ae17964fa16a34a2bdae930aab1a4bffc}\label{classEClientSocket_ae17964fa16a34a2bdae930aab1a4bffc}} 
+\mbox{\hyperlink{classESocket}{E\+Socket}} $\ast$ {\bfseries get\+Transport} ()
+\item 
+\mbox{\Hypertarget{classEClientSocket_abb37fbfc1f6decc9e1696dc58c97a0b8}\label{classEClientSocket_abb37fbfc1f6decc9e1696dc58c97a0b8}} 
+void {\bfseries allow\+Redirect} (bool v)
+\item 
+\mbox{\Hypertarget{classEClientSocket_a50969012ca54ec32b7845a05a9456e03}\label{classEClientSocket_a50969012ca54ec32b7845a05a9456e03}} 
+bool {\bfseries allow\+Redirect} () const
+\item 
+\mbox{\Hypertarget{classEClientSocket_af7654c6bbe0e202cea411a41526ac110}\label{classEClientSocket_af7654c6bbe0e202cea411a41526ac110}} 
+bool {\bfseries handle\+Socket\+Error} ()
+\item 
+\mbox{\Hypertarget{classEClientSocket_a9a780708dbf3c2c7144229fd809909ef}\label{classEClientSocket_a9a780708dbf3c2c7144229fd809909ef}} 
+int {\bfseries receive} (char $\ast$buf, size\+\_\+t sz)
+\item 
+\mbox{\Hypertarget{classEClientSocket_a0b14b175dde1ada79e60f0a59cf7bf69}\label{classEClientSocket_a0b14b175dde1ada79e60f0a59cf7bf69}} 
+void {\bfseries on\+Send} ()
+\item 
+\mbox{\Hypertarget{classEClientSocket_afc666edba8df6b3dec65fafbeb495195}\label{classEClientSocket_afc666edba8df6b3dec65fafbeb495195}} 
+void {\bfseries on\+Error} ()
+\item 
+\mbox{\Hypertarget{classEClientSocket_affd971a04e9c588a6a161b8495509d6a}\label{classEClientSocket_affd971a04e9c588a6a161b8495509d6a}} 
+void {\bfseries server\+Version} (int version, const char $\ast$time)
+\item 
+\mbox{\Hypertarget{classEClientSocket_a65a9b3667e90c61821f2928b0dfd552b}\label{classEClientSocket_a65a9b3667e90c61821f2928b0dfd552b}} 
+void {\bfseries redirect} (const char $\ast$host, int port)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEClientSocket_afa527fcf51cf2ca4e6bee750a5b7ae67}\label{classEClientSocket_afa527fcf51cf2ca4e6bee750a5b7ae67}} 
+virtual void {\bfseries prepare\+Buffer\+Impl} (std\+::ostream \&) const
+\item 
+\mbox{\Hypertarget{classEClientSocket_af0bad0be293e9d5f60cbb03107cb02ad}\label{classEClientSocket_af0bad0be293e9d5f60cbb03107cb02ad}} 
+virtual void {\bfseries prepare\+Buffer} (std\+::ostream \&) const
+\item 
+\mbox{\Hypertarget{classEClientSocket_a95be7594aa9fcd4c0405d5c3ae1ff347}\label{classEClientSocket_a95be7594aa9fcd4c0405d5c3ae1ff347}} 
+virtual bool {\bfseries close\+And\+Send} (std\+::string msg, unsigned offset=0)
+\item 
+\mbox{\Hypertarget{classEClientSocket_a8525daaf0f12c96ad6602220980163a9}\label{classEClientSocket_a8525daaf0f12c96ad6602220980163a9}} 
+virtual void {\bfseries prepare\+Buffer\+Impl} (std\+::ostream \&) const
+\item 
+\mbox{\Hypertarget{classEClientSocket_ab647b130050dc8fae700f28829398805}\label{classEClientSocket_ab647b130050dc8fae700f28829398805}} 
+virtual void {\bfseries prepare\+Buffer} (std\+::ostream \&) const
+\item 
+\mbox{\Hypertarget{classEClientSocket_a187305c11e1de7f6d862bfe5fdf6b17c}\label{classEClientSocket_a187305c11e1de7f6d862bfe5fdf6b17c}} 
+virtual bool {\bfseries close\+And\+Send} (std\+::string msg, unsigned offset=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+source/makefiles/cmake\+Example/medium\+Make/src/\+T\+W\+S/client/E\+Client\+Socket.\+h\item 
+source/makefiles/cmake\+Example/medium\+Make/src/\+T\+W\+S/client/E\+Client\+Socket.\+cpp\end{DoxyCompactItemize}

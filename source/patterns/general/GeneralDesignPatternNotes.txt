@@ -1,0 +1,150 @@
+1. What Makes a Good Designer?
+   A. A good designer is often created by having a wealth of experiance. They often are able to easily formulate desings
+      based on patterns that have worked for them in the past.
+   B. Analogy: Sucessful writers rarely develop their plot from scratch. Instead they use existing patterns, for example
+               the Tragically Flawed Hero (ie MacBeth/Hamlet), or the Romantic Novel
+   C. When you've completed a successful design, record the pattern in notes so that you can resuse the experiance
+      and lessons learned in future projects.
+2. Definition: Design Pattern
+   A. A pattern describes a problem which occurs over and over again in our envrionment and then describes the core of
+      the solution to that problem in such a away that you can use this soultion a million times over without ever doing
+      it the same way twice. It names, abstracts and identifies the key aspects of a common design structure that make it
+      useful for creating a resuable object-oriented design.
+   B. The Four Essential Elements of a Pattern
+         I. Pattern Name
+            a. A handle that can be used to describe the pattern in a word or two that allows us to easily communicate
+               with colleagues
+         II. Problem
+            a. A description of when to apply the pattern. It explains the problem and its context. Sometimes the
+               description will include a list of conditions for when to apply the pattern
+         III. Solution
+            a. An abstract description of the arrangement of elements and their relationships that can be used
+               to solve the problem. It is important to note that this is not a concrete example, but rather it is
+               a template for many examples.
+         IV. Consequences
+            a. The results and tradeoffs of using the pattern. In software terms this is usually space and time
+               tradeoffs. It can often impose restrictions on languages and the flexibility of the system moving forward.
+3. Describing Design patterns
+   A. Pattern Name and Classification
+         I. Describes the pattern succiently
+   B. Intent
+         I. A Short statement that answers the following questions:
+            a. What does the design pattern do?
+            b. What is its rationale and intent?
+            c. What particular design issue does the pattern address?
+   C. Also known as
+         I. Other names for the pattern
+   D. Motivation
+         I. A scenario that illustrates why the pattern is useful
+   E. Applicability
+         I. What are the situations the pattern can be applied in?
+         II. What are examples of poor designs that the pattern could resolve?
+   F. Structure 
+         I. Graphical representation of the pattern
+   G. Participants
+         I. The classes/objects and their responsibilities
+   H. Collaborations
+         I. How the participants interact to solve the problem
+   I. Consequences   
+         I. What are the tradeoffs of using this pattern
+   J. Implementation
+         I. Tips for using the pattern
+         II. Are there any language restrictions?
+   K. Sample code
+         I. Examples
+   L. Known Uses  
+         I. Real World Use Cases  
+   M. Related patterns
+         I. What other patterns are closely related to this one.
+4. Classification of Design patterns
+   A. Purpose
+         I. Reflects what the design pattern does
+         II. Creational
+               a. Concern the process of object Creational
+         III. Structural
+               a. The composition of classes or objects
+         IV. Behavioral
+               a. The way classes or objects interact and distribute responsibility
+   B. Scope
+         I. Whether the pattern applies to classes or to objects
+         II. Class
+               a. Deal with relationships between classes and their subclasses
+               b. Relationships are established through inheritance so they are static
+                  (Fixed at compile time)
+         III. Objects
+               a. Object Relationships
+               b. Can be changed at run-time and are more dynamic
+5. Interfaces
+   A. Define: Signature
+         I. A signature consists of a function's name, parameters and return value
+   B. Define: Interface
+         I. A interface is an object's set of signatures. It characterizes the complete set
+            of requests that can be sent to the object.
+   C. Define: Dynamic Binding
+         I. The run-time association of a request to an object and one of its operations
+   D. Polymorphism
+         I. Inheritance relationships that allow a single interface to be implemented by
+            many different implementations. The classic example is overriding a function
+            to perform a different action than its base class.
+   E. Define: Class 
+         I. A specification of an object's internal data, representation, and behaviors
+   F. The Benifits of manupulating objects in terms of their interface
+         I. The Client remains unaware of the specific types of objects they use as long as the
+            objects adhere to the interface that the client expects
+         II. Clients remain unaware of teh classes that implement these objects. Clients only know
+             about the abstract class(es) defining the interface.
+         III. Principle: Program to an interface, not an implementation
+6. Inheritance vs composition
+   A. Inheritance allows you to define the implementation of one class in term's of another's
+   B. Define: White-Box Reuse
+         I. White-Box refer's to visibility (ie the internals of the parent class are visibile
+         to the child)
+   C. Define: composition
+         I. New functionality is obtained by assembling or composing objects to get more complex functionality
+            It requires that objects have well defined interfaces
+   D. Define: Black-Box Reuse
+         I. No internal details of objects are visible
+   E. Advantages and Disadvantages
+         I. Inheritance Advantages
+               a. Defined statically at compile time
+               b. Easier to modify reused implementations
+         II. Inheritance Disadvantages
+               a. You can't change the implementation inherited from the parent at run time.
+               b. Parent classes often define at least some part of the derived class's structure
+               c. It is often said that inheritance breaks encapsulation because a portion of the parent's
+                  internal data is exposed to the child. Thus a change to the parent can easily drive a change
+                  to the child.
+         III. Composition Advantages
+               a. Encapsulation is not broken. Keeps each class focused on one task
+               b. Any object can be replaced with another object of the same type as long as it does not break the
+                  interface.
+               c. Less implementation dependencies.
+               d. Class heirarchy is less likely to grow and become unmanageable
+         IV. Composition Disadvantages
+               a. Defined at runtime through reference
+               b. Requires object's to respect each other's interfaces
+               c. Often results in having more Objects
+               d. System's behavior is dependent on interraltionships between types
+   F. Principle: Favor object composition over class inheritance
+   G. Delegation
+         I. A way to make composition as powerful as inheritance
+         II. Two objects are involved in handling a request
+               a. A receiving object delegates operations to its "delegate"
+         III. Example
+               a. If two classes exist: "Rectangle" and "Window"
+               b. Instead of having Window inherit from Rectange, it instead has
+                  a member variable fo type Rectangle that it can forward requests to
+         IV. This adds additional flexibility because the behavior can be easily changed
+         V. However this makes the code harder to understand because Dynamic code is more compelx
+         VI. Delegation is a good pattern only when it simplifies more than it complicates
+7. Paramaterized types
+   A. This allows generic typing of parameters to allow a single class to interact with multiple different types
+   B. In C++ this is accomplished through templates
+8. How to select a Design Pattern
+   A. Consider how design patterns solve design problems
+   B. Scan Intent sections
+   C. Study how patterns interrelate
+   D. Study patterns of like Purpose
+   E. Examine a cause of redesign
+   F. Conside what should be variable in your design
+      

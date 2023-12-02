@@ -1,0 +1,66 @@
+The Power of 10 by NASA
+1) Simple Control Flow
+	a. Do not use:
+		- goto statements
+		- setjmp constructs
+		- longjmp constructs
+		- recursion
+	b. Benifits
+		- Simpler control flow translates into stronger capabilities for analysis and often results in improved code clarity
+		- Avoiding recurion results in an acyclic function call graph which code analyzers can exploit to prove the limits on stack use
+		  and boundedness of executions
+			- Definition: acyclic - a call graph where we can't start at a node, follow a series of edges and end up back at the
+			  						same node that we started at
+		- Single points of returns are not required by this rule, but can simplify the code
+2) Give all loops an upper bound
+	a. It must be trivially possible for a tool to prove that a loop cannot exceed a preset number of iterations
+	b. Benifits
+		- This prevents runaway code
+	c. Exception
+		- This does not apply to loops that are meant to be nonterminating (ie a process scheduler). In these cases the reverse rule
+		  is applied. It should be possible for a tool to prove statically that the loop cannot terminate.
+3) Do Not use Dynamic Memory allocation afer initialization
+	a. Memory allocators and garbage collection can have unpredictable behavior and can impact performance
+	b. There are a lot of errors related to not freeing memory after it is done being used
+	c. Benifits
+		- Forcing applications to always have the same memory size eliminates a lot of the errors described above
+		- It also makes it possible to determine if the application always lives within its resource limits
+4) No function should be longer than what can be printed on a single piece of paper. This basically translates to limiting a function
+   to 60 lines.
+   	a. Functions are meant to be a logical unit that is easily understandable and verifiable.
+   	b. Functions which grow too large are often the result of poorly structured code
+5) The codes' assertion density should average to minimally two assertions per functions.
+	a. Assertions must be used to check for anomalous conditions that should never happen
+	b. Assertions must be side-effect free and should be defined as boolean tests. When one fails, an explicit recovery action must be taken
+	   such as returning an error condition to the caller
+	c. Benifits
+		- Statistics show that unit tests find one defect per 10 to 100 lines of code. The odds of finding defects increase significantly with
+		  increasing assertion density
+		- Assertions should be used defensively. In particular they should be used to very pre and post conditions of functions, parameter values,
+		  return values and loop invariants.
+		- Since these assertions are side-effect free. They can be disabled after testing in performance critical code
+6) Declare alll data objects at the smallest possible level of scope
+	a. Basically this is data hiding/data encapsulation.
+	b. Reducing how many things can interact with the data object makes debugging easier.
+7) Each calling function must check the return value of nonvoid functions and each function must check the validity of all parameters provided by the
+   caller.
+   	a. This rule is the most frequently violated.
+   	b. In some cases it may be acceptable to cast a return value to void such as with printf(), but a comment should be left explaining why that is ok.
+   	c. Otherwise return values should always be checked to ensure an error was not detected
+8) Limit the use of the preprocessor
+	a. Only allow the inclusion of header files and simple macro definitions. 
+	b. Token pasting, variable argument lists (ellipses) and recursive macrio calls are not allowed
+	c. Preprocessor macros can make the code more complexity and harder to reader
+	c. Benifits
+		- increased code clarity
+9) Restrict the use of pointers. No more than one level of dereferencing. No use of function pointers.
+	a. Pointer dereferences should not be used within macros or typedefs
+	b. Benifits
+		- Reduces errors due to pointers being misused. This is often the case even by experianced programmers
+		- Increases the ability for tools to analyze code. Static Analyzers do not work well with function pointers.
+10) All code must be compiled from the first day of development. 
+	a. All compiler warnings enabled at the most pedantic settings.
+	b. All code must compile without warnings
+	c. Use at least one strong static analyzer
+	d. Code should pass with 0 Static Analysis warnings
+		- Even erronoeuos errors should be resolved since it is highly likely that if the tool was confused then the code itself was confused. 

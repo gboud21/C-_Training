@@ -1,0 +1,32 @@
+1) Creating an object by specifying a class explicitly
+    A) Specifying the class name commmits you to a specific implementation
+    B) Instead, create an interface or specify the clas indirectly
+2) Dependence on specific operations
+    A) This commits you to one way of satisfying a request
+    B) By avoiding hard-coded requests you make it easier to change the way a request gets satisfied both at
+       compile-time and run-time
+3) Dependence on a hardware or software platform
+    A) Creating dependencies or apis that are specific to an OS or hardware make it difficult to port to
+       different platforms
+    B) You should limit your dependencies on external software
+4) Dependence on object representations or implementations
+    A) If a client knows how the object is made then it could create additional dependencies when the data
+       structure changes.
+    B) Hide information from clients to keep changes from cascading
+5) Algorithm dependencies
+    A) Algorithms are likely to be extended or modified
+    B) Isolate the algoirthms to prevent their changes from forcing the callers to change
+6) Tight Coupling
+    A) Classes that are tightly coupled are hard to reuse in isolation since they depend on each other.
+       This leads to very dense systems that are hard to modify.
+    B) Avoid tight coupling when possible
+7) Extending functionality by subclassing
+    A) Customizing classes by subclass often is not easy and can lead to the number of classes balooning
+       for a simple extension. In addition, all functions and initialization is also inherited by each of
+       subclasses
+    B) Composition should be prefered as long as it does not make the existing design more complicated.
+       In general composing objects of other objects provides flexibility when creating new objects, but
+       it can lead to making the design harder to understand
+8) Inability to alter classes conviently
+    A) Sometimes you have to modify a class that cant be modified conveniently (ex commericial class library)
+    B) Design patterns can often provide a way to solve this

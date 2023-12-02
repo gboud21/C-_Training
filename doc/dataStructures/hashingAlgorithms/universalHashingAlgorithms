@@ -1,0 +1,67 @@
+What is it?
+-selecting a hash function at random from a family of hash functions with a certain mathematical property
+-This guarantees a low number of collisions in expectation even if the data is chosen by an adversary
+
+Definitions
+-U = some universe of keys
+-m = number of bins for the hash map
+-S = some data set contained within U
+-n = number of keys
+-h = a hash function
+-universal family = a set of hash functions where any two different keys of the universe collide at most 1/m when the hash
+                    function h is drawn uniformly at random from h
+-unform difference property = Some families enforce this stronger property where h is drawn randomly from the family h
+                              where the difference h(x) - h(y) mod m is uniformly distributed in made
+                              ***Get more information on this
+-pairwise independence = an even stronger condition 
+
+Mathematical guarantees
+-For any fixed set S of n keys, using a universal family guarantees the following properties
+1) For any fixed x in S, the expected number of keys in the bin h(x) is n/m. When implementing hash tables by chaining,
+   this number is proportional to the expected running time of an operation involving the key x (ie a query, insertion or deletion)
+2) The expected number of pairs of keys x,y in S with x != y that collide (h(x) == h(y)) is bounded above by n(n-1)/2m which is of
+   order O(n^2/m). When the number of bins, m is chosen linear in n, the expected number of collisions is O(n). When hashing into
+   n^2 bins. There are no collisions at all withj probability at least a half
+3) The expected number of keys in bins with at least t keys in them is bounded above by 2n/(t-2(n/m)+1). Thus the capacity of each
+   bin is capped to three times the average size (t=3n/m), the total number of keys in overflowing bins is at most O(m). This only
+   holds with a hash family whose collision probability is bounded above 1/m. If a weaker definition is used, bounding it by O(1/m)
+   this result is no longer true
+
+Hashing Integers
+1) Original Carter and Wegman Proposal was to pick a prime p >= |U| and define
+h(x) = ((ax+b) % p) % m
+
+-Where a and b are randomly chosen integers with a != 0
+-This is only a Universal family when 
+    - ax+b == ay + b + i*m % p
+        -For some integer i between 0 and (p-1)/m
+
+There is a simpler formular that is only approximatly universal
+h(x) = (ax % p) % m
+
+2) Multiply-shift scheme described by Dietzfelbinger
+-Easier to implement and better performance
+-Assumes the number of bins is a power of two, m = 2^M
+-Let w = number of bits in a machine word
+-Hash functions are parameterised over odd positive integers a < 2^w
+-Formula where M is the high order bits to keep as the hash code
+h(x) = (a*x % 2^w) / 2^(w-M)
+
+-Function can become truly universal if we use the multiply-add-shift scheme
+h(x) = ((ax+b) % 2^(w+M)) / 2^w
+
+-Where a is a random positive integer with a < 2^(2w) and 0 <= b < 2^(2w)
+
+Hashing Strings
+h(x) = SUM(((h*a) + x[i]) %p)
+
+-Where h is some initial value, x = the string, i = the character index, a < p
+-To mitigate modular arithmatetic
+1) choose p to be close to a power of two such as Mersenne prime (one less than a power of two --> 2^n - 1)
+   thus allowing modulo p to be implemented without division
+    -For modern architectures p = 2^61 - 1 while x_i's are 32-bit values
+2) Can apply vector hashing to blocks
+    -apply vector hashing to each 16 word block of the string and applies string hashign to the
+     k/16 results. Since the slower string hashing is applied on a substantially smaller vector this will essentially be
+     as fast as vector Hashing
+3) Choose a power-of-two as the divisor allowing arithmatic modulo 2^w to be implemented without division

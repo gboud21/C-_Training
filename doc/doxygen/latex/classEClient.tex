@@ -1,0 +1,783 @@
+\hypertarget{classEClient}{}\doxysection{E\+Client Class Reference}
+\label{classEClient}\index{EClient@{EClient}}
+
+
+Inheritance diagram for E\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classEClient__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for E\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classEClient__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEClient_a55360b0d6b3f13046f37b51b550cf006}\label{classEClient_a55360b0d6b3f13046f37b51b550cf006}} 
+enum {\bfseries Conn\+State} \{ \newline
+{\bfseries C\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}, 
+{\bfseries C\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}, 
+{\bfseries C\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}, 
+{\bfseries C\+S\+\_\+\+R\+E\+D\+I\+R\+E\+CT}, 
+\newline
+{\bfseries C\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}, 
+{\bfseries C\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}, 
+{\bfseries C\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}, 
+{\bfseries C\+S\+\_\+\+R\+E\+D\+I\+R\+E\+CT}
+ \}
+\item 
+\mbox{\Hypertarget{classEClient_a55360b0d6b3f13046f37b51b550cf006}\label{classEClient_a55360b0d6b3f13046f37b51b550cf006}} 
+enum {\bfseries Conn\+State} \{ \newline
+{\bfseries C\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}, 
+{\bfseries C\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}, 
+{\bfseries C\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}, 
+{\bfseries C\+S\+\_\+\+R\+E\+D\+I\+R\+E\+CT}, 
+\newline
+{\bfseries C\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}, 
+{\bfseries C\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}, 
+{\bfseries C\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}, 
+{\bfseries C\+S\+\_\+\+R\+E\+D\+I\+R\+E\+CT}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEClient_a6d556e9d11bccc7f36b5f3b7d32c6206}\label{classEClient_a6d556e9d11bccc7f36b5f3b7d32c6206}} 
+{\bfseries E\+Client} (\mbox{\hyperlink{classEWrapper}{E\+Wrapper}} $\ast$ptr, \mbox{\hyperlink{structETransport}{E\+Transport}} $\ast$p\+Transport)
+\item 
+\mbox{\Hypertarget{classEClient_ac01edd21cbe76d3a47c11c650b4d0849}\label{classEClient_ac01edd21cbe76d3a47c11c650b4d0849}} 
+virtual void {\bfseries e\+Disconnect} (bool reset\+State)=0
+\item 
+\mbox{\Hypertarget{classEClient_aa4e6066f5f41e01293b821b74a0b45f2}\label{classEClient_aa4e6066f5f41e01293b821b74a0b45f2}} 
+int {\bfseries client\+Id} () const
+\item 
+\mbox{\Hypertarget{classEClient_aa40539aa380528b5f8a74e6f18fca8c1}\label{classEClient_aa40539aa380528b5f8a74e6f18fca8c1}} 
+const std\+::string \& {\bfseries optional\+Capabilities} () const
+\item 
+\mbox{\Hypertarget{classEClient_a1cf292a2e0d66759d673ea8433502b8f}\label{classEClient_a1cf292a2e0d66759d673ea8433502b8f}} 
+void {\bfseries set\+Optional\+Capabilities} (const std\+::string \&opt\+Capts)
+\item 
+\mbox{\Hypertarget{classEClient_ae688c9f32fe8eabbe4f08775be6e3fa8}\label{classEClient_ae688c9f32fe8eabbe4f08775be6e3fa8}} 
+void {\bfseries set\+Connect\+Options} (const std\+::string \&connect\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_abeaf8649ffb04ab6c89a57163072cb72}\label{classEClient_abeaf8649ffb04ab6c89a57163072cb72}} 
+void {\bfseries disable\+Use\+V100\+Plus} ()
+\item 
+\mbox{\Hypertarget{classEClient_a1538d44deceb4b220f541e2cd1dddc1e}\label{classEClient_a1538d44deceb4b220f541e2cd1dddc1e}} 
+bool {\bfseries using\+V100\+Plus} ()
+\item 
+\mbox{\Hypertarget{classEClient_a62f679fc0cfe44394c425ee27e6ce132}\label{classEClient_a62f679fc0cfe44394c425ee27e6ce132}} 
+Conn\+State {\bfseries conn\+State} () const
+\item 
+\mbox{\Hypertarget{classEClient_a173adce303d2e437ceb24ea391dab3f8}\label{classEClient_a173adce303d2e437ceb24ea391dab3f8}} 
+bool {\bfseries is\+Connected} () const
+\item 
+\mbox{\Hypertarget{classEClient_aeea5810cb1fb681a27b243329b2eefd9}\label{classEClient_aeea5810cb1fb681a27b243329b2eefd9}} 
+const std\+::string \& {\bfseries host} () const
+\item 
+\mbox{\Hypertarget{classEClient_ae4f486a7b34d34db08b710c10ed29927}\label{classEClient_ae4f486a7b34d34db08b710c10ed29927}} 
+int {\bfseries port} () const
+\item 
+\mbox{\Hypertarget{classEClient_a0376a4cbd1192815c87215e309369350}\label{classEClient_a0376a4cbd1192815c87215e309369350}} 
+\mbox{\hyperlink{classEWrapper}{E\+Wrapper}} $\ast$ {\bfseries get\+Wrapper} () const
+\item 
+\mbox{\Hypertarget{classEClient_a4b586a58c354f4f6b82c9df8b02c7a68}\label{classEClient_a4b586a58c354f4f6b82c9df8b02c7a68}} 
+bool {\bfseries is\+In\+Buffer\+Empty} () const
+\item 
+\mbox{\Hypertarget{classEClient_ab8f51f8ba38239fbde464543cbfdc1d8}\label{classEClient_ab8f51f8ba38239fbde464543cbfdc1d8}} 
+int {\bfseries server\+Version} ()
+\item 
+\mbox{\Hypertarget{classEClient_a06626e90bab0d6cd667a12dacb1fb924}\label{classEClient_a06626e90bab0d6cd667a12dacb1fb924}} 
+std\+::string {\bfseries Tws\+Connection\+Time} ()
+\item 
+\mbox{\Hypertarget{classEClient_abba60729369a7a8e9875af451d10f5a7}\label{classEClient_abba60729369a7a8e9875af451d10f5a7}} 
+void {\bfseries req\+Mkt\+Data} (Ticker\+Id id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, const std\+::string \&generic\+Ticks, bool snapshot, bool regulatory\+Snaphsot, const Tag\+Value\+List\+S\+Ptr \&mkt\+Data\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_a34b14604795ebb1f385c8f268f2bbca9}\label{classEClient_a34b14604795ebb1f385c8f268f2bbca9}} 
+void {\bfseries cancel\+Mkt\+Data} (Ticker\+Id id)
+\item 
+\mbox{\Hypertarget{classEClient_a927fabe01e58c8e9658719c577424cf9}\label{classEClient_a927fabe01e58c8e9658719c577424cf9}} 
+void {\bfseries place\+Order} (Order\+Id id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, const \mbox{\hyperlink{structOrder}{Order}} \&order)
+\item 
+\mbox{\Hypertarget{classEClient_a5d1741376853f961f85c6c520d212a14}\label{classEClient_a5d1741376853f961f85c6c520d212a14}} 
+void {\bfseries cancel\+Order} (Order\+Id id)
+\item 
+\mbox{\Hypertarget{classEClient_a90ca0c7b288e2ccb87b617d647bfdc86}\label{classEClient_a90ca0c7b288e2ccb87b617d647bfdc86}} 
+void {\bfseries req\+Open\+Orders} ()
+\item 
+\mbox{\Hypertarget{classEClient_ac7614cd09b3cf4fce24e782c2f8f5f1f}\label{classEClient_ac7614cd09b3cf4fce24e782c2f8f5f1f}} 
+void {\bfseries req\+Account\+Updates} (bool subscribe, const std\+::string \&acct\+Code)
+\item 
+\mbox{\Hypertarget{classEClient_af294a5f1c5b51814b154ccbfb013f3d1}\label{classEClient_af294a5f1c5b51814b154ccbfb013f3d1}} 
+void {\bfseries req\+Executions} (int req\+Id, const \mbox{\hyperlink{structExecutionFilter}{Execution\+Filter}} \&filter)
+\item 
+\mbox{\Hypertarget{classEClient_aae053e7f8680e511658ac4584d3d059c}\label{classEClient_aae053e7f8680e511658ac4584d3d059c}} 
+void {\bfseries req\+Ids} (int num\+Ids)
+\item 
+\mbox{\Hypertarget{classEClient_a9cfc40b1229410ba266aa048fc28f96b}\label{classEClient_a9cfc40b1229410ba266aa048fc28f96b}} 
+void {\bfseries req\+Contract\+Details} (int req\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract)
+\item 
+\mbox{\Hypertarget{classEClient_a80886745059466829d26abef4e42241f}\label{classEClient_a80886745059466829d26abef4e42241f}} 
+void {\bfseries req\+Mkt\+Depth} (Ticker\+Id ticker\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, int num\+Rows, bool is\+Smart\+Depth, const Tag\+Value\+List\+S\+Ptr \&mkt\+Depth\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_a0d6ede9d34ee1801462a12399c23bd3c}\label{classEClient_a0d6ede9d34ee1801462a12399c23bd3c}} 
+void {\bfseries cancel\+Mkt\+Depth} (Ticker\+Id ticker\+Id, bool is\+Smart\+Depth)
+\item 
+\mbox{\Hypertarget{classEClient_a0b3e3b2f48a6e4eea1ec698b05b62a1c}\label{classEClient_a0b3e3b2f48a6e4eea1ec698b05b62a1c}} 
+void {\bfseries req\+News\+Bulletins} (bool all\+Msgs)
+\item 
+\mbox{\Hypertarget{classEClient_a6bc8514d434d7047d084d9855817bc8b}\label{classEClient_a6bc8514d434d7047d084d9855817bc8b}} 
+void {\bfseries cancel\+News\+Bulletins} ()
+\item 
+\mbox{\Hypertarget{classEClient_adbd3add761f0904535bd1902d2ca6fa5}\label{classEClient_adbd3add761f0904535bd1902d2ca6fa5}} 
+void {\bfseries set\+Server\+Log\+Level} (int level)
+\item 
+\mbox{\Hypertarget{classEClient_a79ed3a07ac8163426955e0db7e1d155d}\label{classEClient_a79ed3a07ac8163426955e0db7e1d155d}} 
+void {\bfseries req\+Auto\+Open\+Orders} (bool b\+Auto\+Bind)
+\item 
+\mbox{\Hypertarget{classEClient_a0546e623dd5d42fd6af809df5ef67ade}\label{classEClient_a0546e623dd5d42fd6af809df5ef67ade}} 
+void {\bfseries req\+All\+Open\+Orders} ()
+\item 
+\mbox{\Hypertarget{classEClient_a9656eeed27af477ffa17a4d21dab2859}\label{classEClient_a9656eeed27af477ffa17a4d21dab2859}} 
+void {\bfseries req\+Managed\+Accts} ()
+\item 
+\mbox{\Hypertarget{classEClient_a94645fc21cda9a247942ee0f144cb937}\label{classEClient_a94645fc21cda9a247942ee0f144cb937}} 
+void {\bfseries request\+FA} (fa\+Data\+Type p\+Fa\+Data\+Type)
+\item 
+\mbox{\Hypertarget{classEClient_a75659812aa3c5da0f15a7da968efbcac}\label{classEClient_a75659812aa3c5da0f15a7da968efbcac}} 
+void {\bfseries replace\+FA} (fa\+Data\+Type p\+Fa\+Data\+Type, const std\+::string \&cxml)
+\item 
+\mbox{\Hypertarget{classEClient_aca00459ec9cc83d7f2fc565d4434e4dc}\label{classEClient_aca00459ec9cc83d7f2fc565d4434e4dc}} 
+void {\bfseries req\+Historical\+Data} (Ticker\+Id id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, const std\+::string \&end\+Date\+Time, const std\+::string \&duration\+Str, const std\+::string \&bar\+Size\+Setting, const std\+::string \&what\+To\+Show, int use\+R\+TH, int format\+Date, bool keep\+Up\+To\+Date, const Tag\+Value\+List\+S\+Ptr \&chart\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_ab668d532581128ee5a33a44d7f9caa95}\label{classEClient_ab668d532581128ee5a33a44d7f9caa95}} 
+void {\bfseries exercise\+Options} (Ticker\+Id ticker\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, int exercise\+Action, int exercise\+Quantity, const std\+::string \&account, int override)
+\item 
+\mbox{\Hypertarget{classEClient_ad30090448f6bfb3e8963a24409dcd1f9}\label{classEClient_ad30090448f6bfb3e8963a24409dcd1f9}} 
+void {\bfseries cancel\+Historical\+Data} (Ticker\+Id ticker\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a6f8f7d68434f11459912c1bb9f15e35b}\label{classEClient_a6f8f7d68434f11459912c1bb9f15e35b}} 
+void {\bfseries req\+Real\+Time\+Bars} (Ticker\+Id id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, int bar\+Size, const std\+::string \&what\+To\+Show, bool use\+R\+TH, const Tag\+Value\+List\+S\+Ptr \&real\+Time\+Bars\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_a430078298bebf27fc1c27f60a08e4e69}\label{classEClient_a430078298bebf27fc1c27f60a08e4e69}} 
+void {\bfseries cancel\+Real\+Time\+Bars} (Ticker\+Id ticker\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_aa5883123091d94607849a6d53b9f7d6b}\label{classEClient_aa5883123091d94607849a6d53b9f7d6b}} 
+void {\bfseries cancel\+Scanner\+Subscription} (int ticker\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_ae2369c79e36a7c615c3793b16a2795c9}\label{classEClient_ae2369c79e36a7c615c3793b16a2795c9}} 
+void {\bfseries req\+Scanner\+Parameters} ()
+\item 
+\mbox{\Hypertarget{classEClient_a5aa098cf76ade83c16a26373497ceae1}\label{classEClient_a5aa098cf76ade83c16a26373497ceae1}} 
+void {\bfseries req\+Scanner\+Subscription} (int ticker\+Id, const \mbox{\hyperlink{structScannerSubscription}{Scanner\+Subscription}} \&subscription, const Tag\+Value\+List\+S\+Ptr \&scanner\+Subscription\+Options, const Tag\+Value\+List\+S\+Ptr \&scanner\+Subscription\+Filter\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_a8e6e2774988f6734fa7c9f31cbb80150}\label{classEClient_a8e6e2774988f6734fa7c9f31cbb80150}} 
+void {\bfseries req\+Current\+Time} ()
+\item 
+\mbox{\Hypertarget{classEClient_a1f480e1d6b279d2b96a65956679d000d}\label{classEClient_a1f480e1d6b279d2b96a65956679d000d}} 
+void {\bfseries req\+Fundamental\+Data} (Ticker\+Id req\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&, const std\+::string \&report\+Type, const Tag\+Value\+List\+S\+Ptr \&fundamental\+Data\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_aaca67f771e63ea26cfcf8b08130a21b1}\label{classEClient_aaca67f771e63ea26cfcf8b08130a21b1}} 
+void {\bfseries cancel\+Fundamental\+Data} (Ticker\+Id req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_ae6c32d880614c4ad94b76fc8a8a1bf0d}\label{classEClient_ae6c32d880614c4ad94b76fc8a8a1bf0d}} 
+void {\bfseries calculate\+Implied\+Volatility} (Ticker\+Id req\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, double option\+Price, double under\+Price, const Tag\+Value\+List\+S\+Ptr \&misc\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_a9d1314c9aa7c6da01d5764417c929ed5}\label{classEClient_a9d1314c9aa7c6da01d5764417c929ed5}} 
+void {\bfseries calculate\+Option\+Price} (Ticker\+Id req\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, double volatility, double under\+Price, const Tag\+Value\+List\+S\+Ptr \&misc\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_a45bddc1fa618dc7410286f346c06b55b}\label{classEClient_a45bddc1fa618dc7410286f346c06b55b}} 
+void {\bfseries cancel\+Calculate\+Implied\+Volatility} (Ticker\+Id req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_aac2f9fcdc027477d9321da82bbfe3010}\label{classEClient_aac2f9fcdc027477d9321da82bbfe3010}} 
+void {\bfseries cancel\+Calculate\+Option\+Price} (Ticker\+Id req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a07df95a4aa8dd738f3f0e47a62e737c8}\label{classEClient_a07df95a4aa8dd738f3f0e47a62e737c8}} 
+void {\bfseries req\+Global\+Cancel} ()
+\item 
+\mbox{\Hypertarget{classEClient_a2013753254fb5a132152995537b9eba2}\label{classEClient_a2013753254fb5a132152995537b9eba2}} 
+void {\bfseries req\+Market\+Data\+Type} (int market\+Data\+Type)
+\item 
+\mbox{\Hypertarget{classEClient_a010c97ebb935dd1c9be316f2dc9d39b2}\label{classEClient_a010c97ebb935dd1c9be316f2dc9d39b2}} 
+void {\bfseries req\+Positions} ()
+\item 
+\mbox{\Hypertarget{classEClient_a156bb0b460c926f64d8fa00e1e0510f8}\label{classEClient_a156bb0b460c926f64d8fa00e1e0510f8}} 
+void {\bfseries cancel\+Positions} ()
+\item 
+\mbox{\Hypertarget{classEClient_af435c839e77d778f11da1416300d9c14}\label{classEClient_af435c839e77d778f11da1416300d9c14}} 
+void {\bfseries req\+Account\+Summary} (int req\+Id, const std\+::string \&group\+Name, const std\+::string \&tags)
+\item 
+\mbox{\Hypertarget{classEClient_a183dcaef3c963987710401e122806979}\label{classEClient_a183dcaef3c963987710401e122806979}} 
+void {\bfseries cancel\+Account\+Summary} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_ab06ce271fb0dec3b4484c25d30dc801b}\label{classEClient_ab06ce271fb0dec3b4484c25d30dc801b}} 
+void {\bfseries verify\+Request} (const std\+::string \&api\+Name, const std\+::string \&api\+Version)
+\item 
+\mbox{\Hypertarget{classEClient_a6c133f9c023eee0b4028bc80ad63cb83}\label{classEClient_a6c133f9c023eee0b4028bc80ad63cb83}} 
+void {\bfseries verify\+Message} (const std\+::string \&api\+Data)
+\item 
+\mbox{\Hypertarget{classEClient_af1dc2b6ce890b76d10d7c49cf77e3478}\label{classEClient_af1dc2b6ce890b76d10d7c49cf77e3478}} 
+void {\bfseries verify\+And\+Auth\+Request} (const std\+::string \&api\+Name, const std\+::string \&api\+Version, const std\+::string \&opaque\+Isv\+Key)
+\item 
+\mbox{\Hypertarget{classEClient_a56566473c10701f2b0773f0b21d90692}\label{classEClient_a56566473c10701f2b0773f0b21d90692}} 
+void {\bfseries verify\+And\+Auth\+Message} (const std\+::string \&api\+Data, const std\+::string \&xyz\+Response)
+\item 
+\mbox{\Hypertarget{classEClient_a523fc6c3368b2f9e7f4438dd2f1e6dbb}\label{classEClient_a523fc6c3368b2f9e7f4438dd2f1e6dbb}} 
+void {\bfseries query\+Display\+Groups} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_affb4fbcb0c2e38df578b23869019559c}\label{classEClient_affb4fbcb0c2e38df578b23869019559c}} 
+void {\bfseries subscribe\+To\+Group\+Events} (int req\+Id, int group\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_ae058b83cf0129a4c6d021bf1eac0de69}\label{classEClient_ae058b83cf0129a4c6d021bf1eac0de69}} 
+void {\bfseries update\+Display\+Group} (int req\+Id, const std\+::string \&contract\+Info)
+\item 
+\mbox{\Hypertarget{classEClient_a819a30edc2a55ab9ac1a0abb543db63b}\label{classEClient_a819a30edc2a55ab9ac1a0abb543db63b}} 
+void {\bfseries unsubscribe\+From\+Group\+Events} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_af32cc0169ac47fca2560442a0713dc82}\label{classEClient_af32cc0169ac47fca2560442a0713dc82}} 
+void {\bfseries req\+Positions\+Multi} (int req\+Id, const std\+::string \&account, const std\+::string \&model\+Code)
+\item 
+\mbox{\Hypertarget{classEClient_adfb092e3552b7a58fa1262be275f923e}\label{classEClient_adfb092e3552b7a58fa1262be275f923e}} 
+void {\bfseries cancel\+Positions\+Multi} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_af875a293413fdd68bf68794305685890}\label{classEClient_af875a293413fdd68bf68794305685890}} 
+void {\bfseries req\+Account\+Updates\+Multi} (int req\+Id, const std\+::string \&account, const std\+::string \&model\+Code, bool ledger\+And\+N\+LV)
+\item 
+\mbox{\Hypertarget{classEClient_a198cff6c6d603d2dcaeb35c4e2aa5edc}\label{classEClient_a198cff6c6d603d2dcaeb35c4e2aa5edc}} 
+void {\bfseries cancel\+Account\+Updates\+Multi} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a8d82f51506321bb851b49aa8e08cd865}\label{classEClient_a8d82f51506321bb851b49aa8e08cd865}} 
+void {\bfseries req\+Sec\+Def\+Opt\+Params} (int req\+Id, const std\+::string \&underlying\+Symbol, const std\+::string \&fut\+Fop\+Exchange, const std\+::string \&underlying\+Sec\+Type, int underlying\+Con\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a8dba4f3f6bd72523f0938607ce260096}\label{classEClient_a8dba4f3f6bd72523f0938607ce260096}} 
+void {\bfseries req\+Soft\+Dollar\+Tiers} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a939893458a44607d207a8ed5d5b7a6d8}\label{classEClient_a939893458a44607d207a8ed5d5b7a6d8}} 
+void {\bfseries req\+Family\+Codes} ()
+\item 
+\mbox{\Hypertarget{classEClient_a3178c1e1e0267579aacc5d583f9bb062}\label{classEClient_a3178c1e1e0267579aacc5d583f9bb062}} 
+void {\bfseries req\+Matching\+Symbols} (int req\+Id, const std\+::string \&pattern)
+\item 
+\mbox{\Hypertarget{classEClient_ac97a17d2d5ee4d292f821a496275b74b}\label{classEClient_ac97a17d2d5ee4d292f821a496275b74b}} 
+void {\bfseries req\+Mkt\+Depth\+Exchanges} ()
+\item 
+\mbox{\Hypertarget{classEClient_afe49e4fa4338721a8fa5bda14530040b}\label{classEClient_afe49e4fa4338721a8fa5bda14530040b}} 
+void {\bfseries req\+Smart\+Components} (int req\+Id, std\+::string bbo\+Exchange)
+\item 
+\mbox{\Hypertarget{classEClient_aa522e2d4fa1afdc6f900fe6bec52aca0}\label{classEClient_aa522e2d4fa1afdc6f900fe6bec52aca0}} 
+void {\bfseries req\+News\+Providers} ()
+\item 
+\mbox{\Hypertarget{classEClient_a2afba90cdf2ada9de23fd4877e8b545a}\label{classEClient_a2afba90cdf2ada9de23fd4877e8b545a}} 
+void {\bfseries req\+News\+Article} (int request\+Id, const std\+::string \&provider\+Code, const std\+::string \&article\+Id, const Tag\+Value\+List\+S\+Ptr \&news\+Article\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_adc0600bb94ff03f2e86f936603ed2c4c}\label{classEClient_adc0600bb94ff03f2e86f936603ed2c4c}} 
+void {\bfseries req\+Historical\+News} (int request\+Id, int con\+Id, const std\+::string \&provider\+Codes, const std\+::string \&start\+Date\+Time, const std\+::string \&end\+Date\+Time, int total\+Results, const Tag\+Value\+List\+S\+Ptr \&historical\+News\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_ad0e8830d11acc9f6fb237d11897c56b2}\label{classEClient_ad0e8830d11acc9f6fb237d11897c56b2}} 
+void {\bfseries req\+Head\+Timestamp} (int ticker\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, const std\+::string \&what\+To\+Show, int use\+R\+TH, int format\+Date)
+\item 
+\mbox{\Hypertarget{classEClient_a2e2606be3122c8eeb047292a8ce6297f}\label{classEClient_a2e2606be3122c8eeb047292a8ce6297f}} 
+void {\bfseries cancel\+Head\+Timestamp} (int ticker\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a83bdaefd61202c6877a66406dd9fa5cf}\label{classEClient_a83bdaefd61202c6877a66406dd9fa5cf}} 
+void {\bfseries req\+Histogram\+Data} (int req\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, bool use\+R\+TH, const std\+::string \&time\+Period)
+\item 
+\mbox{\Hypertarget{classEClient_a84fd09b9993d2ec4c74e5988927cabad}\label{classEClient_a84fd09b9993d2ec4c74e5988927cabad}} 
+void {\bfseries cancel\+Histogram\+Data} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a6b3db7207f3d5544be80b39cb809cf70}\label{classEClient_a6b3db7207f3d5544be80b39cb809cf70}} 
+void {\bfseries req\+Market\+Rule} (int market\+Rule\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a0d50ab63e2a9f99d41025538e0bc3331}\label{classEClient_a0d50ab63e2a9f99d41025538e0bc3331}} 
+void {\bfseries req\+PnL} (int req\+Id, const std\+::string \&account, const std\+::string \&model\+Code)
+\item 
+\mbox{\Hypertarget{classEClient_aa7efd49d61043f49b3a3725184738f25}\label{classEClient_aa7efd49d61043f49b3a3725184738f25}} 
+void {\bfseries cancel\+PnL} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_aba164c8ad058581053b1bd4acbdc3709}\label{classEClient_aba164c8ad058581053b1bd4acbdc3709}} 
+void {\bfseries req\+Pn\+L\+Single} (int req\+Id, const std\+::string \&account, const std\+::string \&model\+Code, int con\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a434905d5b764aef5d867bdfa0f7beca7}\label{classEClient_a434905d5b764aef5d867bdfa0f7beca7}} 
+void {\bfseries cancel\+Pn\+L\+Single} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_adbfed69f7512fd6ffc83e75721c32df1}\label{classEClient_adbfed69f7512fd6ffc83e75721c32df1}} 
+void {\bfseries req\+Historical\+Ticks} (int req\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, const std\+::string \&start\+Date\+Time, const std\+::string \&end\+Date\+Time, int number\+Of\+Ticks, const std\+::string \&what\+To\+Show, int use\+Rth, bool ignore\+Size, const Tag\+Value\+List\+S\+Ptr \&misc\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_acbbdb40d120de88f09d0575ebda704df}\label{classEClient_acbbdb40d120de88f09d0575ebda704df}} 
+void {\bfseries req\+Tick\+By\+Tick\+Data} (int req\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, const std\+::string \&tick\+Type, int number\+Of\+Ticks, bool ignore\+Size)
+\item 
+\mbox{\Hypertarget{classEClient_a149b33cc2ef0b412426bc34b641297cf}\label{classEClient_a149b33cc2ef0b412426bc34b641297cf}} 
+void {\bfseries cancel\+Tick\+By\+Tick\+Data} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a4ac48ebba4c8f95712e21a7cf54d4fb1}\label{classEClient_a4ac48ebba4c8f95712e21a7cf54d4fb1}} 
+void {\bfseries req\+Completed\+Orders} (bool api\+Only)
+\item 
+\mbox{\Hypertarget{classEClient_a28204c214e743fef8c440fd5fee96d1d}\label{classEClient_a28204c214e743fef8c440fd5fee96d1d}} 
+void {\bfseries start\+Api} ()
+\item 
+\mbox{\Hypertarget{classEClient_af51ed8ca1eb2666bb23da79cf37fb75b}\label{classEClient_af51ed8ca1eb2666bb23da79cf37fb75b}} 
+void {\bfseries Encode\+Contract} (std\+::ostream \&os, const \mbox{\hyperlink{structContract}{Contract}} \&contract)
+\item 
+\mbox{\Hypertarget{classEClient_ac91811ebb2c69d1dd639a6c8d382b257}\label{classEClient_ac91811ebb2c69d1dd639a6c8d382b257}} 
+void {\bfseries Encode\+Tag\+Value\+List} (std\+::ostream \&os, const Tag\+Value\+List\+S\+Ptr \&tag\+Value\+List)
+\item 
+\mbox{\Hypertarget{classEClient_a6d556e9d11bccc7f36b5f3b7d32c6206}\label{classEClient_a6d556e9d11bccc7f36b5f3b7d32c6206}} 
+{\bfseries E\+Client} (\mbox{\hyperlink{classEWrapper}{E\+Wrapper}} $\ast$ptr, \mbox{\hyperlink{structETransport}{E\+Transport}} $\ast$p\+Transport)
+\item 
+\mbox{\Hypertarget{classEClient_ac01edd21cbe76d3a47c11c650b4d0849}\label{classEClient_ac01edd21cbe76d3a47c11c650b4d0849}} 
+virtual void {\bfseries e\+Disconnect} (bool reset\+State)=0
+\item 
+\mbox{\Hypertarget{classEClient_aa4e6066f5f41e01293b821b74a0b45f2}\label{classEClient_aa4e6066f5f41e01293b821b74a0b45f2}} 
+int {\bfseries client\+Id} () const
+\item 
+\mbox{\Hypertarget{classEClient_a23674c423348f03a15b378efbca80322}\label{classEClient_a23674c423348f03a15b378efbca80322}} 
+const std\+::string \& {\bfseries optional\+Capabilities} () const
+\item 
+\mbox{\Hypertarget{classEClient_a1cf292a2e0d66759d673ea8433502b8f}\label{classEClient_a1cf292a2e0d66759d673ea8433502b8f}} 
+void {\bfseries set\+Optional\+Capabilities} (const std\+::string \&opt\+Capts)
+\item 
+\mbox{\Hypertarget{classEClient_ae688c9f32fe8eabbe4f08775be6e3fa8}\label{classEClient_ae688c9f32fe8eabbe4f08775be6e3fa8}} 
+void {\bfseries set\+Connect\+Options} (const std\+::string \&connect\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_abeaf8649ffb04ab6c89a57163072cb72}\label{classEClient_abeaf8649ffb04ab6c89a57163072cb72}} 
+void {\bfseries disable\+Use\+V100\+Plus} ()
+\item 
+\mbox{\Hypertarget{classEClient_a1538d44deceb4b220f541e2cd1dddc1e}\label{classEClient_a1538d44deceb4b220f541e2cd1dddc1e}} 
+bool {\bfseries using\+V100\+Plus} ()
+\item 
+\mbox{\Hypertarget{classEClient_a3cf607446ce252440edc1b60c4e79fdb}\label{classEClient_a3cf607446ce252440edc1b60c4e79fdb}} 
+Conn\+State {\bfseries conn\+State} () const
+\item 
+\mbox{\Hypertarget{classEClient_a173adce303d2e437ceb24ea391dab3f8}\label{classEClient_a173adce303d2e437ceb24ea391dab3f8}} 
+bool {\bfseries is\+Connected} () const
+\item 
+\mbox{\Hypertarget{classEClient_aeea5810cb1fb681a27b243329b2eefd9}\label{classEClient_aeea5810cb1fb681a27b243329b2eefd9}} 
+const std\+::string \& {\bfseries host} () const
+\item 
+\mbox{\Hypertarget{classEClient_ae4f486a7b34d34db08b710c10ed29927}\label{classEClient_ae4f486a7b34d34db08b710c10ed29927}} 
+int {\bfseries port} () const
+\item 
+\mbox{\Hypertarget{classEClient_a8ec6fec26bd5e81834a923820480549e}\label{classEClient_a8ec6fec26bd5e81834a923820480549e}} 
+\mbox{\hyperlink{classEWrapper}{E\+Wrapper}} $\ast$ {\bfseries get\+Wrapper} () const
+\item 
+\mbox{\Hypertarget{classEClient_a4b586a58c354f4f6b82c9df8b02c7a68}\label{classEClient_a4b586a58c354f4f6b82c9df8b02c7a68}} 
+bool {\bfseries is\+In\+Buffer\+Empty} () const
+\item 
+\mbox{\Hypertarget{classEClient_ab8f51f8ba38239fbde464543cbfdc1d8}\label{classEClient_ab8f51f8ba38239fbde464543cbfdc1d8}} 
+int {\bfseries server\+Version} ()
+\item 
+\mbox{\Hypertarget{classEClient_a06626e90bab0d6cd667a12dacb1fb924}\label{classEClient_a06626e90bab0d6cd667a12dacb1fb924}} 
+std\+::string {\bfseries Tws\+Connection\+Time} ()
+\item 
+\mbox{\Hypertarget{classEClient_abba60729369a7a8e9875af451d10f5a7}\label{classEClient_abba60729369a7a8e9875af451d10f5a7}} 
+void {\bfseries req\+Mkt\+Data} (Ticker\+Id id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, const std\+::string \&generic\+Ticks, bool snapshot, bool regulatory\+Snaphsot, const Tag\+Value\+List\+S\+Ptr \&mkt\+Data\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_a34b14604795ebb1f385c8f268f2bbca9}\label{classEClient_a34b14604795ebb1f385c8f268f2bbca9}} 
+void {\bfseries cancel\+Mkt\+Data} (Ticker\+Id id)
+\item 
+\mbox{\Hypertarget{classEClient_a927fabe01e58c8e9658719c577424cf9}\label{classEClient_a927fabe01e58c8e9658719c577424cf9}} 
+void {\bfseries place\+Order} (Order\+Id id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, const \mbox{\hyperlink{structOrder}{Order}} \&order)
+\item 
+\mbox{\Hypertarget{classEClient_a5d1741376853f961f85c6c520d212a14}\label{classEClient_a5d1741376853f961f85c6c520d212a14}} 
+void {\bfseries cancel\+Order} (Order\+Id id)
+\item 
+\mbox{\Hypertarget{classEClient_a90ca0c7b288e2ccb87b617d647bfdc86}\label{classEClient_a90ca0c7b288e2ccb87b617d647bfdc86}} 
+void {\bfseries req\+Open\+Orders} ()
+\item 
+\mbox{\Hypertarget{classEClient_ac7614cd09b3cf4fce24e782c2f8f5f1f}\label{classEClient_ac7614cd09b3cf4fce24e782c2f8f5f1f}} 
+void {\bfseries req\+Account\+Updates} (bool subscribe, const std\+::string \&acct\+Code)
+\item 
+\mbox{\Hypertarget{classEClient_af294a5f1c5b51814b154ccbfb013f3d1}\label{classEClient_af294a5f1c5b51814b154ccbfb013f3d1}} 
+void {\bfseries req\+Executions} (int req\+Id, const \mbox{\hyperlink{structExecutionFilter}{Execution\+Filter}} \&filter)
+\item 
+\mbox{\Hypertarget{classEClient_aae053e7f8680e511658ac4584d3d059c}\label{classEClient_aae053e7f8680e511658ac4584d3d059c}} 
+void {\bfseries req\+Ids} (int num\+Ids)
+\item 
+\mbox{\Hypertarget{classEClient_a9cfc40b1229410ba266aa048fc28f96b}\label{classEClient_a9cfc40b1229410ba266aa048fc28f96b}} 
+void {\bfseries req\+Contract\+Details} (int req\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract)
+\item 
+\mbox{\Hypertarget{classEClient_a80886745059466829d26abef4e42241f}\label{classEClient_a80886745059466829d26abef4e42241f}} 
+void {\bfseries req\+Mkt\+Depth} (Ticker\+Id ticker\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, int num\+Rows, bool is\+Smart\+Depth, const Tag\+Value\+List\+S\+Ptr \&mkt\+Depth\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_a0d6ede9d34ee1801462a12399c23bd3c}\label{classEClient_a0d6ede9d34ee1801462a12399c23bd3c}} 
+void {\bfseries cancel\+Mkt\+Depth} (Ticker\+Id ticker\+Id, bool is\+Smart\+Depth)
+\item 
+\mbox{\Hypertarget{classEClient_a0b3e3b2f48a6e4eea1ec698b05b62a1c}\label{classEClient_a0b3e3b2f48a6e4eea1ec698b05b62a1c}} 
+void {\bfseries req\+News\+Bulletins} (bool all\+Msgs)
+\item 
+\mbox{\Hypertarget{classEClient_a6bc8514d434d7047d084d9855817bc8b}\label{classEClient_a6bc8514d434d7047d084d9855817bc8b}} 
+void {\bfseries cancel\+News\+Bulletins} ()
+\item 
+\mbox{\Hypertarget{classEClient_adbd3add761f0904535bd1902d2ca6fa5}\label{classEClient_adbd3add761f0904535bd1902d2ca6fa5}} 
+void {\bfseries set\+Server\+Log\+Level} (int level)
+\item 
+\mbox{\Hypertarget{classEClient_a79ed3a07ac8163426955e0db7e1d155d}\label{classEClient_a79ed3a07ac8163426955e0db7e1d155d}} 
+void {\bfseries req\+Auto\+Open\+Orders} (bool b\+Auto\+Bind)
+\item 
+\mbox{\Hypertarget{classEClient_a0546e623dd5d42fd6af809df5ef67ade}\label{classEClient_a0546e623dd5d42fd6af809df5ef67ade}} 
+void {\bfseries req\+All\+Open\+Orders} ()
+\item 
+\mbox{\Hypertarget{classEClient_a9656eeed27af477ffa17a4d21dab2859}\label{classEClient_a9656eeed27af477ffa17a4d21dab2859}} 
+void {\bfseries req\+Managed\+Accts} ()
+\item 
+\mbox{\Hypertarget{classEClient_a94645fc21cda9a247942ee0f144cb937}\label{classEClient_a94645fc21cda9a247942ee0f144cb937}} 
+void {\bfseries request\+FA} (fa\+Data\+Type p\+Fa\+Data\+Type)
+\item 
+\mbox{\Hypertarget{classEClient_a75659812aa3c5da0f15a7da968efbcac}\label{classEClient_a75659812aa3c5da0f15a7da968efbcac}} 
+void {\bfseries replace\+FA} (fa\+Data\+Type p\+Fa\+Data\+Type, const std\+::string \&cxml)
+\item 
+\mbox{\Hypertarget{classEClient_aca00459ec9cc83d7f2fc565d4434e4dc}\label{classEClient_aca00459ec9cc83d7f2fc565d4434e4dc}} 
+void {\bfseries req\+Historical\+Data} (Ticker\+Id id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, const std\+::string \&end\+Date\+Time, const std\+::string \&duration\+Str, const std\+::string \&bar\+Size\+Setting, const std\+::string \&what\+To\+Show, int use\+R\+TH, int format\+Date, bool keep\+Up\+To\+Date, const Tag\+Value\+List\+S\+Ptr \&chart\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_ab668d532581128ee5a33a44d7f9caa95}\label{classEClient_ab668d532581128ee5a33a44d7f9caa95}} 
+void {\bfseries exercise\+Options} (Ticker\+Id ticker\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, int exercise\+Action, int exercise\+Quantity, const std\+::string \&account, int override)
+\item 
+\mbox{\Hypertarget{classEClient_ad30090448f6bfb3e8963a24409dcd1f9}\label{classEClient_ad30090448f6bfb3e8963a24409dcd1f9}} 
+void {\bfseries cancel\+Historical\+Data} (Ticker\+Id ticker\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a6f8f7d68434f11459912c1bb9f15e35b}\label{classEClient_a6f8f7d68434f11459912c1bb9f15e35b}} 
+void {\bfseries req\+Real\+Time\+Bars} (Ticker\+Id id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, int bar\+Size, const std\+::string \&what\+To\+Show, bool use\+R\+TH, const Tag\+Value\+List\+S\+Ptr \&real\+Time\+Bars\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_a430078298bebf27fc1c27f60a08e4e69}\label{classEClient_a430078298bebf27fc1c27f60a08e4e69}} 
+void {\bfseries cancel\+Real\+Time\+Bars} (Ticker\+Id ticker\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_aa5883123091d94607849a6d53b9f7d6b}\label{classEClient_aa5883123091d94607849a6d53b9f7d6b}} 
+void {\bfseries cancel\+Scanner\+Subscription} (int ticker\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_ae2369c79e36a7c615c3793b16a2795c9}\label{classEClient_ae2369c79e36a7c615c3793b16a2795c9}} 
+void {\bfseries req\+Scanner\+Parameters} ()
+\item 
+\mbox{\Hypertarget{classEClient_a5aa098cf76ade83c16a26373497ceae1}\label{classEClient_a5aa098cf76ade83c16a26373497ceae1}} 
+void {\bfseries req\+Scanner\+Subscription} (int ticker\+Id, const \mbox{\hyperlink{structScannerSubscription}{Scanner\+Subscription}} \&subscription, const Tag\+Value\+List\+S\+Ptr \&scanner\+Subscription\+Options, const Tag\+Value\+List\+S\+Ptr \&scanner\+Subscription\+Filter\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_a8e6e2774988f6734fa7c9f31cbb80150}\label{classEClient_a8e6e2774988f6734fa7c9f31cbb80150}} 
+void {\bfseries req\+Current\+Time} ()
+\item 
+\mbox{\Hypertarget{classEClient_a1f480e1d6b279d2b96a65956679d000d}\label{classEClient_a1f480e1d6b279d2b96a65956679d000d}} 
+void {\bfseries req\+Fundamental\+Data} (Ticker\+Id req\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&, const std\+::string \&report\+Type, const Tag\+Value\+List\+S\+Ptr \&fundamental\+Data\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_aaca67f771e63ea26cfcf8b08130a21b1}\label{classEClient_aaca67f771e63ea26cfcf8b08130a21b1}} 
+void {\bfseries cancel\+Fundamental\+Data} (Ticker\+Id req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_ae6c32d880614c4ad94b76fc8a8a1bf0d}\label{classEClient_ae6c32d880614c4ad94b76fc8a8a1bf0d}} 
+void {\bfseries calculate\+Implied\+Volatility} (Ticker\+Id req\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, double option\+Price, double under\+Price, const Tag\+Value\+List\+S\+Ptr \&misc\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_a9d1314c9aa7c6da01d5764417c929ed5}\label{classEClient_a9d1314c9aa7c6da01d5764417c929ed5}} 
+void {\bfseries calculate\+Option\+Price} (Ticker\+Id req\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, double volatility, double under\+Price, const Tag\+Value\+List\+S\+Ptr \&misc\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_a45bddc1fa618dc7410286f346c06b55b}\label{classEClient_a45bddc1fa618dc7410286f346c06b55b}} 
+void {\bfseries cancel\+Calculate\+Implied\+Volatility} (Ticker\+Id req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_aac2f9fcdc027477d9321da82bbfe3010}\label{classEClient_aac2f9fcdc027477d9321da82bbfe3010}} 
+void {\bfseries cancel\+Calculate\+Option\+Price} (Ticker\+Id req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a07df95a4aa8dd738f3f0e47a62e737c8}\label{classEClient_a07df95a4aa8dd738f3f0e47a62e737c8}} 
+void {\bfseries req\+Global\+Cancel} ()
+\item 
+\mbox{\Hypertarget{classEClient_a2013753254fb5a132152995537b9eba2}\label{classEClient_a2013753254fb5a132152995537b9eba2}} 
+void {\bfseries req\+Market\+Data\+Type} (int market\+Data\+Type)
+\item 
+\mbox{\Hypertarget{classEClient_a010c97ebb935dd1c9be316f2dc9d39b2}\label{classEClient_a010c97ebb935dd1c9be316f2dc9d39b2}} 
+void {\bfseries req\+Positions} ()
+\item 
+\mbox{\Hypertarget{classEClient_a156bb0b460c926f64d8fa00e1e0510f8}\label{classEClient_a156bb0b460c926f64d8fa00e1e0510f8}} 
+void {\bfseries cancel\+Positions} ()
+\item 
+\mbox{\Hypertarget{classEClient_af435c839e77d778f11da1416300d9c14}\label{classEClient_af435c839e77d778f11da1416300d9c14}} 
+void {\bfseries req\+Account\+Summary} (int req\+Id, const std\+::string \&group\+Name, const std\+::string \&tags)
+\item 
+\mbox{\Hypertarget{classEClient_a183dcaef3c963987710401e122806979}\label{classEClient_a183dcaef3c963987710401e122806979}} 
+void {\bfseries cancel\+Account\+Summary} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_ab06ce271fb0dec3b4484c25d30dc801b}\label{classEClient_ab06ce271fb0dec3b4484c25d30dc801b}} 
+void {\bfseries verify\+Request} (const std\+::string \&api\+Name, const std\+::string \&api\+Version)
+\item 
+\mbox{\Hypertarget{classEClient_a6c133f9c023eee0b4028bc80ad63cb83}\label{classEClient_a6c133f9c023eee0b4028bc80ad63cb83}} 
+void {\bfseries verify\+Message} (const std\+::string \&api\+Data)
+\item 
+\mbox{\Hypertarget{classEClient_af1dc2b6ce890b76d10d7c49cf77e3478}\label{classEClient_af1dc2b6ce890b76d10d7c49cf77e3478}} 
+void {\bfseries verify\+And\+Auth\+Request} (const std\+::string \&api\+Name, const std\+::string \&api\+Version, const std\+::string \&opaque\+Isv\+Key)
+\item 
+\mbox{\Hypertarget{classEClient_a56566473c10701f2b0773f0b21d90692}\label{classEClient_a56566473c10701f2b0773f0b21d90692}} 
+void {\bfseries verify\+And\+Auth\+Message} (const std\+::string \&api\+Data, const std\+::string \&xyz\+Response)
+\item 
+\mbox{\Hypertarget{classEClient_a523fc6c3368b2f9e7f4438dd2f1e6dbb}\label{classEClient_a523fc6c3368b2f9e7f4438dd2f1e6dbb}} 
+void {\bfseries query\+Display\+Groups} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_affb4fbcb0c2e38df578b23869019559c}\label{classEClient_affb4fbcb0c2e38df578b23869019559c}} 
+void {\bfseries subscribe\+To\+Group\+Events} (int req\+Id, int group\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_ae058b83cf0129a4c6d021bf1eac0de69}\label{classEClient_ae058b83cf0129a4c6d021bf1eac0de69}} 
+void {\bfseries update\+Display\+Group} (int req\+Id, const std\+::string \&contract\+Info)
+\item 
+\mbox{\Hypertarget{classEClient_a819a30edc2a55ab9ac1a0abb543db63b}\label{classEClient_a819a30edc2a55ab9ac1a0abb543db63b}} 
+void {\bfseries unsubscribe\+From\+Group\+Events} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_af32cc0169ac47fca2560442a0713dc82}\label{classEClient_af32cc0169ac47fca2560442a0713dc82}} 
+void {\bfseries req\+Positions\+Multi} (int req\+Id, const std\+::string \&account, const std\+::string \&model\+Code)
+\item 
+\mbox{\Hypertarget{classEClient_adfb092e3552b7a58fa1262be275f923e}\label{classEClient_adfb092e3552b7a58fa1262be275f923e}} 
+void {\bfseries cancel\+Positions\+Multi} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_af875a293413fdd68bf68794305685890}\label{classEClient_af875a293413fdd68bf68794305685890}} 
+void {\bfseries req\+Account\+Updates\+Multi} (int req\+Id, const std\+::string \&account, const std\+::string \&model\+Code, bool ledger\+And\+N\+LV)
+\item 
+\mbox{\Hypertarget{classEClient_a198cff6c6d603d2dcaeb35c4e2aa5edc}\label{classEClient_a198cff6c6d603d2dcaeb35c4e2aa5edc}} 
+void {\bfseries cancel\+Account\+Updates\+Multi} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a8d82f51506321bb851b49aa8e08cd865}\label{classEClient_a8d82f51506321bb851b49aa8e08cd865}} 
+void {\bfseries req\+Sec\+Def\+Opt\+Params} (int req\+Id, const std\+::string \&underlying\+Symbol, const std\+::string \&fut\+Fop\+Exchange, const std\+::string \&underlying\+Sec\+Type, int underlying\+Con\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a8dba4f3f6bd72523f0938607ce260096}\label{classEClient_a8dba4f3f6bd72523f0938607ce260096}} 
+void {\bfseries req\+Soft\+Dollar\+Tiers} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a939893458a44607d207a8ed5d5b7a6d8}\label{classEClient_a939893458a44607d207a8ed5d5b7a6d8}} 
+void {\bfseries req\+Family\+Codes} ()
+\item 
+\mbox{\Hypertarget{classEClient_a3178c1e1e0267579aacc5d583f9bb062}\label{classEClient_a3178c1e1e0267579aacc5d583f9bb062}} 
+void {\bfseries req\+Matching\+Symbols} (int req\+Id, const std\+::string \&pattern)
+\item 
+\mbox{\Hypertarget{classEClient_ac97a17d2d5ee4d292f821a496275b74b}\label{classEClient_ac97a17d2d5ee4d292f821a496275b74b}} 
+void {\bfseries req\+Mkt\+Depth\+Exchanges} ()
+\item 
+\mbox{\Hypertarget{classEClient_afe49e4fa4338721a8fa5bda14530040b}\label{classEClient_afe49e4fa4338721a8fa5bda14530040b}} 
+void {\bfseries req\+Smart\+Components} (int req\+Id, std\+::string bbo\+Exchange)
+\item 
+\mbox{\Hypertarget{classEClient_aa522e2d4fa1afdc6f900fe6bec52aca0}\label{classEClient_aa522e2d4fa1afdc6f900fe6bec52aca0}} 
+void {\bfseries req\+News\+Providers} ()
+\item 
+\mbox{\Hypertarget{classEClient_a2afba90cdf2ada9de23fd4877e8b545a}\label{classEClient_a2afba90cdf2ada9de23fd4877e8b545a}} 
+void {\bfseries req\+News\+Article} (int request\+Id, const std\+::string \&provider\+Code, const std\+::string \&article\+Id, const Tag\+Value\+List\+S\+Ptr \&news\+Article\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_adc0600bb94ff03f2e86f936603ed2c4c}\label{classEClient_adc0600bb94ff03f2e86f936603ed2c4c}} 
+void {\bfseries req\+Historical\+News} (int request\+Id, int con\+Id, const std\+::string \&provider\+Codes, const std\+::string \&start\+Date\+Time, const std\+::string \&end\+Date\+Time, int total\+Results, const Tag\+Value\+List\+S\+Ptr \&historical\+News\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_ad0e8830d11acc9f6fb237d11897c56b2}\label{classEClient_ad0e8830d11acc9f6fb237d11897c56b2}} 
+void {\bfseries req\+Head\+Timestamp} (int ticker\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, const std\+::string \&what\+To\+Show, int use\+R\+TH, int format\+Date)
+\item 
+\mbox{\Hypertarget{classEClient_a2e2606be3122c8eeb047292a8ce6297f}\label{classEClient_a2e2606be3122c8eeb047292a8ce6297f}} 
+void {\bfseries cancel\+Head\+Timestamp} (int ticker\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a83bdaefd61202c6877a66406dd9fa5cf}\label{classEClient_a83bdaefd61202c6877a66406dd9fa5cf}} 
+void {\bfseries req\+Histogram\+Data} (int req\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, bool use\+R\+TH, const std\+::string \&time\+Period)
+\item 
+\mbox{\Hypertarget{classEClient_a84fd09b9993d2ec4c74e5988927cabad}\label{classEClient_a84fd09b9993d2ec4c74e5988927cabad}} 
+void {\bfseries cancel\+Histogram\+Data} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a6b3db7207f3d5544be80b39cb809cf70}\label{classEClient_a6b3db7207f3d5544be80b39cb809cf70}} 
+void {\bfseries req\+Market\+Rule} (int market\+Rule\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a0d50ab63e2a9f99d41025538e0bc3331}\label{classEClient_a0d50ab63e2a9f99d41025538e0bc3331}} 
+void {\bfseries req\+PnL} (int req\+Id, const std\+::string \&account, const std\+::string \&model\+Code)
+\item 
+\mbox{\Hypertarget{classEClient_aa7efd49d61043f49b3a3725184738f25}\label{classEClient_aa7efd49d61043f49b3a3725184738f25}} 
+void {\bfseries cancel\+PnL} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_aba164c8ad058581053b1bd4acbdc3709}\label{classEClient_aba164c8ad058581053b1bd4acbdc3709}} 
+void {\bfseries req\+Pn\+L\+Single} (int req\+Id, const std\+::string \&account, const std\+::string \&model\+Code, int con\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a434905d5b764aef5d867bdfa0f7beca7}\label{classEClient_a434905d5b764aef5d867bdfa0f7beca7}} 
+void {\bfseries cancel\+Pn\+L\+Single} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_adbfed69f7512fd6ffc83e75721c32df1}\label{classEClient_adbfed69f7512fd6ffc83e75721c32df1}} 
+void {\bfseries req\+Historical\+Ticks} (int req\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, const std\+::string \&start\+Date\+Time, const std\+::string \&end\+Date\+Time, int number\+Of\+Ticks, const std\+::string \&what\+To\+Show, int use\+Rth, bool ignore\+Size, const Tag\+Value\+List\+S\+Ptr \&misc\+Options)
+\item 
+\mbox{\Hypertarget{classEClient_acbbdb40d120de88f09d0575ebda704df}\label{classEClient_acbbdb40d120de88f09d0575ebda704df}} 
+void {\bfseries req\+Tick\+By\+Tick\+Data} (int req\+Id, const \mbox{\hyperlink{structContract}{Contract}} \&contract, const std\+::string \&tick\+Type, int number\+Of\+Ticks, bool ignore\+Size)
+\item 
+\mbox{\Hypertarget{classEClient_a149b33cc2ef0b412426bc34b641297cf}\label{classEClient_a149b33cc2ef0b412426bc34b641297cf}} 
+void {\bfseries cancel\+Tick\+By\+Tick\+Data} (int req\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_a4ac48ebba4c8f95712e21a7cf54d4fb1}\label{classEClient_a4ac48ebba4c8f95712e21a7cf54d4fb1}} 
+void {\bfseries req\+Completed\+Orders} (bool api\+Only)
+\item 
+\mbox{\Hypertarget{classEClient_a28204c214e743fef8c440fd5fee96d1d}\label{classEClient_a28204c214e743fef8c440fd5fee96d1d}} 
+void {\bfseries start\+Api} ()
+\item 
+\mbox{\Hypertarget{classEClient_af51ed8ca1eb2666bb23da79cf37fb75b}\label{classEClient_af51ed8ca1eb2666bb23da79cf37fb75b}} 
+void {\bfseries Encode\+Contract} (std\+::ostream \&os, const \mbox{\hyperlink{structContract}{Contract}} \&contract)
+\item 
+\mbox{\Hypertarget{classEClient_ac91811ebb2c69d1dd639a6c8d382b257}\label{classEClient_ac91811ebb2c69d1dd639a6c8d382b257}} 
+void {\bfseries Encode\+Tag\+Value\+List} (std\+::ostream \&os, const Tag\+Value\+List\+S\+Ptr \&tag\+Value\+List)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEClient_aa6ff79086076c23bc9e895fdfb37c665}\label{classEClient_aa6ff79086076c23bc9e895fdfb37c665}} 
+static void {\bfseries Encode\+Field\+Max} (std\+::ostream \&os, int)
+\item 
+\mbox{\Hypertarget{classEClient_aeca4c9bcd4f639739c1e7669eb63fda5}\label{classEClient_aeca4c9bcd4f639739c1e7669eb63fda5}} 
+static void {\bfseries Encode\+Field\+Max} (std\+::ostream \&os, double)
+\item 
+\mbox{\Hypertarget{classEClient_a84a6cf29bc166ef27cba43a049ae6198}\label{classEClient_a84a6cf29bc166ef27cba43a049ae6198}} 
+static void {\bfseries Encode\+Field\+Max} (std\+::ostream \&os, int)
+\item 
+\mbox{\Hypertarget{classEClient_a32850761211f8604454c158f02d5a4ff}\label{classEClient_a32850761211f8604454c158f02d5a4ff}} 
+static void {\bfseries Encode\+Field\+Max} (std\+::ostream \&os, double)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEClient_a16d96744b2e01ba0e7acebabc52ac730}\label{classEClient_a16d96744b2e01ba0e7acebabc52ac730}} 
+void {\bfseries e\+Connect\+Base} ()
+\item 
+\mbox{\Hypertarget{classEClient_a41964f96bf3efb9cc22c99e7a76df442}\label{classEClient_a41964f96bf3efb9cc22c99e7a76df442}} 
+void {\bfseries e\+Disconnect\+Base} ()
+\item 
+\mbox{\Hypertarget{classEClient_ae9f11b62e9405893f2a31cca5187d041}\label{classEClient_ae9f11b62e9405893f2a31cca5187d041}} 
+void {\bfseries set\+Client\+Id} (int client\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_aeb06dc5caf6265448d9fa315cb3d5b7a}\label{classEClient_aeb06dc5caf6265448d9fa315cb3d5b7a}} 
+void {\bfseries set\+Extra\+Auth} (bool extra\+Auth)
+\item 
+\mbox{\Hypertarget{classEClient_a4e8d072830dc4c0121ae0d1195943184}\label{classEClient_a4e8d072830dc4c0121ae0d1195943184}} 
+void {\bfseries set\+Host} (const std\+::string \&host)
+\item 
+\mbox{\Hypertarget{classEClient_a19cd2f165e5c8fadde8d4f7b0077c2f8}\label{classEClient_a19cd2f165e5c8fadde8d4f7b0077c2f8}} 
+void {\bfseries set\+Port} (int port)
+\item 
+\mbox{\Hypertarget{classEClient_a43b8d141b37a3f17ed6182507ebdbe4c}\label{classEClient_a43b8d141b37a3f17ed6182507ebdbe4c}} 
+virtual void {\bfseries prepare\+Buffer\+Impl} (std\+::ostream \&) const =0
+\item 
+\mbox{\Hypertarget{classEClient_a3950a51a6daeab79e489058134236958}\label{classEClient_a3950a51a6daeab79e489058134236958}} 
+virtual void {\bfseries prepare\+Buffer} (std\+::ostream \&) const =0
+\item 
+\mbox{\Hypertarget{classEClient_ac81ff23c9d49804d862817cb5d289639}\label{classEClient_ac81ff23c9d49804d862817cb5d289639}} 
+virtual bool {\bfseries close\+And\+Send} (std\+::string msg, unsigned offset=0)=0
+\item 
+\mbox{\Hypertarget{classEClient_a85cb44e876af19fa575a5d7bff5ba6b4}\label{classEClient_a85cb44e876af19fa575a5d7bff5ba6b4}} 
+virtual int {\bfseries buffered\+Send} (const std\+::string \&msg)
+\item 
+\mbox{\Hypertarget{classEClient_ac508f2aa65ac3b1aa2b9c80c758b70b7}\label{classEClient_ac508f2aa65ac3b1aa2b9c80c758b70b7}} 
+bool {\bfseries is\+Connecting} () const
+\item 
+\mbox{\Hypertarget{classEClient_a0a821616a7743b50e39f25188c42b01d}\label{classEClient_a0a821616a7743b50e39f25188c42b01d}} 
+int {\bfseries send\+Connect\+Request} ()
+\item 
+\mbox{\Hypertarget{classEClient_a260c3ad18ec0168dd19635e35aebd5c9}\label{classEClient_a260c3ad18ec0168dd19635e35aebd5c9}} 
+bool {\bfseries extra\+Auth} ()
+\item 
+\mbox{\Hypertarget{classEClient_a16d96744b2e01ba0e7acebabc52ac730}\label{classEClient_a16d96744b2e01ba0e7acebabc52ac730}} 
+void {\bfseries e\+Connect\+Base} ()
+\item 
+\mbox{\Hypertarget{classEClient_a41964f96bf3efb9cc22c99e7a76df442}\label{classEClient_a41964f96bf3efb9cc22c99e7a76df442}} 
+void {\bfseries e\+Disconnect\+Base} ()
+\item 
+\mbox{\Hypertarget{classEClient_ae9f11b62e9405893f2a31cca5187d041}\label{classEClient_ae9f11b62e9405893f2a31cca5187d041}} 
+void {\bfseries set\+Client\+Id} (int client\+Id)
+\item 
+\mbox{\Hypertarget{classEClient_aeb06dc5caf6265448d9fa315cb3d5b7a}\label{classEClient_aeb06dc5caf6265448d9fa315cb3d5b7a}} 
+void {\bfseries set\+Extra\+Auth} (bool extra\+Auth)
+\item 
+\mbox{\Hypertarget{classEClient_a4e8d072830dc4c0121ae0d1195943184}\label{classEClient_a4e8d072830dc4c0121ae0d1195943184}} 
+void {\bfseries set\+Host} (const std\+::string \&host)
+\item 
+\mbox{\Hypertarget{classEClient_a19cd2f165e5c8fadde8d4f7b0077c2f8}\label{classEClient_a19cd2f165e5c8fadde8d4f7b0077c2f8}} 
+void {\bfseries set\+Port} (int port)
+\item 
+\mbox{\Hypertarget{classEClient_a43b8d141b37a3f17ed6182507ebdbe4c}\label{classEClient_a43b8d141b37a3f17ed6182507ebdbe4c}} 
+virtual void {\bfseries prepare\+Buffer\+Impl} (std\+::ostream \&) const =0
+\item 
+\mbox{\Hypertarget{classEClient_a3950a51a6daeab79e489058134236958}\label{classEClient_a3950a51a6daeab79e489058134236958}} 
+virtual void {\bfseries prepare\+Buffer} (std\+::ostream \&) const =0
+\item 
+\mbox{\Hypertarget{classEClient_ac81ff23c9d49804d862817cb5d289639}\label{classEClient_ac81ff23c9d49804d862817cb5d289639}} 
+virtual bool {\bfseries close\+And\+Send} (std\+::string msg, unsigned offset=0)=0
+\item 
+\mbox{\Hypertarget{classEClient_ae79dd20c54cd61f34b41b8b9ccb9bfc6}\label{classEClient_ae79dd20c54cd61f34b41b8b9ccb9bfc6}} 
+virtual int {\bfseries buffered\+Send} (const std\+::string \&msg)
+\item 
+\mbox{\Hypertarget{classEClient_ac508f2aa65ac3b1aa2b9c80c758b70b7}\label{classEClient_ac508f2aa65ac3b1aa2b9c80c758b70b7}} 
+bool {\bfseries is\+Connecting} () const
+\item 
+\mbox{\Hypertarget{classEClient_a0a821616a7743b50e39f25188c42b01d}\label{classEClient_a0a821616a7743b50e39f25188c42b01d}} 
+int {\bfseries send\+Connect\+Request} ()
+\item 
+\mbox{\Hypertarget{classEClient_a260c3ad18ec0168dd19635e35aebd5c9}\label{classEClient_a260c3ad18ec0168dd19635e35aebd5c9}} 
+bool {\bfseries extra\+Auth} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEClient_acfcbfb4640f3dc6e3e95f49c2658dbed}\label{classEClient_acfcbfb4640f3dc6e3e95f49c2658dbed}} 
+{\footnotesize template$<$class T $>$ }\\static void {\bfseries Encode\+Field} (std\+::ostream \&, T)
+\item 
+\mbox{\Hypertarget{classEClient_a36abe708d0922bca889fb96b95b819f1}\label{classEClient_a36abe708d0922bca889fb96b95b819f1}} 
+{\footnotesize template$<$class T $>$ }\\static void {\bfseries Encode\+Field} (std\+::ostream \&, T)
+\item 
+\mbox{\Hypertarget{classEClient_a0e1cb01316a788e776f003c0afb655f5}\label{classEClient_a0e1cb01316a788e776f003c0afb655f5}} 
+template$<$$>$ void {\bfseries Encode\+Field} (std\+::ostream \&os, bool bool\+Value)
+\item 
+\mbox{\Hypertarget{classEClient_a78f8bba4c28871af7c0d5457d87dd631}\label{classEClient_a78f8bba4c28871af7c0d5457d87dd631}} 
+template$<$$>$ void {\bfseries Encode\+Field} (std\+::ostream \&os, double double\+Value)
+\item 
+\mbox{\Hypertarget{classEClient_afb73b6e87d94f0e71bad36a5f375e22b}\label{classEClient_afb73b6e87d94f0e71bad36a5f375e22b}} 
+template$<$$>$ void {\bfseries Encode\+Field} (std\+::ostream \&os, bool)
+\item 
+\mbox{\Hypertarget{classEClient_a3d62e3b1ef1a78b34e6f491ce13703f8}\label{classEClient_a3d62e3b1ef1a78b34e6f491ce13703f8}} 
+template$<$$>$ void {\bfseries Encode\+Field} (std\+::ostream \&os, double)
+\item 
+\mbox{\Hypertarget{classEClient_a0e1cb01316a788e776f003c0afb655f5}\label{classEClient_a0e1cb01316a788e776f003c0afb655f5}} 
+template$<$$>$ void {\bfseries Encode\+Field} (std\+::ostream \&os, bool bool\+Value)
+\item 
+\mbox{\Hypertarget{classEClient_a78f8bba4c28871af7c0d5457d87dd631}\label{classEClient_a78f8bba4c28871af7c0d5457d87dd631}} 
+template$<$$>$ void {\bfseries Encode\+Field} (std\+::ostream \&os, double double\+Value)
+\item 
+\mbox{\Hypertarget{classEClient_afb73b6e87d94f0e71bad36a5f375e22b}\label{classEClient_afb73b6e87d94f0e71bad36a5f375e22b}} 
+template$<$$>$ void {\bfseries Encode\+Field} (std\+::ostream \&os, bool)
+\item 
+\mbox{\Hypertarget{classEClient_a3d62e3b1ef1a78b34e6f491ce13703f8}\label{classEClient_a3d62e3b1ef1a78b34e6f491ce13703f8}} 
+template$<$$>$ void {\bfseries Encode\+Field} (std\+::ostream \&os, double)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEClient_a029195760a4bc1c6c06a57de8bf120c2}\label{classEClient_a029195760a4bc1c6c06a57de8bf120c2}} 
+\mbox{\hyperlink{classEWrapper}{E\+Wrapper}} $\ast$ {\bfseries m\+\_\+p\+E\+Wrapper}
+\item 
+\mbox{\Hypertarget{classEClient_a67863682b01a887bb5e4d4c0beed37fe}\label{classEClient_a67863682b01a887bb5e4d4c0beed37fe}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structETransport}{E\+Transport}} $>$ {\bfseries m\+\_\+transport}
+\item 
+\mbox{\Hypertarget{classEClient_a83b7d1451372c204636f18274381d411}\label{classEClient_a83b7d1451372c204636f18274381d411}} 
+int {\bfseries m\+\_\+server\+Version}
+\item 
+\mbox{\Hypertarget{classEClient_a4375ee1932d57999de6df468feaa7b2f}\label{classEClient_a4375ee1932d57999de6df468feaa7b2f}} 
+std\+::string {\bfseries m\+\_\+\+Tws\+Time}
+\item 
+\mbox{\Hypertarget{classEClient_ac766b59275aa0de87e2fcf12f544a516}\label{classEClient_ac766b59275aa0de87e2fcf12f544a516}} 
+bool {\bfseries m\+\_\+use\+V100\+Plus}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEClient_a770223cb08edd7f4e167401c1cc8921b}\label{classEClient_a770223cb08edd7f4e167401c1cc8921b}} 
+class {\bfseries Contract\+Condition}
+\item 
+\mbox{\Hypertarget{classEClient_ab1455c63ba78f2c3f58153638a3aa795}\label{classEClient_ab1455c63ba78f2c3f58153638a3aa795}} 
+class {\bfseries Execution\+Condition}
+\item 
+\mbox{\Hypertarget{classEClient_a644bc2df2040d8634775b70374837963}\label{classEClient_a644bc2df2040d8634775b70374837963}} 
+class {\bfseries Operator\+Condition}
+\item 
+\mbox{\Hypertarget{classEClient_a8f9b1e51dfefa773a5f2c930c2d0e11e}\label{classEClient_a8f9b1e51dfefa773a5f2c930c2d0e11e}} 
+class {\bfseries Order\+Condition}
+\item 
+\mbox{\Hypertarget{classEClient_a7d80ff03452833f9470ce93ce1d12740}\label{classEClient_a7d80ff03452833f9470ce93ce1d12740}} 
+class {\bfseries Price\+Condition}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+source/makefiles/cmake\+Example/medium\+Make/src/\+T\+W\+S/client/E\+Client.\+h\item 
+source/makefiles/cmake\+Example/medium\+Make/src/\+T\+W\+S/client/E\+Client.\+cpp\end{DoxyCompactItemize}

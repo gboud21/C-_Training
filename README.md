@@ -1,4 +1,4 @@
-# CPlusPlus_Training
+# Software_Training
 This project contains multiple examples aimed at teaching C++
 
 # Directory Structure

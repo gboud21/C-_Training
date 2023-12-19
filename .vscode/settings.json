@@ -27,7 +27,8 @@
         "type_traits": "cpp",
         "typeinfo": "cpp",
         "array": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "fstream": "cpp"
     },
     "cmake.configureOnOpen": true
 }

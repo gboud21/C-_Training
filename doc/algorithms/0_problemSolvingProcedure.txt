@@ -19,7 +19,9 @@ Procedure:
     -Create some example test cases to confirm your understanding of the problem
 4. Keep It Simple
     -Brute force the algorithm just to get it working. At the very least you have something on paper. Elegance and efficieny is nice to have in code,
-     but in a real environment there is a complexity trade off for elegance in terms of readability and ease of understanding
+     but in a real environment there is a complexity trade off for elegance in terms of readability and ease of understanding. 
+    -Always write psuedo-code first that details what the solution is before transitioning to writing actual code. If the solution is simple enough its
+     possible that you can skip directly to the optimized solution.
     -Test the solution
     -Identifiy Time Complexity
     -Identifiy Space Complexity
@@ -34,6 +36,9 @@ Procedure:
                 -Use a Hash Map, this could reduce the complexity of gets to O(1)
             -Dynamic
                 -
+    -Always write psuedo-code first that details what the solution is before transitioning to writing actual code. The benifit here is it serves as a psuedo
+     design phase that you can walk through the logic without worrying about syntax and language restrictions, as well as, providing an outline for you when
+     actually implementing the algorithm.
     -Test the solution
     -Identifiy Time Complexity
     -Identifiy Space Complexity

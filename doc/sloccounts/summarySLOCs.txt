@@ -1,0 +1,239 @@
+================================================================================================
+Software Training
+================================================================================================
+Creating filelist for bash
+Creating filelist for basics
+Creating filelist for dataStructures
+Creating filelist for io
+Creating filelist for makefiles
+Creating filelist for network
+Creating filelist for patterns
+Categorizing files.
+Finding a working MD5 command....
+Found a working MD5 command.
+Computing results.
+
+
+SLOC	Directory	SLOC-by-Language (Sorted)
+1553    makefiles       cpp=768,ansic=661,sh=124
+563     dataStructures  cpp=443,sh=120
+215     basics          sh=124,cpp=91
+185     io              cpp=128,sh=57
+46      bash            sh=46
+12      patterns        cpp=12
+0       network         (none)
+
+
+Totals grouped by language (dominant language first):
+cpp:           1442 (56.02%)
+ansic:          661 (25.68%)
+sh:             471 (18.30%)
+
+
+
+
+Total Physical Source Lines of Code (SLOC)                = 2,574
+Development Effort Estimate, Person-Years (Person-Months) = 0.54 (6.48)
+ (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
+Schedule Estimate, Years (Months)                         = 0.42 (5.08)
+ (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
+Estimated Average Number of Developers (Effort/Schedule)  = 1.27
+Total Estimated Cost to Develop                           = $ 72,909
+ (average salary = $56,286/year, overhead = 2.40).
+SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
+SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
+SLOCCount comes with ABSOLUTELY NO WARRANTY, and you are welcome to
+redistribute it under certain conditions as specified by the GNU GPL license;
+see the documentation for details.
+Please credit this data as "generated using David A. Wheeler's 'SLOCCount'."
+
+================================================================================================
+CodeWeb
+================================================================================================
+Creating filelist for BaseWidgets
+Creating filelist for CodeGenerator
+Have a non-directory at the top, so creating directory top_dir
+Adding /home/dapper/code/CodeWeb/CodeWeb.pro to top_dir
+Adding /home/dapper/code/CodeWeb/CodeWeb.pro.user to top_dir
+Adding /home/dapper/code/CodeWeb/CodeWeb.pro.user.4.9-pre1 to top_dir
+Creating filelist for Common
+Adding /home/dapper/code/CodeWeb/LICENSE to top_dir
+Creating filelist for TestCaseGenerator
+Creating filelist for Utils
+Creating filelist for Widgets
+Adding /home/dapper/code/CodeWeb/codeWebApp.h to top_dir
+Adding /home/dapper/code/CodeWeb/codewebapp.cpp to top_dir
+Adding /home/dapper/code/CodeWeb/cppCodeTemplate.txt to top_dir
+Adding /home/dapper/code/CodeWeb/cppCodeTemplateConstructor.txt to top_dir
+Adding /home/dapper/code/CodeWeb/cppCodeTemplateConstructor.xml to top_dir
+Adding /home/dapper/code/CodeWeb/cppCodeTemplateDoWhileLoop.txt to top_dir
+Adding /home/dapper/code/CodeWeb/cppCodeTemplateElseIf.txt to top_dir
+Adding /home/dapper/code/CodeWeb/cppCodeTemplateForLoop.txt to top_dir
+Adding /home/dapper/code/CodeWeb/cppCodeTemplateFunction.txt to top_dir
+Adding /home/dapper/code/CodeWeb/cppCodeTemplateIf.txt to top_dir
+Adding /home/dapper/code/CodeWeb/cppCodeTemplateSwitch.txt to top_dir
+Adding /home/dapper/code/CodeWeb/cppCodeTemplateWhileLoop.txt to top_dir
+Adding /home/dapper/code/CodeWeb/cppText.ent to top_dir
+Adding /home/dapper/code/CodeWeb/main.cpp to top_dir
+Adding /home/dapper/code/CodeWeb/mainwindow.ui to top_dir
+Adding /home/dapper/code/CodeWeb/rCodeTemplateElse.txt to top_dir
+Adding /home/dapper/code/CodeWeb/rCodeTemplateElseIf.txt to top_dir
+Adding /home/dapper/code/CodeWeb/rCodeTemplateForLoop.txt to top_dir
+Adding /home/dapper/code/CodeWeb/rCodeTemplateFunction.txt to top_dir
+Adding /home/dapper/code/CodeWeb/rCodeTemplateIf.txt to top_dir
+Categorizing files.
+Finding a working MD5 command....
+Found a working MD5 command.
+Computing results.
+
+
+SLOC	Directory	SLOC-by-Language (Sorted)
+2781    Widgets         cpp=2781
+662     TestCaseGenerator cpp=662
+408     CodeGenerator   cpp=408
+265     Utils           cpp=265
+260     top_dir         cpp=242,xml=18
+195     Common          cpp=195
+24      BaseWidgets     cpp=24
+
+
+Totals grouped by language (dominant language first):
+cpp:           4577 (99.61%)
+xml:             18 (0.39%)
+
+
+
+================================================================================================
+TinyVils
+================================================================================================
+Total Physical Source Lines of Code (SLOC)                = 4,595
+Development Effort Estimate, Person-Years (Person-Months) = 0.99 (11.90)
+ (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
+Schedule Estimate, Years (Months)                         = 0.53 (6.41)
+ (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
+Estimated Average Number of Developers (Effort/Schedule)  = 1.86
+Total Estimated Cost to Develop                           = $ 133,980
+ (average salary = $56,286/year, overhead = 2.40).
+SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
+SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
+SLOCCount comes with ABSOLUTELY NO WARRANTY, and you are welcome to
+redistribute it under certain conditions as specified by the GNU GPL license;
+see the documentation for details.
+Please credit this data as "generated using David A. Wheeler's 'SLOCCount'."
+
+
+Creating filelist for Assets
+Creating filelist for Licenses
+Creating filelist for Packages
+Creating filelist for ProjectSettings
+Have a non-directory at the top, so creating directory top_dir
+Adding /home/dapper/code/TinyVils/./README.md to top_dir
+Categorizing files.
+Finding a working MD5 command....
+Found a working MD5 command.
+Computing results.
+
+
+SLOC	Directory	SLOC-by-Language (Sorted)
+1302    Assets          cs=1302
+0       Licenses        (none)
+0       Packages        (none)
+0       ProjectSettings (none)
+0       top_dir         (none)
+
+
+Totals grouped by language (dominant language first):
+cs:            1302 (100.00%)
+
+
+
+================================================================================================
+BoardGame
+================================================================================================
+Total Physical Source Lines of Code (SLOC)                = 1,302
+Development Effort Estimate, Person-Years (Person-Months) = 0.26 (3.17)
+ (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
+Schedule Estimate, Years (Months)                         = 0.32 (3.87)
+ (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
+Estimated Average Number of Developers (Effort/Schedule)  = 0.82
+Total Estimated Cost to Develop                           = $ 35,644
+ (average salary = $56,286/year, overhead = 2.40).
+SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
+SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
+SLOCCount comes with ABSOLUTELY NO WARRANTY, and you are welcome to
+redistribute it under certain conditions as specified by the GNU GPL license;
+see the documentation for details.
+Please credit this data as "generated using David A. Wheeler's 'SLOCCount'."
+
+
+Creating filelist for BoardGame
+Categorizing files.
+Finding a working MD5 command....
+Found a working MD5 command.
+Computing results.
+
+
+SLOC	Directory	SLOC-by-Language (Sorted)
+2581    BoardGame       cpp=2140,sh=308,perl=99,cs=34
+
+
+Totals grouped by language (dominant language first):
+cpp:           2140 (82.91%)
+sh:             308 (11.93%)
+perl:            99 (3.84%)
+cs:              34 (1.32%)
+
+
+
+
+Total Physical Source Lines of Code (SLOC)                = 2,581
+Development Effort Estimate, Person-Years (Person-Months) = 0.54 (6.50)
+ (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
+Schedule Estimate, Years (Months)                         = 0.42 (5.09)
+ (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
+Estimated Average Number of Developers (Effort/Schedule)  = 1.28
+Total Estimated Cost to Develop                           = $ 73,117
+ (average salary = $56,286/year, overhead = 2.40).
+SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
+SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
+SLOCCount comes with ABSOLUTELY NO WARRANTY, and you are welcome to
+redistribute it under certain conditions as specified by the GNU GPL license;
+see the documentation for details.
+Please credit this data as "generated using David A. Wheeler's 'SLOCCount'."
+
+================================================================================================
+WorkoutTracker
+================================================================================================
+Creating filelist for WorkoutTracker
+Categorizing files.
+Finding a working MD5 command....
+Found a working MD5 command.
+Computing results.
+
+
+SLOC	Directory	SLOC-by-Language (Sorted)
+1868    WorkoutTracker  cpp=1461,sh=308,perl=99
+
+
+Totals grouped by language (dominant language first):
+cpp:           1461 (78.21%)
+sh:             308 (16.49%)
+perl:            99 (5.30%)
+
+
+
+
+Total Physical Source Lines of Code (SLOC)                = 1,868
+Development Effort Estimate, Person-Years (Person-Months) = 0.39 (4.63)
+ (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
+Schedule Estimate, Years (Months)                         = 0.37 (4.47)
+ (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
+Estimated Average Number of Developers (Effort/Schedule)  = 1.03
+Total Estimated Cost to Develop                           = $ 52,070
+ (average salary = $56,286/year, overhead = 2.40).
+SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
+SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
+SLOCCount comes with ABSOLUTELY NO WARRANTY, and you are welcome to
+redistribute it under certain conditions as specified by the GNU GPL license;
+see the documentation for details.
+Please credit this data as "generated using David A. Wheeler's 'SLOCCount'."

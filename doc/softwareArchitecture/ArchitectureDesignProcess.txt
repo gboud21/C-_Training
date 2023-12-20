@@ -1,0 +1,20 @@
+Description:
+This document provides a general process for architecting a software application. There are multiple sections 
+whose scope range from planning/designing the high-level structural aspects of the application all the way
+down to designing individual software components.
+
+Structural Design:
+1) Review Requirements/Use Cases/Procesdures
+    a) Document required functionality of the application
+    b) Document any timing constraints that could drive changes to threading architecture
+2) Review External Interfaces
+    a) Document design constraints applied by the external systems. For example (network connections, external timing, data formats, etc)
+3) Review any existing designs/code
+    a) Document the purposes of each class and identify any areas of improvement/complexity which could be reduced 
+4) Review Existing Applications
+    a) Research applications that do similar things to try to find examples/ideas of both proven and ineffective applications to gain
+       lessons learned prior to design.
+5) Review Architecture Patterns
+    a) Identify any patterns that could be applied or are known solutions to the problems solved by this application
+6) Design
+    a) Go forth and design the application using all of the knowledge gained.

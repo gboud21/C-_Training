@@ -1,0 +1,60 @@
+I. Links/Resources
+    A. https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/PipeFilter.pdf
+II. Definition
+    A. Pipe and filter is a component based architectural style that allows the deconstruction of monolithic
+       processes into small independent components consisting of "Pumps", "Filters" and a Sink. Data is passed
+       through a variety of filters and ultimately ends up in the sink.
+        i. Pumps
+            a. The initial source of data which can be streamed or passed into an initial filter
+        ii. Filters
+            a. Independent components that execute a specified task and do not share states with other filters
+               or components.
+            b. Often have buffers to be able to queue work, but are unaware of their upstream/downstream neighbors
+        iii. Sink
+            a. The consumer. The target where the final output from a series of filters is collected.
+III. Topological constraints
+    A. In this architecture, you can imagine multiple pipes feeding into a series of filters which ultimately funnel
+       into a single sink where the data is stored/used/consumed
+
+       Pump ---> Filter ---> Filter ---
+                                      |
+                                      |
+                                      ----------> Sink
+                                      |
+                                      |
+       Pump ---> Filter ---> Filter ---
+
+    B. Typically the application must form a uni-directional sequence where the structure lacks cycles
+        i. This means that the data must flow forward in a single direction creating a clearly defined workflow for the
+           data and that the application isn't "cycling" or going back through previous filters
+    C. Filters cannot be aware of downstream processes and must only communicate through the main communication channels
+       (input/output pipes). This makes it so that each of the components is only loosely coupled with that coupling being
+       the data being passed from one to the next
+IV. Applicable Problems
+    A. The processing required by an application can easily be broken down into a set of independent steps. This allows for
+       modularized content that is not tightly coupled. Each step can be performed by an application and have different
+       scalability requirements
+        i. It also provides the flexibility of reordering the processing steps and exchanging the filters for different use
+           cases
+        ii. This system can also benefit from distributed processing of steps across various servers, simplifying the development
+            process for develepores as they no longer require an understanding of the entire system
+    B. It is most applicable in large workflows that can be decomposed into smaller independent component which can be chained
+       and/or run asynchronous
+    C. The separate components normally wouldn't have any relevant knowledge of previous states and could be rearranged with 
+       respect to functional costraints
+V. Resialnce to change
+    A. Pipe and filter has very low resilance to change as each part of the system is componentized leading to high cohesion and low
+       coupling
+    B. It would be easy to create new filters and attach new pipes without impacting the remaining code base. This means it is highly
+       scalable
+VI. Negative behaviors
+   A. Using this patterns with states is inefficient because so much information based on the state of the data is required to be
+      transferred between components
+   B. Not recommended for dynamic behaviors due to indpendent nature of each component
+   C. The linear nature of this architecture can lead to delays within the system since a delay caused by a single component
+      impacts all downstream components
+   D. Cannot be used for programs that requires steps that cannot be executed independently/concurrently (aks highly coupled)
+VII. Comparisons with other architecture
+   A. Client-server can be though of as a variation fo layered architecture with two layers
+   B. Pipe and filter only allows uniderectional flow of information wheras client-server and layered architecture allow bidirectional
+      flow

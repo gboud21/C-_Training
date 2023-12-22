@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 
+#include "AddTwoNumbers-test.cpp"
 #include "TwoSum-test.cpp"
 
 int main(int argc, char* argv[])

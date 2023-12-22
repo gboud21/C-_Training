@@ -5,6 +5,7 @@ cmake_minimum_required(VERSION 3.14)
 
 #This command specifies the project name
 project(Algorithms VERSION 1.0)
+add_compile_options(-g3)
 
 #Set the C++ Standard to C++ 11
 set(CMAKE_CXX_STANDARD 11)

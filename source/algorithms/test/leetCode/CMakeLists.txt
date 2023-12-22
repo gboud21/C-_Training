@@ -2,6 +2,7 @@ enable_testing()
 
 # Add the subdirectories
 add_subdirectory(problem1)
+add_subdirectory(problem2)
 
 # Compile Executable
 set(GTest_ROOT /usr/src/googletest/googletest)
@@ -26,6 +27,7 @@ add_executable(${TEST_PROJECT_NAME}
 target_link_libraries(${TEST_PROJECT_NAME}
                     gtest_main
                     leet_1_test
+                    leet_2_test
                     )
 
 # Link in the Configuration File

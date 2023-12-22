@@ -1,3 +1,5 @@
+#ifndef ALGORITHMTYPES_H
+#define ALGORITHMTYPES_H
 // Just some data types that are useful across a variety of tests
 
 namespace alg
@@ -18,3 +20,4 @@ enum FunctionVersion
     MAX_FUNCTION_VERSION
 };
 } // namespace alg
+#endif

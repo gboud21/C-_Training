@@ -1,7 +1,7 @@
 ================================================================================================
 Software Training
 ================================================================================================
-Total Physical Source Lines of Code (SLOC)                = 2,574
+Total Physical Source Lines of Code (SLOC)                = 3,318 3,828
 ================================================================================================
 CodeWeb
 ================================================================================================
@@ -19,10 +19,8 @@ WorkoutTracker
 ================================================================================================
 Total Physical Source Lines of Code (SLOC)                = 1,868
 
-Total = 12920
+Total = 13664
 Low-End SLOC/Month = 325
 High-End SLOC/Month = 750
 
-Additional Experiance Range: 12920/750 < Months Experiance < 12920/325
-                                 17.23 < Months Experiance < 39.75
-                                  1.44 <  Years Experiance < 3.31
+Average Years Additional Experiance: 2.20 years

@@ -1,7 +1,8 @@
 #ifndef ALGORITHMTYPES_H
 #define ALGORITHMTYPES_H
-// Just some data types that are useful across a variety of tests
+#include <string>
 
+// Just some data types that are useful across a variety of tests
 namespace alg
 {
 ///////////////////////////////////////////////////////////////////////////
@@ -19,5 +20,12 @@ enum FunctionVersion
     OPTIMIZATION_FIVE,
     MAX_FUNCTION_VERSION
 };
+
+///////////////////////////////////////////////////////////////////////////
+// \details This function converts the FunctionVersion enumeration to a stirng
+// \param [in] version - The version of the function
+// \return std::string - The string representation of the FunctionVersion
+///////////////////////////////////////////////////////////////////////////
+std::string functionVersionToString(FunctionVersion version);
 } // namespace alg
 #endif

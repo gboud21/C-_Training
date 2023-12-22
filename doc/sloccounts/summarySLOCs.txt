@@ -17,7 +17,7 @@ Computing results.
 
 
 SLOC	Directory	SLOC-by-Language (Sorted)
-1855    algorithms      cpp=1060,ansic=675,sh=120
+2054    algorithms      cpp=1275,ansic=659,sh=120
 383     dataStructures  cpp=263,sh=120
 246     makefiles       sh=124,cpp=122
 202     basics          sh=124,cpp=78
@@ -29,20 +29,20 @@ SLOC	Directory	SLOC-by-Language (Sorted)
 
 
 Totals grouped by language (dominant language first):
-cpp:           1812 (58.87%)
-ansic:          675 (21.93%)
-sh:             591 (19.20%)
+cpp:           2027 (61.86%)
+ansic:          659 (20.11%)
+sh:             591 (18.03%)
 
 
 
 
-Total Physical Source Lines of Code (SLOC)                = 3,078
-Development Effort Estimate, Person-Years (Person-Months) = 0.65 (7.81)
+Total Physical Source Lines of Code (SLOC)                = 3,277
+Development Effort Estimate, Person-Years (Person-Months) = 0.70 (8.35)
  (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
-Schedule Estimate, Years (Months)                         = 0.46 (5.46)
+Schedule Estimate, Years (Months)                         = 0.47 (5.60)
  (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
-Estimated Average Number of Developers (Effort/Schedule)  = 1.43
-Total Estimated Cost to Develop                           = $ 87,968
+Estimated Average Number of Developers (Effort/Schedule)  = 1.49
+Total Estimated Cost to Develop                           = $ 93,949
  (average salary = $56,286/year, overhead = 2.40).
 SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
 SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
@@ -50,7 +50,6 @@ SLOCCount comes with ABSOLUTELY NO WARRANTY, and you are welcome to
 redistribute it under certain conditions as specified by the GNU GPL license;
 see the documentation for details.
 Please credit this data as "generated using David A. Wheeler's 'SLOCCount'."
-
 ================================================================================================
 CodeWeb
 ================================================================================================

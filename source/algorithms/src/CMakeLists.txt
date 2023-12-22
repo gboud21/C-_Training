@@ -6,10 +6,16 @@ set(COMMON_H
     AlgorithmTypes.h
     )
 
+# The header files to be compiled
+set(COMMON_SRC
+    AlgorithmTypes.cpp
+    )
+
 # Create the library
 add_library(${TARGET_NAME} STATIC
-            ${COMMON_H}
-            )
+    ${COMMON_H}
+    ${COMMON_SRC}
+    )
 
 set_target_properties(${TARGET_NAME} PROPERTIES LINKER_LANGUAGE CXX)
 

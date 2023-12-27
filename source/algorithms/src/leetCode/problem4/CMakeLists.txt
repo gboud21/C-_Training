@@ -1,14 +1,14 @@
 # Set the name of the library
-set(TARGET_NAME leet_3)
+set(TARGET_NAME leet_4)
 
 # The header files to compile
 set(PROBLEM_H
-    SubstringWoRepeat.h
+    MedianTwoSortedArrays.h
     )
 
 # The source files to compile
 set(PROBLEM_SRC
-    SubstringWoRepeat.cpp
+    MedianTwoSortedArrays.cpp
     )
 
 add_library(${TARGET_NAME} STATIC

@@ -99,30 +99,30 @@ TEST_P(SubstringWoRepeatTest, Sunny_RepeatHalfWayReversed)
 // Description: Validates it finds the substring within the maximum length
 // string
 ////////////////////////////////////////////////////////////////////////////////
-// TEST_P(SubstringWoRepeatTest, Sunny_MaxStringLength)
-// {
-//     // Initialize test data
-//     int output = -1;
-//     std::string input = "";
-//     const int expected = 4; // "abcd"
+TEST_P(SubstringWoRepeatTest, Sunny_MaxStringLength)
+{
+    // Initialize test data
+    int output = -1;
+    std::string input = "";
+    const int expected = 4; // "abcd"
 
-//     // Build the max length string
-//     for (size_t index = 0; index < 5 * pow(10, 4); index++)
-//     {
-//         input += 'a';
-//     }
+    // Build the max length string
+    for (size_t index = 0; index < 5 * pow(10, 4); index++)
+    {
+        input += 'a';
+    }
 
-//     input[100] = 'b';
-//     input[101] = 'c';
-//     input[102] = 'd';
+    input[100] = 'b';
+    input[101] = 'c';
+    input[102] = 'd';
 
-//     // Initialize the class to run the brute force method
-//     SubstringWoRepeat testAlg(m_version);
+    // Initialize the class to run the brute force method
+    SubstringWoRepeat testAlg(m_version);
 
-//     // Run the algorithm and verify the output
-//     output = testAlg.substringWoRepeat(input);
-//     EXPECT_TRUE(compareOutput(output, expected));
-// }
+    // Run the algorithm and verify the output
+    output = testAlg.substringWoRepeat(input);
+    EXPECT_TRUE(compareOutput(output, expected));
+}
 
 TEST_P(SubstringWoRepeatTest, Sunny_BackToBackDup)
 {

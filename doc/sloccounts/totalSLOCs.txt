@@ -7,7 +7,7 @@ Total Physical Source Lines of Code (SLOC)                = 0
 ================================================================================================
 Software Training
 ================================================================================================
-Total Physical Source Lines of Code (SLOC)                = 3,480
+Total Physical Source Lines of Code (SLOC)                = 3,604
 ================================================================================================
 CodeWeb
 ================================================================================================
@@ -25,11 +25,11 @@ WorkoutTracker
 ================================================================================================
 Total Physical Source Lines of Code (SLOC)                = 1,868
 
-Total = 13623
+Total = 13950
 Low-End SLOC/Month = 325
 High-End SLOC/Month = 750
 Average SLOC/Month = 537.5
-Average CCUT Years Additional Experiance: 2.14 years
+Average CCUT Years Additional Experiance: 2.16 years
 
 Total High-Level Design Diagrams: 13
 Total Detailed Design Diagrams: 2
@@ -37,4 +37,4 @@ High-Level Design Diagrams/Day = 0.25
 Detailed Design Diagrams/Day = 0.5
 Average Design Years Additional Experiance: 0.15 years
 
-Average Years Additional Experiance: 2.29 years
+Average Years Additional Experiance: 2.31 years

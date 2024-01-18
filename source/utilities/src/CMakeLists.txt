@@ -1,18 +1,31 @@
-# Establish the minimum CMake version
-# This ensures the following CMake functions are run with a compatible
-# version of CMake
-cmake_minimum_required(VERSION 3.14)
+# Set the name of the library
+# set(TARGET_NAME common)
 
-# This command specifies the project name
-project(UtilitiesLibrary VERSION 1.0)
+# The header files to be compiled
+# set(COMMON_H
+#     AlgorithmTypes.h
+#     )
 
-# Set the C++ Standard to C++11
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+# # The header files to be compiled
+# set(COMMON_SRC
+#     AlgorithmTypes.cpp
+#     )
 
-# Compile the components within this project
+# Create the library
+# add_library(${TARGET_NAME} STATIC
+#     ${COMMON_H}
+#     ${COMMON_SRC}
+#     )
+
+# set_target_properties(${TARGET_NAME} PROPERTIES LINKER_LANGUAGE CXX)
+
+# # Add the include directories to the library
+# target_include_directories(${TARGET_NAME} PUBLIC
+#                           "${CMAKE_CURRENT_SOURCE_DIR}"
+#                           )
+
+# Compile Error Component
 add_subdirectory(error)
-add_subdirectory(logger)
 
-# Complie the unit tests for this project
-# add_subdirectory(test)
+# Compile Logger Component
+add_subdirectory(logger)

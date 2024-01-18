@@ -1,2 +1,0 @@
-1. Still need to do the CMake to make this an external library that can be compiled into other projects
-2. Need to enhance the error class to create a more standardized approach that can be used by any project

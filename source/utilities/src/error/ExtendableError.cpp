@@ -1,30 +1,18 @@
 ////////////////////////////////////////////////////////////////////////////////////
 ///
-/// File Name: errorHandler.cpp
+/// File Name: extendableError.cpp
 ///
-/// Class Name: ErrorHandler
+/// Class Name: ExtendableError
 ///
-/// Description: The ErrorHandler class is a singleton class that CodeWeb uses
-/// to
+/// Description: The ExtendableError class is a singleton class that CodeWeb
+/// uses to
 ///              check for errors. This class makes calls to the Logger class
 ///              when an error is detected to log the error to the log file and
 ///              then asserts to close the application.
 ///
 ////////////////////////////////////////////////////////////////////////////////////
 
-#include "ErrorHandler.h"
-#include "Logger.h"
-
-#include <assert.h>
-#include <string.h>
-#include <string>
-
-////////////////////////////////////////////////////////////////////////////////
-///
-///                            Static Variables
-///
-////////////////////////////////////////////////////////////////////////////////
-ErrorHandler* ErrorHandler::mp_errorHandler = nullptr;
+#include "ExtendableError.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 ///
@@ -43,17 +31,17 @@ ErrorHandler* ErrorHandler::mp_errorHandler = nullptr;
 ///    None
 ///
 ////////////////////////////////////////////////////////////////////////////////
-ErrorHandler* ErrorHandler::getInstance(void)
+ExtendableError* ExtendableError::getInstance(void)
 {
     // --- If the Error Handler has not been initialized then
-    if (nullptr == mp_errorHandler)
+    if (nullptr == mp_extendableError)
     {
         // Initialize the Error Handler
-        mp_errorHandler = new (std::nothrow) ErrorHandler();
-        assert(mp_errorHandler);
+        mp_extendableError = new (std::nothrow) ExtendableError();
+        assert(mp_extendableError);
     }
 
-    return mp_errorHandler;
+    return mp_extendableError;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -73,17 +61,17 @@ ErrorHandler* ErrorHandler::getInstance(void)
 ///    None
 ///
 ////////////////////////////////////////////////////////////////////////////////
-bool ErrorHandler::destroyInstance(void)
+bool ExtendableError::destroyInstance(void)
 {
     // --- Initialize local variables
     bool status = false;
 
     // --- If the Error Handler has been initialized then
-    if (nullptr != mp_errorHandler)
+    if (nullptr != mp_extendableError)
     {
         // --- Call the Error Handler Destructor
-        delete mp_errorHandler;
-        mp_errorHandler = nullptr;
+        delete mp_extendableError;
+        mp_extendableError = nullptr;
 
         // --- Set the return value to true
         status = true;
@@ -113,9 +101,9 @@ bool ErrorHandler::destroyInstance(void)
 ///    None
 ///
 ////////////////////////////////////////////////////////////////////////////////
-void ErrorHandler::handleError(bool isError, const char* fileName,
-                               const char* functionName,
-                               unsigned int lineNumber, ErrorCodes errorCode)
+void ExtendableError::handleError(bool isError, const char* fileName,
+                                  const char* functionName,
+                                  unsigned int lineNumber, ErrorCodes errorCode)
 {
     // --- Initialize local variables
     std::string outputMsg;
@@ -141,7 +129,7 @@ void ErrorHandler::handleError(bool isError, const char* fileName,
 
 ////////////////////////////////////////////////////////////////////////////////
 ///
-/// Name: ErrorHandler
+/// Name: ExtendableError
 ///
 /// Description: This is the constructor for the Error Handler.
 ///
@@ -155,11 +143,11 @@ void ErrorHandler::handleError(bool isError, const char* fileName,
 ///    None
 ///
 ////////////////////////////////////////////////////////////////////////////////
-ErrorHandler::ErrorHandler(void) {}
+ExtendableError::ExtendableError(void) {}
 
 ////////////////////////////////////////////////////////////////////////////////
 ///
-/// Name: ~ErrorHandler
+/// Name: ~ExtendableError
 ///
 /// Description: This is the destructor for the Error Handler.
 ///
@@ -173,4 +161,4 @@ ErrorHandler::ErrorHandler(void) {}
 ///    None
 ///
 ////////////////////////////////////////////////////////////////////////////////
-ErrorHandler::~ErrorHandler(void) {}
+ExtendableError::~ExtendableError(void) {}

@@ -30,7 +30,7 @@ public:
     /// \param literal - The enumeration literal to add to the list
     /// \return bool - TRUE if literal added, FALSE otherwise
     ////////////////////////////////////////////////////////////////////////////////
-    bool addEnumerationLiteral(const ExtendableEnumLiteral& literal);
+    bool addExtendableLiteral(const ExtendableEnumLiteral& literal);
 
     ////////////////////////////////////////////////////////////////////////////////
     /// \brief Determines if an enumeration literal is valid
@@ -39,7 +39,7 @@ public:
     /// \param [in] literal - The enumeration literal to validate list
     /// \return bool - TRUE if literal is a valid literal, FALSE otherwise
     ////////////////////////////////////////////////////////////////////////////////
-    bool isValid(const ExtendableEnumLiteral& literal) const;
+    bool isExtendableValid(const ExtendableEnumLiteral& literal) const;
 
 protected:
     // Mapping that tracks the integer equivalent value for an enumeration

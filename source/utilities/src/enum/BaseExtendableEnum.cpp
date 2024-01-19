@@ -13,7 +13,7 @@ BaseExtendableEnum::~BaseExtendableEnum() {}
 //////////////////////////////////////////////////////////////////
 /// BaseExtendableEnum::addEnumerationLiteral()
 //////////////////////////////////////////////////////////////////
-bool BaseExtendableEnum::addEnumerationLiteral(
+bool BaseExtendableEnum::addExtendableLiteral(
     const ExtendableEnumLiteral& literal)
 {
     return m_enumerationMap
@@ -24,7 +24,8 @@ bool BaseExtendableEnum::addEnumerationLiteral(
 //////////////////////////////////////////////////////////////////
 /// BaseExtendableEnum::isValid()
 //////////////////////////////////////////////////////////////////
-bool BaseExtendableEnum::isValid(const ExtendableEnumLiteral& literal) const
+bool BaseExtendableEnum::isExtendableValid(
+    const ExtendableEnumLiteral& literal) const
 {
     return m_enumerationMap.find(literal) != m_enumerationMap.end();
 }

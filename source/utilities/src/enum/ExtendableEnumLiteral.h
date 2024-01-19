@@ -64,7 +64,7 @@ public:
     template <typename T>
     bool isEqual(const T literal)
     {
-        return (mp_enumType.isValid(*this) &&
+        return (mp_enumType.isExtendableValid(*this) &&
                 (static_cast<int64_t>(literal) == m_literal));
     };
 
@@ -90,8 +90,3 @@ private:
     int64_t m_literal;
 };
 #endif // EXTENDABLEENUMLITERAL_H
-
-// #ifndef EXTENDABLEENUMLITERAL_C
-// #define EXTENDABLEENUMLITERAL_C
-// #include "ExtendableEnumLiteral.cpp"
-// #endif

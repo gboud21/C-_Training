@@ -4,8 +4,9 @@ set(TARGET_NAME utl_enum)
 
 # Create a variable to contain the header files
 set(ENUM_H
-BaseExtendableEnum.h
-ExtendableEnumLiteral.h
+    BaseExtendableEnum.h
+    ExtendableEnum.h
+    ExtendableEnumLiteral.h
     )
 
 # Create a variable to contain the source files
@@ -18,12 +19,6 @@ add_library(${TARGET_NAME} STATIC
             ${ENUM_H}
             ${ENUM_SRC}
             )
-
-# set_target_properties(${TARGET_NAME} PROPERTIES LINKER_LANGUAGE CXX)
-
-# target_link_libraries(${TARGET_NAME} PUBLIC
-#                     logger
-#                     )
 
 # Link in the Configuration File
 target_include_directories(${TARGET_NAME} PUBLIC

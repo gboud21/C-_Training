@@ -1,4 +1,4 @@
-#include "BaseExtendableEnum.h"
+#include "ExtendableEnum.h"
 
 #include <gtest/gtest.h>
 #include <limits.h>
@@ -51,14 +51,14 @@ enum AnotherEnum
 ///////////////////////////////////////////////////////////////////////////
 TEST_F(ExtendableEnumTest, AddAndEqualTestSunny)
 {
-    BaseExtendableEnum extEnum;
+    ExtendableEnum extEnum;
     // ExtendableEnumLiteral testLiteral(extEnum);
     ExtendableEnumLiteral testLiteral(extEnum);
 
     EXPECT_TRUE(true);
 
     testLiteral.setLiteral<TestEnum>(VALUE_1);
-    extEnum.addEnumerationLiteral(testLiteral);
+    extEnum.addExtendableLiteral(testLiteral);
     EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_1));
 
     // // Verify that the default literal is not a part of the ExtendEnumeration

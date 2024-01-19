@@ -4,6 +4,8 @@
 #include <map>
 #include <stdint.h>
 
+#include "BaseExtendableEnum.h"
+
 ////////////////////////////////////////////////////////////////////////////////////
 /// \details This class provides the ability to mesh multiple enumerations
 /// together into a single access point. This class provides the ability to
@@ -15,12 +17,12 @@ public:
     ////////////////////////////////////////////////////////////////////////////////
     /// \details Default Constructor
     ////////////////////////////////////////////////////////////////////////////////
-    ExtendableEnum();
+    ExtendableEnum(){};
 
     ////////////////////////////////////////////////////////////////////////////////
     /// \details Destructor
     ////////////////////////////////////////////////////////////////////////////////
-    ~ExtendableEnum();
+    ~ExtendableEnum(){};
 
     ////////////////////////////////////////////////////////////////////////////////
     /// \brief Adds an enumeration literal
@@ -33,7 +35,13 @@ public:
     /// \return bool - TRUE if literal added, FALSE otherwise
     ////////////////////////////////////////////////////////////////////////////////
     template <typename T>
-    bool addEnumerationLiteral(const T enumValue);
+    bool addEnumerationLiteral(const T enumValue)
+    {
+        return m_enumerationMap
+            .insert(std::pair<ExtendableEnumLiteral, bool>(
+                ExtendableEnumLiteral(static_cast<uint64_t>(enumValue)), true))
+            .second;
+    };
 
     ////////////////////////////////////////////////////////////////////////////////
     /// \brief Determines if a C++ enumeration literal is a part of this list
@@ -45,11 +53,10 @@ public:
     /// \return bool - TRUE if literal is a valid literal, FALSE otherwise
     ////////////////////////////////////////////////////////////////////////////////
     template <typename T>
-    bool isValid(const T enumValue);
+    bool isValid(const T enumValue)
+    {
+        return m_enumerationMap.find(ExtendableEnumLiteral(
+                   static_cast<uint64_t>(enumValue))) != m_enumerationMap.end();
+    };
 };
 #endif // EXTENDABLEENUM_H
-
-#ifndef EXTENDABLEENUM_C
-#define EXTENDABLEENUM_C
-#include "ExtendableEnum.cpp"
-#endif

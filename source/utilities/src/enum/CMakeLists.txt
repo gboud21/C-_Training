@@ -6,7 +6,6 @@ set(TARGET_NAME utl_enum)
 set(ENUM_H
     BaseExtendableEnum.h
     ExtendableEnum.h
-    ExtendableEnumLiteral.h
     )
 
 # Create a variable to contain the source files

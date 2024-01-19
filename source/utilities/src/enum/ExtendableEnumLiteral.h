@@ -4,7 +4,7 @@
 #include <map>
 #include <stdint.h>
 
-class ExtendableEnum;
+class BaseExtendableEnum;
 
 ////////////////////////////////////////////////////////////////////////////////////
 /// \details This class provides the ability to mesh multiple enumerations
@@ -18,7 +18,8 @@ public:
     /// \param [in] enumType - Pointer to the Extenable Enumeration Type that
     /// this object is associated with
     ////////////////////////////////////////////////////////////////////////////////
-    ExtendableEnumLiteral(const ExtendableEnum& enumType);
+    ExtendableEnumLiteral(const BaseExtendableEnum& enumType)
+        : mp_enumType(enumType), m_literal(0){};
 
     ////////////////////////////////////////////////////////////////////////////////
     /// \details Constructor as assigned
@@ -26,12 +27,13 @@ public:
     /// this object is associated with
     /// \param [in] literal - The enumeration literal to assign to the object
     ////////////////////////////////////////////////////////////////////////////////
-    ExtendableEnumLiteral(const ExtendableEnum& enumType, int64_t literal);
+    ExtendableEnumLiteral(const BaseExtendableEnum& enumType, int64_t literal)
+        : mp_enumType(enumType), m_literal(literal){};
 
     ////////////////////////////////////////////////////////////////////////////////
     /// \details Destructor
     ////////////////////////////////////////////////////////////////////////////////
-    ~ExtendableEnumLiteral();
+    ~ExtendableEnumLiteral(){};
 
     ////////////////////////////////////////////////////////////////////////////////
     /// \brief Assigns literal
@@ -41,8 +43,11 @@ public:
     /// \param [in] literal - The enumeration literal to assign to the
     /// object
     ////////////////////////////////////////////////////////////////////////////////
-    // template <typename T>
-    // void setLiteral(const T literal);
+    template <typename T>
+    void setLiteral(const T literal)
+    {
+        m_literal = static_cast<int64_t>(literal);
+    };
 
     ////////////////////////////////////////////////////////////////////////////////
     /// \brief Compares a literal to this object
@@ -56,8 +61,12 @@ public:
     /// either
     /// the literal is not equal, or a value was never assigned
     ////////////////////////////////////////////////////////////////////////////////
-    // template <typename T>
-    // bool isEqual(const T literal);
+    template <typename T>
+    bool isEqual(const T literal)
+    {
+        return (mp_enumType.isValid(*this) &&
+                (static_cast<int64_t>(literal) == m_literal));
+    };
 
     ////////////////////////////////////////////////////////////////////////////////
     /// \brief Less than operator
@@ -67,11 +76,14 @@ public:
     /// \return bool - TRUE if this instance is less than the rhs, FALSE
     /// otherwise
     ////////////////////////////////////////////////////////////////////////////////
-    bool operator<(const ExtendableEnumLiteral& rhs) const;
+    bool operator<(const ExtendableEnumLiteral& rhs) const
+    {
+        return (m_literal < rhs.m_literal);
+    };
 
 private:
     // The Extendable Enumerated Type that this variable is associated with
-    const ExtendableEnum& mp_enumType;
+    const BaseExtendableEnum& mp_enumType;
 
     // The integer equivalent value of the enumeration literal that was
     // assigned
@@ -79,7 +91,7 @@ private:
 };
 #endif // EXTENDABLEENUMLITERAL_H
 
-#ifndef EXTENDABLEENUMLITERAL_C
-#define EXTENDABLEENUMLITERAL_C
-#include "ExtendableEnumLiteral.cpp"
-#endif
+// #ifndef EXTENDABLEENUMLITERAL_C
+// #define EXTENDABLEENUMLITERAL_C
+// #include "ExtendableEnumLiteral.cpp"
+// #endif

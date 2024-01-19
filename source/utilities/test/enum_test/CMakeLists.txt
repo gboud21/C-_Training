@@ -13,7 +13,7 @@ add_library(${TARGET_NAME}
 
 target_link_libraries(${TARGET_NAME}
                     gtest_main
-                    enum
+                    utl_enum
                     )
 
 target_include_directories(${TARGET_NAME} PUBLIC

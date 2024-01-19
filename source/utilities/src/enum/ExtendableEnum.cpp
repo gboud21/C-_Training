@@ -23,16 +23,6 @@ bool ExtendableEnum::addEnumerationLiteral(const T enumValue)
 }
 
 //////////////////////////////////////////////////////////////////
-/// ExtendableEnum::addEnumerationLiteral()
-//////////////////////////////////////////////////////////////////
-bool ExtendableEnum::addEnumerationLiteral(const ExtendableEnumLiteral& literal)
-{
-    return m_enumerationMap
-        .insert(std::pair<ExtendableEnumLiteral, bool>(literal, true))
-        .second;
-}
-
-//////////////////////////////////////////////////////////////////
 /// ExtendableEnum::isValid()
 //////////////////////////////////////////////////////////////////
 template <typename T>
@@ -40,12 +30,4 @@ bool ExtendableEnum::isValid(const T enumValue)
 {
     return m_enumerationMap.find(ExtendableEnumLiteral(
                static_cast<uint64_t>(enumValue))) != m_enumerationMap.end();
-}
-
-//////////////////////////////////////////////////////////////////
-/// ExtendableEnum::isValid()
-//////////////////////////////////////////////////////////////////
-bool ExtendableEnum::isValid(const ExtendableEnumLiteral& literal)
-{
-    return m_enumerationMap.find(literal) != m_enumerationMap.end();
 }

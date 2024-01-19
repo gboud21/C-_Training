@@ -39,7 +39,8 @@ public:
     {
         return m_enumerationMap
             .insert(std::pair<ExtendableEnumLiteral, bool>(
-                ExtendableEnumLiteral(static_cast<uint64_t>(enumValue)), true))
+                ExtendableEnumLiteral(*this, static_cast<int64_t>(enumValue)),
+                true))
             .second;
     };
 

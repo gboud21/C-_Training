@@ -57,30 +57,31 @@ TEST_F(ExtendableEnumTest, AddAndEqualTestSunny)
 
     EXPECT_TRUE(true);
 
+    // // Verify that the default literal is not a part of the ExtendEnumeration
+    EXPECT_FALSE(testLiteral.isEqual<TestEnum>(VALUE_0));
+
+    // Add a value using the Base methods and verify the enumeration value
+    // equals the literal
     testLiteral.setLiteral<TestEnum>(VALUE_1);
     extEnum.addExtendableLiteral(testLiteral);
     EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_1));
 
-    // // Verify that the default literal is not a part of the ExtendEnumeration
-    // EXPECT_FALSE(testLiteral.isEqual<TestEnum>(VALUE_0));
-
     // // Add all of the Test Enum Values
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_0));
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_1));
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_2));
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_3));
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_4));
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_5));
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_6));
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_MAX));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_0));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_2));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_3));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_4));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_5));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_6));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_MAX));
 
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_0));
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_1));
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_2));
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_3));
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_4));
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_5));
-    // EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_6));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_0));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_1));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_2));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_3));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_4));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_5));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_6));
 
     // // Use each of the Enumerations and verify that each entry added to the
     // list

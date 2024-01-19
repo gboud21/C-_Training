@@ -1,9 +1,6 @@
 #ifndef EXTENDABLEENUM_H
 #define EXTENDABLEENUM_H
 
-#include <map>
-#include <stdint.h>
-
 #include "BaseExtendableEnum.h"
 
 ////////////////////////////////////////////////////////////////////////////////////

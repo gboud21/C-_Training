@@ -36,13 +36,14 @@ enum TestEnum
 
 enum AnotherEnum
 {
-    ANOTER_0 = 500,
-    ANOTER_1,
-    ANOTER_2,
-    ANOTER_3,
-    ANOTER_4,
-    ANOTER_5,
-    ANOTER_6
+    ANOTHER_0 = 500,
+    ANOTHER_1,
+    ANOTHER_2,
+    ANOTHER_3,
+    ANOTHER_4,
+    ANOTHER_5,
+    ANOTHER_6,
+    ANOTHER_7
 };
 
 ///////////////////////////////////////////////////////////////////////////
@@ -75,90 +76,69 @@ TEST_F(ExtendableEnumTest, AddAndEqualTestSunny)
     EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_6));
     EXPECT_TRUE(extEnum.addEnumerationLiteral<TestEnum>(VALUE_MAX));
 
-    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_0));
-    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_1));
-    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_2));
-    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_3));
-    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_4));
-    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_5));
-    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTER_6));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTHER_0));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTHER_1));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTHER_2));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTHER_3));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTHER_4));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTHER_5));
+    EXPECT_TRUE(extEnum.addEnumerationLiteral<AnotherEnum>(ANOTHER_6));
 
-    // // Use each of the Enumerations and verify that each entry added to the
-    // list
-    // // can be used
-    // // Verify ExtendedEnumeration value is set correctly
-    // // Verify ExtendedEnumeration is equal to itself
-    // testLiteral.setLiteral<TestEnum>(VALUE_0);
-    // EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_0));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    // Use each of the Enumerations and verify that each entry added to the
+    // list can be used
+    // Verify ExtendedEnumeration value is set correctly
+    // Verify ExtendedEnumeration is equal to itself
+    testLiteral.setLiteral<TestEnum>(VALUE_0);
+    EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_0));
 
-    // testLiteral.setLiteral<TestEnum>(VALUE_1);
-    // EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_1));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    testLiteral.setLiteral<TestEnum>(VALUE_2);
+    EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_2));
 
-    // testLiteral.setLiteral<TestEnum>(VALUE_2);
-    // EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_2));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    testLiteral.setLiteral<TestEnum>(VALUE_3);
+    EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_3));
 
-    // testLiteral.setLiteral<TestEnum>(VALUE_3);
-    // EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_3));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    testLiteral.setLiteral<TestEnum>(VALUE_3);
+    EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_3));
 
-    // testLiteral.setLiteral<TestEnum>(VALUE_3);
-    // EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_3));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    testLiteral.setLiteral<TestEnum>(VALUE_3);
+    EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_3));
 
-    // testLiteral.setLiteral<TestEnum>(VALUE_3);
-    // EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_3));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    testLiteral.setLiteral<TestEnum>(VALUE_4);
+    EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_4));
 
-    // testLiteral.setLiteral<TestEnum>(VALUE_4);
-    // EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_4));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    testLiteral.setLiteral<TestEnum>(VALUE_5);
+    EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_5));
 
-    // testLiteral.setLiteral<TestEnum>(VALUE_5);
-    // EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_5));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    testLiteral.setLiteral<TestEnum>(VALUE_6);
+    EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_6));
 
-    // testLiteral.setLiteral<TestEnum>(VALUE_6);
-    // EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_6));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    testLiteral.setLiteral<TestEnum>(VALUE_MAX);
+    EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_MAX));
 
-    // testLiteral.setLiteral<TestEnum>(VALUE_MAX);
-    // EXPECT_TRUE(testLiteral.isEqual<TestEnum>(VALUE_MAX));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    testLiteral.setLiteral<AnotherEnum>(ANOTHER_0);
+    EXPECT_TRUE(testLiteral.isEqual<AnotherEnum>(ANOTHER_0));
 
-    // testLiteral.setLiteral<AnotherEnum>(ANOTER_0);
-    // EXPECT_TRUE(testLiteral.isEqual<AnotherEnum>(ANOTER_0));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    testLiteral.setLiteral<AnotherEnum>(ANOTHER_1);
+    EXPECT_TRUE(testLiteral.isEqual<AnotherEnum>(ANOTHER_1));
 
-    // testLiteral.setLiteral<AnotherEnum>(ANOTER_1);
-    // EXPECT_TRUE(testLiteral.isEqual<AnotherEnum>(ANOTER_1));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    testLiteral.setLiteral<AnotherEnum>(ANOTHER_2);
+    EXPECT_TRUE(testLiteral.isEqual<AnotherEnum>(ANOTHER_2));
 
-    // testLiteral.setLiteral<AnotherEnum>(ANOTER_2);
-    // EXPECT_TRUE(testLiteral.isEqual<AnotherEnum>(ANOTER_2));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    testLiteral.setLiteral<AnotherEnum>(ANOTHER_3);
+    EXPECT_TRUE(testLiteral.isEqual<AnotherEnum>(ANOTHER_3));
 
-    // testLiteral.setLiteral<AnotherEnum>(ANOTER_3);
-    // EXPECT_TRUE(testLiteral.isEqual<AnotherEnum>(ANOTER_3));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    testLiteral.setLiteral<AnotherEnum>(ANOTHER_4);
+    EXPECT_TRUE(testLiteral.isEqual<AnotherEnum>(ANOTHER_4));
 
-    // testLiteral.setLiteral<AnotherEnum>(ANOTER_4);
-    // EXPECT_TRUE(testLiteral.isEqual<AnotherEnum>(ANOTER_4));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    testLiteral.setLiteral<AnotherEnum>(ANOTHER_5);
+    EXPECT_TRUE(testLiteral.isEqual<AnotherEnum>(ANOTHER_5));
 
-    // testLiteral.setLiteral<AnotherEnum>(ANOTER_5);
-    // EXPECT_TRUE(testLiteral.isEqual<AnotherEnum>(ANOTER_5));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    // Verify the last value is false since the literal is still equal to
+    // ANOTHER_5
+    EXPECT_FALSE(testLiteral.isEqual<AnotherEnum>(ANOTHER_6));
 
-    // testLiteral.setLiteral<AnotherEnum>(ANOTER_6);
-    // EXPECT_TRUE(testLiteral.isEqual<AnotherEnum>(ANOTER_6));
-    // EXPECT_TRUE(testLiteral.isEqual(testLiteral));
+    // Verify the derived extractor's templated validation method works
+    EXPECT_TRUE(extEnum.isValid<AnotherEnum>(ANOTHER_5));
+    EXPECT_FALSE(extEnum.isValid<AnotherEnum>(ANOTHER_7));
 }
-
-///////////////////////////////////////////////////////////////////////////
-// Description: Test the less than operator
-///////////////////////////////////////////////////////////////////////////
-TEST_F(ExtendableEnumTest, LessThanOperator) {}
 } // namespace utl

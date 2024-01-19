@@ -57,7 +57,8 @@ public:
     bool isValid(const T enumValue)
     {
         return m_enumerationMap.find(ExtendableEnumLiteral(
-                   static_cast<uint64_t>(enumValue))) != m_enumerationMap.end();
+                   *this, static_cast<int64_t>(enumValue))) !=
+               m_enumerationMap.end();
     };
 };
 #endif // EXTENDABLEENUM_H

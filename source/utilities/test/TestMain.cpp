@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 
 #include "Error-test.cpp"
+#include "ExtendableEnum-test.cpp"
 
 int main(int argc, char* argv[])
 {

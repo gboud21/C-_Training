@@ -1,6 +1,7 @@
 enable_testing()
 
 # Add the subdirectories
+add_subdirectory(enum_test)
 add_subdirectory(error_test)
 
 # Compile Executable
@@ -25,6 +26,7 @@ add_executable(${TEST_PROJECT_NAME}
 
 target_link_libraries(${TEST_PROJECT_NAME}
                     gtest_main
+                    enum_test
                     error_test
                     )
 

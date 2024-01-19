@@ -25,6 +25,9 @@
 #                           )
 
 # Compile Error Component
+add_subdirectory(enum)
+
+# Compile Error Component
 add_subdirectory(error)
 
 # Compile Logger Component

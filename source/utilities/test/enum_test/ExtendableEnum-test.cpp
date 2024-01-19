@@ -53,7 +53,7 @@ TEST_F(ExtendableEnumTest, AddAndEqualTestSunny)
 {
     ExtendableEnum extEnum;
     // ExtendableEnumLiteral testLiteral(extEnum);
-    ExtendableEnumLiteral testLiteral;
+    ExtendableEnumLiteral testLiteral(extEnum);
 
     EXPECT_TRUE(true);
 

@@ -24,6 +24,8 @@
 #                           "${CMAKE_CURRENT_SOURCE_DIR}"
 #                           )
 
+add_compile_options(-E)
+
 # Compile Error Component
 add_subdirectory(enum)
 

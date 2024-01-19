@@ -1,16 +1,14 @@
 #include "ExtendableEnum.h"
 
-namespace utl
-{
 //////////////////////////////////////////////////////////////////
 /// ExtendableEnum::ExtendableEnum()
 //////////////////////////////////////////////////////////////////
-ExtendableEnum::ExtendableEnum(void) {}
+ExtendableEnum::ExtendableEnum() {}
 
 //////////////////////////////////////////////////////////////////
 /// ExtendableEnum::~ExtendableEnum()
 //////////////////////////////////////////////////////////////////
-ExtendableEnum::~ExtendableEnum(void) {}
+ExtendableEnum::~ExtendableEnum() {}
 
 //////////////////////////////////////////////////////////////////
 /// ExtendableEnum::addEnumerationLiteral()
@@ -51,4 +49,3 @@ bool ExtendableEnum::isValid(const ExtendableEnumLiteral& literal)
 {
     return m_enumerationMap.find(literal) != m_enumerationMap.end();
 }
-} // namespace utl

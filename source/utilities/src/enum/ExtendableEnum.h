@@ -6,8 +6,6 @@
 
 #include "ExtendableEnumLiteral.h"
 
-namespace utl
-{
 ////////////////////////////////////////////////////////////////////////////////////
 /// \details This class provides the ability to mesh multiple enumerations
 /// together into a single access point. This class provides the ability to
@@ -72,7 +70,6 @@ private:
     // Mapping that tracks the integer equivalent value for an enumeration
     std::map<ExtendableEnumLiteral, bool> m_enumerationMap;
 };
-} // namespace utl
 #endif // EXTENDABLEENUM_H
 
 #ifndef EXTENDABLEENUM_C

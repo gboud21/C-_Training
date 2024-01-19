@@ -1,30 +1,23 @@
 #include "ExtendableEnumLiteral.h"
 
-// #include "ExtendableEnum.h"
+#include "ExtendableEnum.h"
 
-namespace utl
+//////////////////////////////////////////////////////////////////
+/// ExtendableEnumLiteral::ExtendableEnumLiteral()
+//////////////////////////////////////////////////////////////////
+ExtendableEnumLiteral::ExtendableEnumLiteral(const ExtendableEnum& enumType)
+    : mp_enumType(enumType), m_literal(0)
 {
-//////////////////////////////////////////////////////////////////
-/// ExtendableEnumLiteral::ExtendableEnumLiteral()
-//////////////////////////////////////////////////////////////////
-ExtendableEnumLiteral::ExtendableEnumLiteral() : m_literal(0) {}
-
-//////////////////////////////////////////////////////////////////
-/// ExtendableEnumLiteral::ExtendableEnumLiteral()
-//////////////////////////////////////////////////////////////////
-// ExtendableEnumLiteral::ExtendableEnumLiteral(const ExtendableEnum& enumType)
-//     : mp_enumType(enumType), m_literal(0)
-// {
-// }
+}
 
 // //////////////////////////////////////////////////////////////////
 // /// ExtendableEnumLiteral::ExtendableEnumLiteral()
 // //////////////////////////////////////////////////////////////////
-// ExtendableEnumLiteral::ExtendableEnumLiteral(const ExtendableEnum& enumType,
-//                                              int64_t literal)
-//     : mp_enumType(enumType), m_literal(literal)
-// {
-// }
+ExtendableEnumLiteral::ExtendableEnumLiteral(const ExtendableEnum& enumType,
+                                             int64_t literal)
+    : mp_enumType(enumType), m_literal(literal)
+{
+}
 
 // //////////////////////////////////////////////////////////////////
 // /// ExtendableEnumLiteral::~ExtendableEnumLiteral()
@@ -34,11 +27,11 @@ ExtendableEnumLiteral::~ExtendableEnumLiteral(void) {}
 //////////////////////////////////////////////////////////////////
 /// ExtendableEnumLiteral::setLiteral()
 //////////////////////////////////////////////////////////////////
-template <typename T>
-void ExtendableEnumLiteral::setLiteral(const T literal)
-{
-    m_literal = static_cast<int64_t>(literal);
-}
+// template <typename T>
+// void ExtendableEnumLiteral::setLiteral(const T literal)
+// {
+//     m_literal = static_cast<int64_t>(literal);
+// }
 
 // //////////////////////////////////////////////////////////////////
 // /// ExtendableEnumLiteral::isEqual()
@@ -57,4 +50,3 @@ bool ExtendableEnumLiteral::operator<(const ExtendableEnumLiteral& rhs) const
 {
     return (m_literal < rhs.m_literal);
 }
-} // namespace utl

@@ -6,14 +6,14 @@ II. Definition
        to a central server over a network or internet connection.
     B. It is also known as a networking computing model because all the requests and services are delivered 
        over a network
-        i. Client
+        i.   Client
             a. A piece of software/application that takes the input and sends requests to the servers
-        ii. Server
+        ii.  Server
             a. A piece of software that receives and processes requests from clients
         iii. Load balancer
             a. Responsible for distributing incoming network traffic across a group of backend server to
                optimize resource usage
-        iv. Network layer protocols
+        iv.  Network layer protocols
             a. TCP/UDP
 III. Topological constraints
     A. In this architecture, you can imagine multiple computers sending data out on the net to a single Load
@@ -30,19 +30,19 @@ III. Topological constraints
                   |                          |
        Laptop ----                           -------- Server ------- Databsase -------- Backup Database
 
-    B. The flow of data is unidirectional and forms a cycle. Typically in is initiated by a client requesting data from the
+    B. The flow of data is unidirectional and forms a cycle. Typically it is initiated by a client requesting data from the
        service. Clients cannot talk to each other directly
     C. Data Flow cycle
-        i. Client requests data from a server
-        ii. Load balancer routes the request to the appropriate server
+        i.   Client requests data from a server
+        ii.  Load balancer routes the request to the appropriate server
         iii. Server processes client request
-        iv. server queries appropriate data base for some data
-        v. Database returns the queried data back to the server
-        vi. The server processes the data and sends the data back to the client
+        iv.  Server queries appropriate data base for some data
+        v.   Database returns the queried data back to the server
+        vi.  The server processes the data and sends the data back to the client
         vii. Repeat process
 
 IV. Applicable Problems
-    A. Most useful for applications that require aseparation of concerns between the client and the server. Meant for systems with
+    A. Most useful for applications that require a separation of concerns between the client and the server. Meant for systems with
        high interoperability. Improves scalability
     B. Most applicable for systems that require a separation of functionality. Request validation and input could be handled from 
        the client side while the load balancer routes the request to the server for adequate processing. Server is responsible for
@@ -60,6 +60,6 @@ VI. Negative behaviors
         i. Server machines are typically much more expensive and employees are expensive
    D. Cannot be used for programs that requires steps that cannot be executed independently/concurrently (aks highly coupled)
 VII. Comparisons with other architecture
-   A. Client-server can be though of as a variation fo layered architecture with two layers
+   A. Client-server can be though of as a variation of layered architecture with two layers
    B. Pipe and filter only allows uniderectional flow of information wheras client-server and layered architecture allow bidirectional
       flow

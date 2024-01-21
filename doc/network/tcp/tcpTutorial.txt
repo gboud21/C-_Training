@@ -1,0 +1,37 @@
+Overview
+-This document provides an overview of TCP Sockets.
+
+References
+https://www.linuxhowtos.org/C_C++/socket.htm
+
+The Client Server Model
+-The Client Server Model is an architectural pattern that details how two processes communicate with each other. This pattern can be 
+ summarized as having one or more "client" processes that connect to and make requests of a single "server" process which is responsible
+ for processing those requests and providing data back to the requesting client. For more information on this pattern see:
+ doc/softwareArchitecture/projectStructure/clientServer.txt
+
+Connection Procedure
+-TCP, Transmission Control Protocol, is a standard that defines reliable, in order, and error-checked network communication stream of octets/bytes
+ between two devices.
+    -Reliable
+        -The delivery of a data packet is acknowledge by the sender. Essentially what happens is that when a packet is transmitted by a device using
+         TCP, upon receiving the packet, the receiver of the data packet sends a message back to the sender to inform them of the packet that was
+         received.
+    -In order
+        -Each packet is numbered and guaranteed to be processed by the network stack in the order it was sent. If a packet is received out of order
+         then the receiver will send a message back to the sender informing them that the packet was received out of order and requesting the sender
+         to resend the next packet.
+    -Error-checked  
+        -A partial hash/checksum/CRC is calculated by the sender of some of the fields within the TCP Packet. When the receiver receives a new packet,
+         they recalculate the hash on the same fields and then compare it to the value stored within the TCP Packet. If the two values are the same then
+         the packet is considered "intact" and is error free. If the two values are not equal then there has been some corruption during transmission
+         and the receiver will respond to the sender to request a new copy of the packet be sent.
+-TCP is "connection-oriented". This means that prior to transmitting any data between the two devices a connection must be requested and a handshake 
+ between the devices must occur to establish the network communication.
+    -The TCP connection is established using the following procedure:
+        1. The server is running and listening for connection requests from potential clients.
+        2. The client requests a connection from the server using the server's IP Address and specifies its own IP Address so that the server knows 
+           how to communicate back to the client. The segment in this request is a packet containing SYN (Synchronize Sequence Number). 
+        3. The server responds to the client's request with SYN-ACK, which is an acknowledgement packet that informs the client that the server has
+           received the SYN request and also specifies what sequence number it will start the segment with.
+        4. The client acknowledges the SYN-ACK by sending an ACK. At this point both the client and server establish a reliable connection to transfer data.

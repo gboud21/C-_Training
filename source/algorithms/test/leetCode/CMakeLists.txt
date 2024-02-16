@@ -5,6 +5,7 @@ add_subdirectory(problem1)
 add_subdirectory(problem2)
 add_subdirectory(problem3)
 add_subdirectory(problem4)
+add_subdirectory(problem5)
 add_subdirectory(problem13)
 add_subdirectory(problem21)
 
@@ -34,6 +35,7 @@ target_link_libraries(${TEST_PROJECT_NAME}
                     leet_2_test
                     leet_3_test
                     leet_4_test
+                    leet_5_test
                     leet_13_test
                     leet_21_test
                     )

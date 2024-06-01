@@ -1,0 +1,22 @@
+Kernel
+-A computer program at the core of a computer's operating system that maintains control of the system.
+-The kernel is always in memory
+-When an application interacts with the kernel it does so by invoking a system call
+
+Responsibilities
+-Handles all of startup except for starting itself (that is the bootloader's job)
+-Prevents and mitigate conflicts between processes, handles interrupts
+-Manages hardware resources (ie Memory, IO)
+    -Random-acess Memory (RAM)
+    -Input/Output (IO) devices
+    -Resource Management
+        -Protection mechanisms for mediating resources between processes
+        -Synchronoization and Inter-Process Communication(IPC)
+            -Context Switching
+    -Memory Management
+        -Virtual Addressing
+            -Provides a layer of indirection by managing data that is not currently in memory to free up resources
+                -Typically done through paging
+    -Device Management
+        -Provides access to peripherals
+-Facilitiates interactions between hardware and software components

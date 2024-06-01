@@ -10,9 +10,10 @@ set(TEST_PROJECT_NAME MapTest)
 
 # Create a variable to contain the source files
 set(MAPS_TEST_SRC
-PerfectHashNode-test.cpp
-PerfectHashMap-test.cpp
-)
+        PerfectHashNode-test.cpp
+        PerfectHashMap-test.cpp
+        UnorderedMap-test.cpp
+        )
 
 
 # This command tells CMake to create an executable using the specified source code files
@@ -23,6 +24,7 @@ add_executable(${TEST_PROJECT_NAME}
 target_link_libraries(${TEST_PROJECT_NAME}
                     gtest_main
                     perfect_hash_map
+                    unordered_maps
                     )
 
 include(GoogleTest)

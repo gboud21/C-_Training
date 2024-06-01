@@ -1,0 +1,108 @@
+Overview
+-This document contains notes on the structure of Linux Device Drivers, how they work and how to build them.
+-https://www.youtube.com/watch?v=pIUTaMKq0Xc&t=2122s&ab_channel=TheLinuxFoundation
+
+Agenda
+1. Introduction to device drivers and character drivers
+2. Hardware access (MMIO, gpiolib)
+3. Introduction to the driver model
+4. Frameworks
+5. Buses and device tree
+6. Examples
+
+What are device drivers
+-Abstractions to a piece of Hardware
+-Device drivers can run in the user space via a kernel interface like UIO or I2CDEV, it is more common for 
+ device drivers to run in kernel space.
+    -UIO
+        -a data structure describing a memory buffer to be used in a data transfer
+            -not contiguous in memory
+            -address space for the buffer can either by system space, user space or cross-memory space
+                -for cross memory, an additional array of cross memory descriptors is specified in the structure
+        -most commonly used in the read and write interfaces for device drivers supporting character/raw IO
+        -/usr/include/sys/uio.h
+        -used by ureadc, uwrtiec, uiomove and uphysio
+    -I2CDEV
+        -A collection of classes to provide an interface to a collection of I2C devices
+        -Abstracts bit-level and byte-level communication away from the specific device classes
+-In Unix based systems a file is the most common abstraction to communicate with a device
+    -Example
+                                                FILE                            USER space
+                                                  |
+                                                  |
+    ---------------------------------------------------------------------------------------------------
+                                                  |
+                                                  |
+                                            Device Driver                       Kernel space
+                                                  |
+                                                  |
+    ---------------------------------------------------------------------------------------------------
+                                                  |
+                                                  |
+                                            Hardware Device                     Hardware
+
+-Linux Device nodes typically uses /dev or /sys
+-Device Nodes are either char or block device Facilitiates
+    -char
+        -a stream of bytes
+    -block
+        -a chunk of bytes
+    -Device nodes have three pieces of information associated with them
+        -Type --> block or char
+        -Major number
+        -Minor number
+-Char driver as a file abstraction
+                                                    Application                         User Space
+
+                                            read()              write()
+                                                        |
+                                                        |
+                                                    /dev/ttyS0
+    ---------------------------------------------------------------------------------------------------
+                                                        |                                Kernel Space
+                                                        |
+                                                type/major/minor
+                                                        |
+                                                        |
+                                            read()              write()
+-Implementing a char driver
+    1) Allocate the device number (major/minor)
+        -Done using register_chrdev_region() or alloc_chrdev_region()
+    2) Implement the file operation
+        -ie open, read, write, ioctl...
+    3) Register the char driver in the kernel with cdev_init() and cdev_add()
+                                                    
+GPIOLIB
+-api provided by linux kernel
+-the Linux kernel implements a producer/consumer model for GPIO Management
+    -producers = GPIO controller drivers
+    -consumers = LED driver, keryboard driver or userspace application
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

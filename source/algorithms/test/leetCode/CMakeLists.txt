@@ -7,6 +7,7 @@ add_subdirectory(problem3)
 add_subdirectory(problem4)
 add_subdirectory(problem5)
 add_subdirectory(problem13)
+add_subdirectory(problem20)
 add_subdirectory(problem21)
 
 # Compile Executable
@@ -37,6 +38,7 @@ target_link_libraries(${TEST_PROJECT_NAME}
                     leet_4_test
                     leet_5_test
                     leet_13_test
+                    leet_20_test
                     leet_21_test
                     )
 

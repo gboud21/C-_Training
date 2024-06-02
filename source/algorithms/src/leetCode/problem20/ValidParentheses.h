@@ -72,10 +72,11 @@ public:
 
 private:
     ///////////////////////////////////////////////////////////////////////////
-    // \details This function checks that the first and last character in the
-    // string form a valid pair. If the pair is valid it will increment the
-    // first index and decrewment the last index and then repeat the cycle until
-    // either a mismatch is found or the indexes meet.
+    // \details This function iterates over each of the characters in the
+    // string. When an open bracket is detected it adds it to the queue. When a
+    // close bracket is detected it checks the top of the queue for a match. If
+    // all open brackets do not have a matching closing bracket then the string
+    // is invalid.
     // \param [in] s - string containing only the following character types:
     //                 "()[]{}"
     // \return bool - TRUE if it is a valid combination of brackets, FALSE

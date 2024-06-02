@@ -1,4 +1,5 @@
 #include "ValidParentheses.h"
+#include <stack>
 
 namespace alg
 {
@@ -63,21 +64,34 @@ bool ValidParentheses::bruteForce(std::string s)
 {
     // Initialize local variable
     bool isValid = ((s.length() % 2) == 0);
-    uint32_t left = 0;
-    uint32_t right = s.length() - 1;
+    std::stack<char> openBrackets;
+    uint32_t index = 0;
 
     // Need to swap to stack approach
-    while (isValid && left <= right)
+    while (isValid && index < s.length())
     {
-        const char leftChar = s[left];
-        const char rightChar = s[right];
-        isValid = checkSquareBracket(leftChar, rightChar) ||
-                  checkCurlyBracket(leftChar, rightChar) ||
-                  checkParentheses(leftChar, rightChar);
+        if (s[index] == '(' || s[index] == '{' || s[index] == '[')
+        {
+            openBrackets.push(s[index]);
+        }
+        else if (openBrackets.size() == 0)
+        {
+            isValid = false;
+        }
+        else
+        {
+            const char leftBracket = openBrackets.top();
+            openBrackets.pop();
 
-        left++;
-        right--;
+            isValid = checkSquareBracket(leftBracket, s[index]) ||
+                      checkCurlyBracket(leftBracket, s[index]) ||
+                      checkParentheses(leftBracket, s[index]);
+        }
+
+        index++;
     }
+
+    isValid &= index >= s.length() && openBrackets.size() == 0;
 
     return isValid;
 }

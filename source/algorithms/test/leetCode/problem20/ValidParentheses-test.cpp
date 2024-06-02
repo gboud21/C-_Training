@@ -143,6 +143,22 @@ TEST_P(ValidParenthesesTest, Rainy_Combo)
     EXPECT_FALSE(testAlg.isValid(input3));
 }
 
+////////////////////////////////////////////////////////////////////////////////
+// Description: Simple Test to proof out base functionality of the algorithm
+////////////////////////////////////////////////////////////////////////////////
+TEST_P(ValidParenthesesTest, Sunny_MultipleNestedBrackets)
+{
+    // Initialize test data
+    const bool expected = false;
+    std::string input = "[[()()]]";
+
+    // Initialize the class to run the brute force method
+    ValidParentheses testAlg(m_version);
+
+    // Run the algorithm and verify the output
+    EXPECT_TRUE(testAlg.isValid(input));
+}
+
 INSTANTIATE_TEST_SUITE_P(PerInstance, ValidParenthesesTest,
                          testing::Values(alg::BRUTE_FORCE /*,
                                          alg::OPTIMIZATION_ONE,

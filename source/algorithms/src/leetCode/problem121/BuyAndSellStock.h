@@ -12,10 +12,16 @@ Return the maximum profit you can achieve from this transaction. If you cannot
 achieve any profit, return 0.
 
 Example 1:
+0 1 2 3 4 5
+return 5
 
 Example 2:
+10 5 20 3 12
+return 15
 
 Example 3:
+ 10 9 8 7 6 5
+ return 0
 
 Constraints:
 1 <= prices.length <= 10^5
@@ -23,14 +29,15 @@ Constraints:
 */
 
 /* Scratch Pad:
-Analysis: Follows normal bracket rules, must have same number of open and close
-brackets AND open sequence has to be in the same order as close sequence
+Analysis: Should be able to just iterate through and keep track of the min and
+max index for the greatest difference
 
-Output: TRUE if it is valid, false otherwise
+Output: integer --> the maximum difference, 0 if all values decrease or are the
+same
 
-Input: A string of characters
+Input: Array of integers
 
-Constraints: String length must be even due to bracket pairing.
+Constraints:
 
 Questions:
 Q:
@@ -68,28 +75,22 @@ public:
 
 private:
     ///////////////////////////////////////////////////////////////////////////
-    // \details This function iterates over each of the characters in the
-    // string. When an open bracket is detected it adds it to the queue. When a
-    // close bracket is detected it checks the top of the queue for a match. If
-    // all open brackets do not have a matching closing bracket then the string
-    // is invalid.
-    // \param [in] s - string containing only the following character types:
-    //                 "()[]{}"
-    // \return int - TRUE if it is a valid combination of brackets, FALSE
-    //                otherwise
+    // \details This function is a brute force approach that tests every
+    // combination of values.
+    // \param[in] prices - array of integers representing stock prices
+    // \return int - maximum difference between two stock prices where first
+    // price is the "buy" price and the second price is the "sell" price
     ///////////////////////////////////////////////////////////////////////////
     int bruteForce(std::vector<int>& prices);
 
     ///////////////////////////////////////////////////////////////////////////
-    // \details This function iterates over each of the linked list comparing
-    // each current node and re-linking the existing nodes to build the output
-    // list to reduce memory consumption
-    // \param [in] s - string containing only the following character types:
-    //                 "()[]{}"
-    // \return int - TRUE if it is a valid combination of brackets, FALSE
-    //                otherwise
+    // \details This function is a brute force approach that tests every
+    // combination of values.
+    // \param[in] prices - array of integers representing stock prices
+    // \return int - maximum difference between two stock prices where first
+    // price is the "buy" price and the second price is the "sell" price
     ///////////////////////////////////////////////////////////////////////////
-    // int optimizedOne(std::vector<int>& prices);
+    int optimizedOne(std::vector<int>& prices);
 
     // Determines which private implementation of the BuyAndSellStock
     // algorithm is called when the public function is called

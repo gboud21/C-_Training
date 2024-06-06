@@ -7,7 +7,8 @@
 // #include "MergeTwoSortedLists-test.cpp"
 // #include "SubstringWoRepeat-test.cpp"
 // #include "TwoSum-test.cpp"
-#include "ValidParentheses-test.cpp"
+// #include "ValidParentheses-test.cpp"
+#include "BuyAndSellStock-test.cpp"
 
 int main(int argc, char* argv[])
 {

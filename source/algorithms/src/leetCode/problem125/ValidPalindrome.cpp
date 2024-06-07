@@ -1,5 +1,7 @@
 #include "ValidPalindrome.h"
 
+#include <cctype>
+
 namespace alg
 {
 ///////////////////////////////////////////////////////////////////////////
@@ -39,6 +41,8 @@ bool ValidPalindrome::isPalindrome(std::string s)
     return status;
 }
 
+bool isAlphaNumericSpace(char c) { return (isalnum(c) != 0); }
+
 ///////////////////////////////////////////////////////////////////////////
 // ValidPalindrome::bruteForce(): PASSED
 // Time Complexity: O(Nlog(N))
@@ -47,7 +51,27 @@ bool ValidPalindrome::isPalindrome(std::string s)
 bool ValidPalindrome::bruteForce(std::string s)
 {
     // Initialize local variable
-    bool isValid = false;
+    bool isValid = true;
+    std::string filteredString = "";
+
+    for (size_t index = 0; index < s.length(); index++)
+    {
+        if (isalnum(s[index]) != 0)
+        {
+            filteredString += s[index];
+        }
+    }
+
+    int left = 0;
+    int right = filteredString.length() - 1;
+
+    while (isValid && left < right)
+    {
+        isValid =
+            tolower(filteredString[left]) == tolower(filteredString[right]);
+        left++;
+        right--;
+    }
 
     return isValid;
 }
@@ -60,7 +84,26 @@ bool ValidPalindrome::bruteForce(std::string s)
 bool ValidPalindrome::optimizedOne(std::string s)
 {
     // Initialize local variable
-    bool isValid = false;
+    bool isValid = true;
+    int left = 0;
+    int right = s.length() - 1;
+
+    while (isValid && left < right)
+    {
+        while (left < right && isalnum(s[left]) == 0)
+        {
+            left++;
+        }
+
+        while (left < right && isalnum(s[right]) == 0)
+        {
+            right--;
+        }
+
+        isValid = tolower(s[left]) == tolower(s[right]);
+        left++;
+        right--;
+    }
 
     return isValid;
 }

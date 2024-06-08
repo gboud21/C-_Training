@@ -11,6 +11,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_subdirectory(maps)
+add_subdirectory(trees)
 add_subdirectory(app)
 
-add_subdirectory(test)
+# add_subdirectory(test)

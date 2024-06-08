@@ -5,7 +5,7 @@ set -e
 CMAKE_EXE=/opt/cmake/bin/cmake
 CURRENT_DIR=$(dirname "${0}")
 BUILD_DIR=${CURRENT_DIR}/../build/
-SOURCE_DIR=${CURRENT_DIR}/../src/
+SOURCE_DIR=${CURRENT_DIR}/../
 
 # --- Command Parameters
 SHOULD_HELP=0

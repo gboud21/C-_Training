@@ -29,6 +29,15 @@ public:
     BinaryNode<T>* depthFirstSearch(T value);
 
     ///////////////////////////////////////////////////////////////////////////
+    // \details This function performs a breadth-first search of the binary tree
+    // for the specified value
+    // \param [in] value - the value to find in the binary tree
+    // \return BinaryNode<T> * - A pointer to the node that contains the value
+    // being searched for
+    ///////////////////////////////////////////////////////////////////////////
+    BinaryNode<T>* breadthFirstSearch(T value);
+
+    ///////////////////////////////////////////////////////////////////////////
     // \details This function inverts the binary tree
     // \return BinaryNode<T> - A reference to the pointer to the root node
     ///////////////////////////////////////////////////////////////////////////

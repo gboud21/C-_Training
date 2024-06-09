@@ -12,6 +12,7 @@ add_subdirectory(problem21)
 add_subdirectory(problem121)
 add_subdirectory(problem125)
 add_subdirectory(problem226)
+add_subdirectory(problem704)
 
 # Compile Executable
 set(GTest_ROOT /usr/src/googletest/googletest)
@@ -46,6 +47,7 @@ target_link_libraries(${TEST_PROJECT_NAME}
                     leet_121_test
                     leet_125_test
                     leet_226_test
+                    leet_704_test
                     )
 
 # Link in the Configuration File

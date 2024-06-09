@@ -8,7 +8,8 @@
 // #include "SubstringWoRepeat-test.cpp"
 // #include "TwoSum-test.cpp"
 // #include "ValidParentheses-test.cpp"
-#include "InvertBinaryTree-test.cpp"
+#include "BinarySearch-test.cpp"
+// #include "InvertBinaryTree-test.cpp"
 // #include "ValidPalindrome-test.cpp"
 // #include "BuyAndSellStock-test.cpp"
 

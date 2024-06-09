@@ -20,6 +20,14 @@ public:
     BinaryTree(BinaryNode<T>* root);
 
     ///////////////////////////////////////////////////////////////////////////
+    // \details This function adds a node to the binary tree. It will keep the
+    // tree balanced by using a breadth-first addition
+    // \param [in] node - the value to find in the binary tree
+    // \return BinaryNode<T> * - A pointer to the node that was added
+    ///////////////////////////////////////////////////////////////////////////
+    BinaryNode<T>* addNode(BinaryNode<T>* node);
+
+    ///////////////////////////////////////////////////////////////////////////
     // \details This function performs a depth-first search of the binary tree
     // for the specified value
     // \param [in] value - the value to find in the binary tree

@@ -13,6 +13,46 @@ BinaryTree<T>::BinaryTree(BinaryNode<T>* root) :
 }
 
 ///////////////////////////////////////////////////////////////////////////
+// BinaryTree::addNode()
+///////////////////////////////////////////////////////////////////////////
+template <typename T>
+BinaryNode<T>* BinaryTree<T>::addNode(BinaryNode<T>* node)
+{
+    // If the tree is empty then just return
+    if (m_rootNode == nullptr)
+    {
+        m_rootNode = node;
+        return m_rootNode;
+    }
+
+    // Initialize a queue with the root node
+    std::queue<BinaryNode<T>*> nodeQueue = {m_rootNode};
+
+    // Iterate over each node layer from left to right searching for the target
+    // value
+    while (queue.front().getLeftChild() != nullptr &&
+           queue.front().getRightChild() != nullptr)
+    {
+        // Push the queue's children and then pop the node at the front of the
+        // queue
+        nodeQueue.push(queue.front().getLeftChild());
+        nodeQueue.push(queue.front().getRightChild());
+        nodeQueue.pop();
+    }
+
+    // Set the node to the left child if it is NULL otherwise set the node to
+    // the right child
+    if (queue.front().getLeftChild() == nulltpr)
+    {
+        queue.front().setLeftChild(node);
+    }
+    else
+    {
+        queue.front().setRightChild(node);
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////
 // BinaryTree::depthFirstSearch()
 ///////////////////////////////////////////////////////////////////////////
 template <typename T>

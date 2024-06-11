@@ -18,8 +18,8 @@ Computing results.
 
 
 SLOC	Directory	SLOC-by-Language (Sorted)
-2923    algorithms      cpp=2144,ansic=659,sh=120
-516     dataStructures  cpp=514,sh=2
+3146    algorithms      cpp=2367,ansic=659,sh=120
+570     dataStructures  cpp=568,sh=2
 500     utilities       cpp=498,sh=2
 246     makefiles       sh=124,cpp=122
 202     basics          sh=124,cpp=78
@@ -31,20 +31,20 @@ SLOC	Directory	SLOC-by-Language (Sorted)
 
 
 Totals grouped by language (dominant language first):
-cpp:           3544 (73.89%)
-ansic:          659 (13.74%)
-sh:             593 (12.36%)
+cpp:           3821 (75.32%)
+ansic:          659 (12.99%)
+sh:             593 (11.69%)
 
 
 
 
-Total Physical Source Lines of Code (SLOC)                = 4,796
-Development Effort Estimate, Person-Years (Person-Months) = 1.04 (12.45)
+Total Physical Source Lines of Code (SLOC)                = 5,073
+Development Effort Estimate, Person-Years (Person-Months) = 1.10 (13.21)
  (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
-Schedule Estimate, Years (Months)                         = 0.54 (6.52)
+Schedule Estimate, Years (Months)                         = 0.56 (6.67)
  (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
-Estimated Average Number of Developers (Effort/Schedule)  = 1.91
-Total Estimated Cost to Develop                           = $ 140,141
+Estimated Average Number of Developers (Effort/Schedule)  = 1.98
+Total Estimated Cost to Develop                           = $ 148,652
  (average salary = $56,286/year, overhead = 2.40).
 SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
 SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.

@@ -24,9 +24,9 @@ FloodFill::floodFill(std::vector<std::vector<int>>& image, int sr, int sc,
             // Execute the Brute Force Algorithm
             return bruteForce(image, sr, sc, color);
             break;
-        case OPTIMIZATION_ONE:
-            return optimizedOne(image, sr, sc, color);
-            break;
+        // case OPTIMIZATION_ONE:
+        //     return optimizedOne(image, sr, sc, color);
+        //     break;
         // case OPTIMIZATION_TWO:
         //     return optimizedTwo(s);
         //     break;

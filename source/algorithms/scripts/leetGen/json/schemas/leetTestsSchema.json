@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "leetTest",
+    "description": "Object that represents a Leet Code Test that source code needs to be generated for.",
+    "type": "object",
+    "properties": {
+      "LEET_ID":{
+        "description": "The integer id for the Leet Code Problem.",
+        "type": "integer",
+        "minimum": 0
+      },
+      "LEET_TITLE" : {
+        "description": "The string title for the Leet Code Problem.",
+        "type": "string"
+      },
+      "LEET_DESCRIPTION" : {
+        "description": "The string description for the Leet Code Problem.",
+        "type": "string"
+      },
+      "LEET_CONSTRAINTS" : {
+        "description": "The string description for the Leet Code Problem.",
+        "type": "string"
+      },
+      "LEET_FUNC" :{
+        "description": "The name of the function that Leet Code will execute.",
+        "type": "string"
+      },
+      "LEET_RETURN" :{
+        "description": "The return type of the function that Leet Code will execute.",
+        "type": "string"
+      },
+      "LEET_PARAMS" :{
+        "description": "The parameters of the function that Leet Code will execute.",
+        "type": "string"
+      }
+    },
+    "required": ["LEET_ID", "LEET_TITLE", "LEET_DESCRIPTION", "LEET_CONSTRAINTS", "LEET_FUNC", "LEET_RETURN", "LEET_PARAMS"]
+}

@@ -8,7 +8,11 @@
 // #include "SubstringWoRepeat-test.cpp"
 // #include "TwoSum-test.cpp"
 // #include "ValidParentheses-test.cpp"
-#include "ValidPalindrome-test.cpp"
+// #include "BinarySearch-test.cpp"
+// #include "InvertBinaryTree-test.cpp"
+#include "FirstBadVersion-test.cpp"
+// #include "ValidPalindrome-test.cpp"
+// #include "LinkedListCycle-test.cpp"
 // #include "BuyAndSellStock-test.cpp"
 
 int main(int argc, char* argv[])

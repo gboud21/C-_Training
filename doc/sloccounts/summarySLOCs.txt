@@ -6,6 +6,7 @@ Creating filelist for bash
 Creating filelist for basics
 Creating filelist for dataStructures
 Creating filelist for io
+Creating filelist for kernel
 Creating filelist for makefiles
 Creating filelist for network
 Creating filelist for patterns
@@ -17,32 +18,32 @@ Computing results.
 
 
 SLOC	Directory	SLOC-by-Language (Sorted)
-2531    algorithms      cpp=1752,ansic=659,sh=120
+2020    algorithms      cpp=1900,sh=120
+570     dataStructures  cpp=568,sh=2
 500     utilities       cpp=498,sh=2
-383     dataStructures  cpp=263,sh=120
-246     makefiles       sh=124,cpp=122
+244     makefiles       sh=124,cpp=120
 202     basics          sh=124,cpp=78
 185     io              cpp=128,sh=57
+130     patterns        sh=118,cpp=12
 48      network         cpp=48
 46      bash            sh=46
-12      patterns        cpp=12
+0       kernel          (none)
 
 
 Totals grouped by language (dominant language first):
-cpp:           2901 (69.85%)
-ansic:          659 (15.87%)
-sh:             593 (14.28%)
+cpp:           3352 (84.97%)
+sh:             593 (15.03%)
 
 
 
 
-Total Physical Source Lines of Code (SLOC)                = 4,153
-Development Effort Estimate, Person-Years (Person-Months) = 0.89 (10.70)
+Total Physical Source Lines of Code (SLOC)                = 3,945
+Development Effort Estimate, Person-Years (Person-Months) = 0.85 (10.14)
  (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
-Schedule Estimate, Years (Months)                         = 0.51 (6.15)
+Schedule Estimate, Years (Months)                         = 0.50 (6.03)
  (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
-Estimated Average Number of Developers (Effort/Schedule)  = 1.74
-Total Estimated Cost to Develop                           = $ 120,482
+Estimated Average Number of Developers (Effort/Schedule)  = 1.68
+Total Estimated Cost to Develop                           = $ 114,154
  (average salary = $56,286/year, overhead = 2.40).
 SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
 SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
@@ -233,6 +234,50 @@ Schedule Estimate, Years (Months)                         = 0.37 (4.47)
  (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
 Estimated Average Number of Developers (Effort/Schedule)  = 1.03
 Total Estimated Cost to Develop                           = $ 52,070
+ (average salary = $56,286/year, overhead = 2.40).
+SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
+SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
+SLOCCount comes with ABSOLUTELY NO WARRANTY, and you are welcome to
+redistribute it under certain conditions as specified by the GNU GPL license;
+see the documentation for details.
+Please credit this data as "generated using David A. Wheeler's 'SLOCCount'."
+
+================================================================================================
+PythonTools
+================================================================================================
+Have a non-directory at the top, so creating directory top_dir
+Adding /home/dapper/code/PythonTools/./README.md to top_dir
+Creating filelist for jsonUtil
+Creating filelist for requirementsManager
+Creating filelist for testCaseGenerator
+Creating filelist for utilities
+Categorizing files.
+Finding a working MD5 command....
+Found a working MD5 command.
+Computing results.
+
+
+SLOC	Directory	SLOC-by-Language (Sorted)
+181     requirementsManager python=181
+156     testCaseGenerator python=156
+2       jsonUtil        python=2
+0       top_dir         (none)
+0       utilities       (none)
+
+
+Totals grouped by language (dominant language first):
+python:         339 (100.00%)
+
+
+
+
+Total Physical Source Lines of Code (SLOC)                = 339
+Development Effort Estimate, Person-Years (Person-Months) = 0.06 (0.77)
+ (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
+Schedule Estimate, Years (Months)                         = 0.19 (2.26)
+ (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
+Estimated Average Number of Developers (Effort/Schedule)  = 0.34
+Total Estimated Cost to Develop                           = $ 8,677
  (average salary = $56,286/year, overhead = 2.40).
 SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
 SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
